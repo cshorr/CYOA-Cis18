@@ -14,7 +14,7 @@ html, body { height: 100%; margin: 0; }
     width: min(800px, 90vw);
     padding: 24px;
     background: rgba(255,255,255,0.03);
-    background-image: ;
+    /* background-image: url('/static/img/placeholder.jpg');  <-- OPTIONAL later */
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 12px;
     color: #eef1f7;
@@ -26,8 +26,7 @@ html, body { height: 100%; margin: 0; }
 .choices button {
     padding: 10px 16px;
     border-radius: 10px;
-    border: 3
-    px solid rgba(255,255,255,0.12);
+    border: 3px solid rgba(255,255,255,0.12);
     border-color: orangered;
     font-weight: normal;
     font-size: 16px;
@@ -37,6 +36,7 @@ html, body { height: 100%; margin: 0; }
     cursor: pointer;
 }
 .choices button:hover { filter: brightness(1.1); }
+
 a.btn {
     display: inline-block;
     padding: 10px 16px;

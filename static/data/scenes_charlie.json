@@ -1,0 +1,44 @@
+[
+  {
+    "scene_id": "S-001",
+    "title": "Scene 1 - south gate",
+    "where_when": "Old stone arch, warm sunlight",
+    "text": "You head south toward a sun-warmed gate.",
+    "choices": [
+      { "label": "Step through the arch", "next_id": "S-001A" },
+      { "label": "Circle around the wall", "next_id": "S-001B" }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "S-001A",
+    "title": "Scene 1A - through the arch",
+    "where_when": "Quiet courtyard",
+    "text": "The stones are warm under your hand. The space beyond feels quiet.",
+    "choices": [
+      { "label": "Continue", "next_id": "S-002" }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "S-001B",
+    "title": "Scene 1B - around the wall",
+    "where_when": "Hidden path",
+    "text": "A narrow track runs along broken cobbles behind the wall.",
+    "choices": [
+      { "label": "Continue", "next_id": "S-002" }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "S-002",
+    "title": "Scene 2 - south",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Choice A", "next_id": "S-002A" },
+      { "label": "Choice B", "next_id": "S-002B" }
+    ],
+    "exit_line": "This line leads to the next scene."
+  }
+]

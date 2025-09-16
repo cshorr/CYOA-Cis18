@@ -4,7 +4,7 @@ html, body { height: 100%; margin: 0; }
 /* gradient background + center layout */
 .screen {
   min-height: 100%;
-  background: radial-gradient(1200px 800px at 70% 10%, #4782e8, #151722 60%, #0d0f18 100%);
+  background: radial-gradient(1200px 800px at 70% 10%, #2f3352, #151722 60%, #0d0f18 100%);
   display: grid;
   place-items: center;
 }
@@ -13,49 +13,53 @@ html, body { height: 100%; margin: 0; }
 .panel {
   width: min(800px, 90vw);
   padding: 24px;
-  background: rgb(3, 51, 121);
+  background: rgba(255,255,255,0.03);
   /* background-image: none;   // was blank; leaving it off */
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 12px;
-  color: #4bd5d5;
+  color: #ffcc99;
   line-height: 1.5;
 }
 
-/* button row */
+/* buttons */
 .choices { margin-top: 16px; display: flex; gap: 12px; }
 
-/* Styles for <button> elements inside .choices */
+/* if you use <button> elements */
 .choices button {
   padding: 10px 16px;
   border-radius: 10px;
-  border: 3px solid rgb(83, 201, 19); /* fixed: '3' and 'px' were split */
+  border: 3px solid rgba(255,255,255,0.12); /* fixed: '3' and 'px' were split */
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
-  background: #c9368a;
-  color: #5247e8;
+  background: yellow;
+  color: orangered;
   cursor: pointer;
 }
 .choices button:hover { filter: brightness(1.1); }
 
-/* body text color */
-body {
-  color: #ffcc99;  /* light orange text */
-}
-
-/* links styled as buttons */
+/* if you use <a class="btn"> links */
 a.btn {
   display: inline-block;
   padding: 10px 16px;
   border-radius: 8px;
-  background: #4bd5d5;       /* teal background */
-  color: #033379;            /* dark blue text */
-  border: 3px solid #4bd5d5; /* teal border */
+  border: 1px solid rgba(255,255,255,0.15);
+  background: #262a36;
+  color: #eef1f7;
   text-decoration: none;
   cursor: pointer;
 }
-
-a.btn:hover {
-  filter: brightness(1.1);
+a.btn:hover { filter: brightness(1.1); }
+body {
+  color: #ffcc99;  /* light orange text */
 }
-
+/* Chris-only overrides for <a class="btn"> buttons */
+a.btn {
+  background: yellow;
+  color: orangered;
+  border: 3px solid orangered;
+}
+a.btn:hover {
+  background: orangered;
+  color: yellow;
+}

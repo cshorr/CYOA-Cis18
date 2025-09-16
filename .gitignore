@@ -2,3 +2,73 @@
 __pycache__/
 *.pyc
 .idea/
+.idea/
+*.iml
+# ====================================
+# Python
+# ====================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# Byte-compiled / cache
+*.pyo
+*.pyd
+*.pdb
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Logs
+*.log
+
+# ====================================
+# PyCharm / JetBrains IDE
+# ====================================
+.idea/
+*.iml
+out/
+
+# User-specific
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# ====================================
+# Flask / web app
+# ====================================
+instance/
+*.db
+*.sqlite3
+*.sqlite
+
+# ====================================
+# Misc
+# ====================================
+# Ignore backup or temp files
+*~
