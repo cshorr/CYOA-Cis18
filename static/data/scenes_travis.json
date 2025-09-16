@@ -1,0 +1,44 @@
+[
+  {
+    "scene_id": "E-001",
+    "title": "Scene 1 - east trailhead",
+    "where_when": "Forest edge, morning",
+    "text": "You head east. The light through the trees is sharp and cold.",
+    "choices": [
+      { "label": "Take the narrow path", "next_id": "E-001A" },
+      { "label": "Climb the fallen tree", "next_id": "E-001B" }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "E-001A",
+    "title": "Scene 1A - on the narrow path",
+    "where_when": "Deep in the brush",
+    "text": "Branches snag your sleeves. Something moves ahead.",
+    "choices": [
+      { "label": "Continue", "next_id": "E-002" }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "E-001B",
+    "title": "Scene 1B - on the fallen tree",
+    "where_when": "Balancing act",
+    "text": "The bark shifts under your feet. You steady yourself.",
+    "choices": [
+      { "label": "Continue", "next_id": "E-002" }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "E-002",
+    "title": "Scene 2 - east",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Choice A", "next_id": "E-002A" },
+      { "label": "Choice B", "next_id": "E-002B" }
+    ],
+    "exit_line": "This line leads to the next scene."
+  }
+]
