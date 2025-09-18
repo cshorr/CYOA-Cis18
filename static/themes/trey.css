@@ -4,7 +4,7 @@ html, body { height: 100%; margin: 0; }
 /* gradient background + center layout */
 .screen {
   min-height: 100%;
-  background: radial-gradient(1200px 800px at 70% 10%, #2f3352, #151722 60%, #0d0f18 100%);
+  background: radial-gradient(1200px 800px at 70% 10%, #e8bb27, #165454 60%, #27e8e2 200%);
   display: grid;
   place-items: center;
 }
