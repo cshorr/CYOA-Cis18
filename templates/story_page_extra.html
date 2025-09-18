@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ scene.title }}{% endblock %}
+
+{% block content %}
+<div class="story-content">
+    <h2>{{ scene.title }}</h2>
+    <p class="where-when">{{ scene.where_when }}</p>
+
+    <pre>{{ scene.text }}</pre>
+
+    <div class="choices">
+        {% for choice in scene.choices %}
+            <a href="/scene/{{ choice.next_id }}">{{ choice.label }}</a>
+        {% endfor %}
+    </div>
+
+    <p class="exit-line">{{ scene.exit_line }}</p>
+</div>
+{% endblock %}
