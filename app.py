@@ -165,6 +165,11 @@ def death():
     theme = request.args.get("theme") or "chris"
     return render_template("death.html", title="You Died", msg=msg, theme=theme)
 
+@app.template_filter('replace_all_newlines')
+def replace_all_newlines(s: str):
+    from markupsafe import Markup
+
+    return Markup(s.replace('\n', '<br>'))
 
 # --- Main entry ---
 if __name__ == "__main__":
