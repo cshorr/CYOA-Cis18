@@ -8,12 +8,20 @@
 </p>
 
 <p><strong>Scene ID:</strong> MENU • <strong>Where/When:</strong> Foggy clearing, morning</p>
+<div class="story-content">
+    <h2>{{ scene.title }}</h2>
+    <p class="where-when">{{ scene.where_when }}</p>
 
-<div class="choices">
-  <a class="btn" href="{{ url_for('north_path') }}">Go North (Chris’s story)</a>
-  <a class="btn" href="{{ url_for('east_path') }}">Go East (Travis’s story)</a>
-  <a class="btn" href="{{ url_for('south_path') }}">Go South (Charlie’s story)</a>
-  <a class="btn" href="{{ url_for('west_path') }}">Go West (Trey’s story)</a>
+    <pre>{{ scene.text }}</pre>
+
+    <div class="choices">
+        {% for choice in scene.choices %}
+        <a class="btn" href="{{ url_for('north_path') }}">Go North (Chris’s story)</a>
+        <a class="btn" href="{{ url_for('east_path') }}">Go East (Travis’s story)</a>
+        <a class="btn" href="{{ url_for('south_path') }}">Go South (Charlie’s story)</a>
+        <a class="btn" href="{{ url_for('west_path') }}">Go West (Trey’s story)</a>
+        {% endfor %}
+    </div>
 </div>
 
 <p><em>Exit:</em> The crossroads fades behind you as your chosen path unfolds.</p>

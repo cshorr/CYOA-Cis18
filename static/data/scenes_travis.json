@@ -1,19 +1,18 @@
 [
   {
     "scene_id": "E-001",
-    "title": "Scene 1 - east trailhead",
-    "where_when": "Forest edge, morning",
-    "text": "You head east. The light through the trees is sharp and cold.",
+    "title": "A Town Called Pidling",
+    "where_when": "Pidling Town, morning",
+    "text":"The air in Pidling is thick with the scent of woodsmoke and a lingering metallic tang from the forge. It's a small town, but its heart beats with the ambition of adventurers—a haven for those seeking fame, fortune, or just a little excitement. The main street is a jumble of humble homes and shops, all leading toward the grand stone building that houses the Adventurer's Guild.\nAs you step inside, the low murmur of conversations and the clinking of tankards fill the air. A stocky, cheerful woman with a weathered face smiles from behind a large wooden counter. \"Here to see the quest board?\" she asks, her voice a warm rasp. Before you can answer, she calls out to a figure sitting in the corner. \"Hey, Olly! Got a new one for you!\"\nA young man with wide, bright eyes and a disarming smile stands up, adjusts the leather pack on his back, and ambles over to you. This is Olly, your newly assigned guide. He seems to know everyone and everything, a living encyclopedia of the surrounding lands.\n",
     "choices": [
-      { "label": "Take the narrow path", "next_id": "E-001A" },
-      { "label": "Climb the fallen tree", "next_id": "E-001B" }
+      { "label": "Follow Olly", "next_id": "E-002" }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Olly gestures for you to follow him over to the main quest board, a massive plank of oak covered in countless scraps of parchment. He points to two specific quests."
   },
   {
-    "scene_id": "E-001A",
-    "title": "Scene 1A - on the narrow path",
-    "where_when": "Deep in the brush",
+    "scene_id": "E-002",
+    "title": "Quest Board in Pidling",
+    "where_when": "Pidling Adventurer's guild",
     "text": "Branches snag your sleeves. Something moves ahead.",
     "choices": [
       { "label": "Continue", "next_id": "E-002" }
