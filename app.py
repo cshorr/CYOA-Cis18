@@ -122,7 +122,7 @@ def chris_start():
 @app.get("/chris/<scene_id>")
 def scene_chris(scene_id):
     scene = get_chris(scene_id)
-    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="chris")
+    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="chris" , base_endpoint="scene_chris")
 
 
 # --- Travis dynamic routes ---
@@ -133,7 +133,7 @@ def travis_start():
 @app.get("/travis/<scene_id>")
 def scene_travis(scene_id):
     scene = get_travis(scene_id)
-    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="travis")
+    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="travis", base_endpoint="scene_travis")
 
 
 # --- Charlie dynamic routes ---
@@ -144,7 +144,7 @@ def charlie_start():
 @app.get("/charlie/<scene_id>")
 def scene_charlie(scene_id):
     scene = get_charlie(scene_id)
-    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="charlie")
+    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="charlie", base_endpoint="scene_charlie")
 
 
 # --- Trey dynamic routes ---
@@ -155,7 +155,43 @@ def trey_start():
 @app.get("/trey/<scene_id>")
 def scene_trey(scene_id):
     scene = get_trey(scene_id)
-    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="trey")
+    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="trey", base_endpoint="scene_trey")
+
+# ========= ORACLE (AI) =========
+SCENES_FILE_ORACLE = BASE_DIR / "static" / "data" / "scenes_oracle.json"
+
+def _load_oracle():
+    with SCENES_FILE_ORACLE.open(encoding="utf-8") as f:
+        raw = json.load(f)
+    return {str(s["scene_id"]).strip(): s for s in raw}
+
+try:
+    ORACLE = _load_oracle()
+except FileNotFoundError:
+    ORACLE = {}
+
+def get_oracle(scene_id: str) -> dict:
+    key = str(scene_id).strip()
+    try:
+        return ORACLE[key]
+    except KeyError:
+        abort(404, f"Scene {key} not found")
+# --- Oracle dynamic routes ---
+@app.get("/oracle")
+def oracle_start():
+    return redirect(url_for("scene_oracle", scene_id="O-001"))
+
+@app.get("/oracle/<scene_id>")
+def scene_oracle(scene_id):
+    scene = get_oracle(scene_id)
+    return render_template(
+        "scene.html",
+        scene=scene,
+        title=scene.get("title"),
+        theme="oracle",
+        base_endpoint="scene_oracle"
+    )
+
 
 
 # --- Shared death page (defaults to Chris theme if none given) ---
@@ -164,6 +200,13 @@ def death():
     msg = request.args.get("msg") or "You slip at the last moment and fall to your death. That is the end of your story."
     theme = request.args.get("theme") or "chris"
     return render_template("death.html", title="You Died", msg=msg, theme=theme)
+
+@app.get("/the_end")
+def the_end():
+    theme = request.args.get("theme") or "chris"
+    msg = request.args.get("msg") or "Thanks for playing!"
+    return render_template("the_end.html", title="The End", theme=theme, msg=msg)
+
 
 @app.template_filter('replace_all_newlines')
 def replace_all_newlines(s: str):

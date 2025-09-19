@@ -20,7 +20,7 @@
         {{ c.label or 'You Died' }}
     </a>
     {% else %}
-    <a class="btn" href="{{ url_for('scene_chris', scene_id=nextid) }}">
+    <a class="btn" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
         {{ c.label }} ({{ nextid }})
     </a>
     {% endif %}
