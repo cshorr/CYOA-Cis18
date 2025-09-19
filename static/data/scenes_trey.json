@@ -24,7 +24,7 @@
     "scene_id": "W-001B",
     "title": "Scene 1B - crossing the rocks",
     "where_when": "Midstream",
-    "text": "Your boots splash. The stones shift but you keep moving.",
+    "text": "Your boots splash. The stones shift but you keep moving. walking near the tree line. animals moving through tree lines. as you walk you notice 2 steel plated",
     "choices": [
       { "label": "Continue", "next_id": "W-002B" }
     ],
