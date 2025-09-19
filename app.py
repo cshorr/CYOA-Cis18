@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, redirect, abort, request
 import json
 from pathlib import Path
+from flask import redirect, url_for
 
 app = Flask(__name__)
 
@@ -9,6 +10,7 @@ BASE_DIR = Path(__file__).parent.resolve()
 
 # ========= CHRIS (NORTH) =========
 SCENES_FILE_CHRIS = BASE_DIR / "static" / "data" / "scenes_chris.json"
+
 
 def _load_chris():
     with SCENES_FILE_CHRIS.open(encoding="utf-8") as f:
@@ -216,4 +218,4 @@ def replace_all_newlines(s: str):
 
 # --- Main entry ---
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='localhost', port=8000, debug=True)
