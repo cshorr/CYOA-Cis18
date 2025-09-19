@@ -40,7 +40,7 @@
     "choices": [
       {
         "label": "Continue",
-        "next_id": "E-003A"
+        "next_id": "E-005"
       }
     ],
     "exit_line": ""
@@ -53,19 +53,436 @@
     "choices": [
       {
         "label": "Choice A",
-        "next_id": "E-002A"
+        "next_id": "E-006"
       }
     ],
     "exit_line": ""
   },
-
-
-
-
-
-
-
-
+   {
+    "scene_id": "E-005",
+    "title": "Scene 5 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-006",
+    "title": "Scene 6 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-007",
+    "title": "Scene 7 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-008",
+    "title": "Scene 8 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-009",
+    "title": "Scene 9 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-010",
+    "title": "Scene 10 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-011",
+    "title": "Scene 11 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-012",
+    "title": "Scene 12 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-013",
+    "title": "Scene 13 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-014",
+    "title": "Scene 14 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-015",
+    "title": "Scene 15 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-016",
+    "title": "Scene 16 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-017",
+    "title": "Scene 17 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-018",
+    "title": "Scene 18 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-019",
+    "title": "Scene 19 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-020",
+    "title": "Scene 20 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-021",
+    "title": "Scene 21 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-022",
+    "title": "Scene 22 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-023",
+    "title": "Scene 23 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+        {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024",
+    "title": "Scene 24 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-025",
+    "title": "Scene 25 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-026",
+    "title": "Scene 26 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-027",
+    "title": "Scene 27 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-028",
+    "title": "Scene 28 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-029",
+    "title": "Scene 29 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
     {
     "scene_id": "E-030",
     "title": "Scene 30 - generic title",
@@ -83,6 +500,7 @@
     ],
     "exit_line": "This line leads to the next scene."
   },
+
   {
     "scene_id": "E-030A",
     "title": "Scene 30A - outcome of A",
