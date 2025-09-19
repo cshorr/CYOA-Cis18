@@ -4,7 +4,7 @@ html, body { height: 100%; margin: 0; }
 /* gradient background + center layout */
 .screen {
   min-height: 100%;
-  background: radial-gradient(1200px 800px at 70% 10%, #2f3352, #151722 60%, #0d0f18 100%);
+  background: radial-gradient(1200px 800px at 80% 10%, #2e4d2e, #1a291a 80%, #0d120d 100%);
   display: grid;
   place-items: center;
 }
@@ -28,13 +28,13 @@ html, body { height: 100%; margin: 0; }
 .choices button {
   padding: 10px 16px;
   border-radius: 10px;
-  border: 3px solid rgba(255,255,255,0.12); /* fixed: '3' and 'px' were split */
+  border: 3px solid rgba(255,255,255,0.12);
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
-  background: lightyellow;
-  color: orangered;
-  cursor: pointer;
+  background: #00008b; /* dark blue */
+  color: #ffffff; /* white */
+  cursor: url('https://drive.google.com/file/d/1RxoHTE-cTT4RdsHwlAcciYwJoml1wLDX/view?usp=sharing'), auto;
 }
 .choices button:hover { filter: brightness(1.1); }
 
