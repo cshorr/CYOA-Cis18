@@ -3,31 +3,62 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffcc99;  /* warm light orange text */
-  background: #0d0f18; /* fallback if gradient fails */
+  color: #c2d6a4;  /* Soft mossy green text */
+  background: #1a2a1a; /* Dark forest green fallback */
 }
+
+/* === CRT Overlay Effect === */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  pointer-events: none; /* Allows interaction with elements beneath */
+  opacity: 0.5; /* Subtle scanlines */
+  mix-blend-mode: overlay; /* Blends nicely with background */
+  filter: blur(0.5px); /* Soften the scanlines slightly */
+  z-index: 9999; /* Ensure it's on top */
+}
+
 
 /* === Gradient Background Screen === */
 .screen {
   min-height: 100%;
   background: radial-gradient(
     1200px 800px at 70% 10%,
-    #4782e8,
-    #151722 60%,
-    #0d0f18 100%
+    #4a8c4a, /* Lighter forest green */
+    #2a4a2a 60%, /* Medium forest green */
+    #1a2a1a 100% /* Dark forest green */
   );
   display: grid;
   place-items: center;
+  position: relative; /* Needed for CRT effect */
+  overflow: hidden; /* Prevent scanlines from exceeding screen */
 }
 
 /* === Glassy Center Panel === */
 .panel {
   width: min(800px, 90vw);
   padding: 24px;
-  background: rgba(3, 51, 121, 0.85); /* semi-transparent glass look */
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(30, 60, 30, 0.85); /* Semi-transparent darker green glass */
+  border: 1px solid rgba(160, 180, 140, 0.15); /* Soft border */
   border-radius: 12px;
-  color: #e0d9e5;
+  color: #e0e8d0; /* Soft cream/greenish text for panel */
   line-height: 1.6;
   backdrop-filter: blur(6px);
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
@@ -53,6 +84,7 @@ a.btn,
   transition: all 0.25s ease;
   min-width: 160px;
   text-align: center;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3); /* Cyan runic glow base */
 }
 
 /* === Shared Hover/Focus === */
@@ -60,61 +92,77 @@ a.btn:hover,
 .choices button:hover {
   transform: scale(1.05);
   filter: brightness(1.15);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
-}
-
-/* === Choice Buttons Row === */
-.choices {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: center;
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.6); /* More intense cyan glow on hover */
 }
 
 /* === Button Variants === */
 .btn-a {
-  background: linear-gradient(145deg, #1e90ff, #0057e7);
-  border-color: #1e90ff;
+  background: linear-gradient(145deg, #4CAF50, #2E8B57); /* Forest Green */
+  border-color: #4CAF50;
   color: #fff;
 }
 .btn-a:hover {
-  background: linear-gradient(145deg, #3fa9f5, #007fff);
-  box-shadow: 0 0 12px #1e90ff;
+  background: linear-gradient(145deg, #66BB6A, #3CB371);
 }
 
 .btn-b {
-  background: linear-gradient(145deg, #ff4747, #b71c1c);
-  border-color: #ff4747;
+  background: linear-gradient(145deg, #6B8E23, #556B2F); /* Olive Drab Green */
+  border-color: #6B8E23;
   color: #fff;
 }
 .btn-b:hover {
-  background: linear-gradient(145deg, #ff6f6f, #d32f2f);
-  box-shadow: 0 0 12px #ff4747;
+  background: linear-gradient(145deg, #8BC34A, #6B8E23);
 }
 
 .btn-c {
-  background: linear-gradient(145deg, #2ecc71, #145a32);
-  border-color: #2ecc71;
+  background: linear-gradient(145deg, #808080, #696969); /* Grey */
+  border-color: #808080;
   color: #fff;
 }
 .btn-c:hover {
-  background: linear-gradient(145deg, #58d68d, #1e8449);
-  box-shadow: 0 0 12px #2ecc71;
+  background: linear-gradient(145deg, #A9A9A9, #808080);
 }
+
+.btn-d {
+  background: linear-gradient(145deg, #C0C0C0, #A9A9A9); /* Silver */
+  border-color: #C0C0C0;
+  color: #333; /* Darker text for better contrast on silver */
+}
+.btn-d:hover {
+  background: linear-gradient(145deg, #D3D3D3, #C0C0C0);
+}
+
+.btn-e {
+  background: linear-gradient(145deg, #FFD700, #DAA520); /* Gold */
+  border-color: #FFD700;
+  color: #333; /* Darker text for better contrast on gold */
+}
+.btn-e:hover {
+  background: linear-gradient(145deg, #FFEA00, #F0C420);
+}
+
+.btn-f {
+  background: linear-gradient(145deg, #E74C3C, #C0392B); /* Ruby Red */
+  border-color: #E74C3C;
+  color: #fff;
+}
+.btn-f:hover {
+  background: linear-gradient(145deg, #EC7063, #E74C3C);
+}
+
 
 /* === Links (Non-choice) === */
 a {
-  color: #4bd5d5;
+  color: #4bd5d5; /* Keep cyan for links, it ties into the runic glow */
   transition: color 0.2s ease;
 }
 a:hover {
-  color: #6ff5f5;
+  color: #7fffd4; /* Brighter cyan on hover */
 }
 
 /* === Titles === */
 h1, h2, h3 {
   margin-top: 0;
-  color: #ffd27f;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  color: #90EE90; /* Light green for titles */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 255, 255, 0.4); /* Added cyan glow to titles */
 }
