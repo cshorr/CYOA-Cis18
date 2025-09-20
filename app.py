@@ -196,16 +196,16 @@ def scene_oracle(scene_id):
 
 
 
-# --- Shared death page (defaults to Chris theme if none given) ---
+# --- Shared death/end page (defaults to Crossroads theme) --- its a design choice , circle of life and all that :)
 @app.get("/death")
 def death():
     msg = request.args.get("msg") or "You slip at the last moment and fall to your death. That is the end of your story."
-    theme = request.args.get("theme") or "chris"
+    theme = request.args.get("theme") or "crossroads"
     return render_template("death.html", title="You Died", msg=msg, theme=theme)
 
 @app.get("/the_end")
 def the_end():
-    theme = request.args.get("theme") or "chris"
+    theme = request.args.get("theme") or "crossroads"
     msg = request.args.get("msg") or "Thanks for playing!"
     return render_template("the_end.html", title="The End", theme=theme, msg=msg)
 
@@ -218,4 +218,5 @@ def replace_all_newlines(s: str):
 
 # --- Main entry ---
 if __name__ == "__main__":
-    app.run(host='localhost', port=8000, debug=True)
+    app.run(debug=True)
+
