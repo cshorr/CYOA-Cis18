@@ -84,7 +84,7 @@ a.btn,
   transition: all 0.25s ease;
   min-width: 160px;
   text-align: center;
-  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3); /* Cyan runic glow base */
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
 }
 
 /* === Shared Hover/Focus === */
@@ -92,12 +92,12 @@ a.btn:hover,
 .choices button:hover {
   transform: scale(1.05);
   filter: brightness(1.15);
-  box-shadow: 0 0 18px rgba(0, 255, 255, 0.6); /* More intense cyan glow on hover */
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.6);
 }
 
 /* === Button Variants === */
 .btn-a {
-  background: linear-gradient(145deg, #4CAF50, #2E8B57); /* Forest Green */
+  background: linear-gradient(145deg, #4CAF50, #2E8B57);
   border-color: #4CAF50;
   color: #fff;
 }
@@ -106,7 +106,7 @@ a.btn:hover,
 }
 
 .btn-b {
-  background: linear-gradient(145deg, #6B8E23, #556B2F); /* Olive Drab Green */
+  background: linear-gradient(145deg, #6B8E23, #556B2F);
   border-color: #6B8E23;
   color: #fff;
 }
@@ -115,7 +115,7 @@ a.btn:hover,
 }
 
 .btn-c {
-  background: linear-gradient(145deg, #808080, #696969); /* Grey */
+  background: linear-gradient(145deg, #808080, #696969);
   border-color: #808080;
   color: #fff;
 }
@@ -124,25 +124,25 @@ a.btn:hover,
 }
 
 .btn-d {
-  background: linear-gradient(145deg, #C0C0C0, #A9A9A9); /* Silver */
+  background: linear-gradient(145deg, #C0C0C0, #A9A9A9);
   border-color: #C0C0C0;
-  color: #333; /* Darker text for better contrast on silver */
+  color: #333;
 }
 .btn-d:hover {
   background: linear-gradient(145deg, #D3D3D3, #C0C0C0);
 }
 
 .btn-e {
-  background: linear-gradient(145deg, #FFD700, #DAA520); /* Gold */
+  background: linear-gradient(145deg, #FFD700, #DAA520);
   border-color: #FFD700;
-  color: #333; /* Darker text for better contrast on gold */
+  color: #333;
 }
 .btn-e:hover {
   background: linear-gradient(145deg, #FFEA00, #F0C420);
 }
 
 .btn-f {
-  background: linear-gradient(145deg, #E74C3C, #C0392B); /* Ruby Red */
+  background: linear-gradient(145deg, #E74C3C, #C0392B);
   border-color: #E74C3C;
   color: #fff;
 }
@@ -153,16 +153,16 @@ a.btn:hover,
 
 /* === Links (Non-choice) === */
 a {
-  color: #4bd5d5; /* Keep cyan for links, it ties into the runic glow */
+  color: #4bd5d5;
   transition: color 0.2s ease;
 }
 a:hover {
-  color: #7fffd4; /* Brighter cyan on hover */
+  color: #7fffd4;
 }
 
 /* === Titles === */
 h1, h2, h3 {
   margin-top: 0;
-  color: #90EE90; /* Light green for titles */
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 255, 255, 0.4); /* Added cyan glow to titles */
+  color: #90EE90;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 255, 255, 0.4);
 }

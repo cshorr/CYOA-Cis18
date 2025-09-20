@@ -30,7 +30,7 @@
 </div>
 
 {% if scene.exit_line %}
-<p><em>Exit:</em> {{ scene.exit_line }}</p>
+<p><em>Exit:</em> {{ scene.exit_line | replace_all_newlines }}</p>
 {% endif %}
 
 <div class="choices" style="margin-top:12px">
