@@ -37,7 +37,8 @@
         },
       {
         "label": "Quest 2: The Lizard Horde of Blackfang Keep.",
-        "next_id": "E-004"
+        "next_id": "E-004",
+        "variant": "danger"
       }
     ],
     "exit_line": ""
