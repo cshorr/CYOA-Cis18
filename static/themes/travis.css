@@ -3,8 +3,13 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: #ec9e5e;  /* warm light orange text */
+  background: #0d0f18; /* fallback if gradient fails */
+
   color: #c2d6a4;  /* Soft mossy green text */
   background: #1a2a1a; /* Dark forest green fallback */
+
 }
 
 /* === CRT Overlay Effect === */
@@ -58,7 +63,11 @@ body::before {
   background: rgba(30, 60, 30, 0.85); /* Semi-transparent darker green glass */
   border: 1px solid rgba(160, 180, 140, 0.15); /* Soft border */
   border-radius: 12px;
+
+  color: #c28ce8;
+
   color: #e0e8d0; /* Soft cream/greenish text for panel */
+
   line-height: 1.6;
   backdrop-filter: blur(6px);
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);

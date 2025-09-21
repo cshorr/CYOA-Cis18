@@ -4,11 +4,13 @@
 {% block content %}
 <h1>{{ scene.title }}</h1>
 
-<p><strong>ID:</strong> {{ scene.scene_id }} • <strong>Where/When:</strong> {{ scene.where_when }}</p>
+  <p><strong>Where/When:</strong> {{ scene.where_when | replace_all_newlines }}</p>
 
-<p>{{ scene.text | replace_all_newlines }}</p>
+  <p>{{ scene.text | replace_all_newlines }}</p>
 
 <div class="choices">
+
+
   {% for c in scene.choices %}
   {% set nextid = (c.next_id|string).strip() %}
   {% set btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
@@ -30,7 +32,8 @@
 </div>
 
 {% if scene.exit_line %}
-<p><em>Exit:</em> {{ scene.exit_line | replace_all_newlines }}</p>
+  <p> {{ scene.exit_line | replace_all_newlines |safe }}</p>
+
 {% endif %}
 
 <div class="choices" style="margin-top:12px">
