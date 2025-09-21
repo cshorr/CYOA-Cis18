@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffcc99;  /* warm light orange text */
+  color: #ec9e5e;  /* warm light orange text */
   background: #0d0f18; /* fallback if gradient fails */
 }
 
@@ -27,7 +27,7 @@ html, body {
   background: rgba(3, 51, 121, 0.85); /* semi-transparent glass look */
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  color: #e0d9e5;
+  color: #c28ce8;
   line-height: 1.6;
   backdrop-filter: blur(6px);
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
