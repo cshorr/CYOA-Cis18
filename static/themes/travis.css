@@ -141,21 +141,21 @@ a.btn:hover,
   background: linear-gradient(145deg, #D3D3D3, #C0C0C0);
 }
 
-.btn-e {
-  background: linear-gradient(145deg, #FFD700, #DAA520);
-  border-color: #FFD700;
-  color: #333;
-}
-.btn-e:hover {
-  background: linear-gradient(145deg, #FFEA00, #F0C420);
-}
-
-.btn-f {
+.btn-danger {
   background: linear-gradient(145deg, #E74C3C, #C0392B);
   border-color: #E74C3C;
   color: #fff;
 }
-.btn-f:hover {
+.btn-danger:hover {
+  background: linear-gradient(145deg, #EC7063, #E74C3C);
+}
+
+.btn-violent {
+  background: linear-gradient(145deg, #E74C3C, #C0392B);
+  border-color: #E74C3C;
+  color: #fff;
+}
+.btn-violent:hover {
   background: linear-gradient(145deg, #EC7063, #E74C3C);
 }
 

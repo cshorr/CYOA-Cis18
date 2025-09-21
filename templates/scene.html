@@ -13,7 +13,11 @@
 
   {% for c in scene.choices %}
   {% set nextid = (c.next_id|string).strip() %}
-  {% set btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
+  {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
+  {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
+  {% set color = (c.color|string).lower() if c.color is defined else '' %}
+  {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
+
 
   {% if nextid == 'END' %}
   <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
