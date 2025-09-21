@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, url_for, redirect, abort, request
 import json
 from pathlib import Path
@@ -216,7 +217,16 @@ def replace_all_newlines(s: str):
 
     return Markup(s.replace('\n', '<br>'))
 
+
+# --- Main entry ---
 # --- Main entry ---
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
+
+
+
+
+
+
+
 
