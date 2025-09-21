@@ -32,7 +32,11 @@
 </div>
 
 {% if scene.exit_line %}
+
   <p> {{ scene.exit_line | replace_all_newlines |safe }}</p>
+
+
+<p><em>Exit:</em> {{ scene.exit_line | replace_all_newlines }}</p>
 
 {% endif %}
 

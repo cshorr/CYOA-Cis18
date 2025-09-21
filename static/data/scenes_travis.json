@@ -1,23 +1,27 @@
 [
   {
     "scene_id": "E-001",
-
-    "title": "Scene 1:  generic title",
-    "where_when": "its mid morning, and you are heading..............",
-    "text": "generic text ",
-
     "title": "A Town Called Pidling",
     "where_when": "Pidling Town",
-    "text": "The air in Pidling is thick with the scent of woodsmoke and a lingering metallic tang from the forge. It's a small town, but its heart beats with the ambition of adventurers—a haven for those seeking fame, fortune, or just a little excitement. The main street is a jumble of humble homes and shops, all leading toward the grand stone building that houses the Adventurer's Guild.\nAs you step inside, the low murmur of conversations and the clinking of tankards fill the air. A stocky, cheerful woman with a weathered face smiles from behind a large wooden counter. \"Here to see the quest board?\" she asks, her voice a warm rasp. Before you can answer, she calls out to a figure sitting in the corner. \"Hey, Olly! Got a new one for you!\"\nA young man with wide, bright eyes and a disarming smile stands up, adjusts the leather pack on his back, and ambles over to you. This is Olly, your newly assigned guide. He seems to know everyone and everything, a living encyclopedia of the surrounding lands.",
-
-
-
+    "text": "The air in Pidling is thick with the scent of woodsmoke and a lingering metallic tang from the forge. It's a small town, but its heart beats with the ambition of adventurers—a haven for those seeking fame, fortune, or just a little excitement. The main street is a jumble of humble homes and shops, all leading toward the grand stone building that houses the Adventurer's Guild.\nAs you step inside, the low murmur of conversations and the clinking of tankards fill the air. A stocky, cheerful woman with a weathered face smiles from behind a large wooden counter. \"Here to see the quest board?\" she asks, her voice a warm rasp. Before you can answer, she calls out to a figure sitting in the corner. \"Hey, Olly! Got a new one for you!\"\n\nA young man with wide, bright eyes and a disarming smile stands up, adjusts the leather pack on his back, and ambles over to you. This is Olly, your newly assigned guide. He seems to know everyone and everything, a living encyclopedia of the surrounding lands.",
     "choices": [
       {
         "label": "Follow Olly",
-        "next_id": "E-002"
+        "next_id": "E-001A"
       }
-
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-001A",
+    "title": "Quest Board",
+    "where_when": "Pidling Quest Board",
+    "text": "The Quest Board is a living testament to the dangers and opportunities of the world. It’s a massive, scarred slab of oak, so old that the grain has become a relief map of countless nail holes and rips. It's a collage of faded ink and fresh parchment, each tacked on with a mix of care and haste.\n\nThe top of the board is a mess of high-level requests, most of them marked with a blood-red DANGER stamp. Here, you see a notice from the dwarven mining community of Stonefall, offering a king's ransom for anyone brave enough to clear a dragon's nest from the Obsidian Peaks. The paper is torn and scorched at the edges. Next to it, a beautifully calligraphed letter from a noble house requests the retrieval of a stolen artifact from an ancient elven ruin, with the promise of land and title. The reward is immense, but the ink is fading from years of being unfulfilled.\n\nBelow these daunting tasks, the middle of the board is a mix of MEDIUM difficulty quests. A handful of towns are looking for help with bandit problems, their leaders' faces crudely drawn on a wanted poster. A farmer offers a simple reward of gold for the extermination of a giant spider infestation in his cellar. A frantic note from a traveling merchant asks for an escort through the Whispering Woods, a place known for its mischievous pixies and treacherous ground. These quests are for more advanced adventurers.",
+    "choices": [
+      {
+        "label": "Quests!",
+        "next_id": "E-002"
+        }
     ],
     "exit_line": ""
   },
@@ -25,7 +29,7 @@
     "scene_id": "E-002",
     "title": "Pidling Quest Board",
     "where_when": "Pidling Quest Board",
-    "text": "Olly gestures for you to follow him over to the main quest board, a massive plank of oak covered in countless scraps of parchment. He points to two specific quests.",
+    "text": "At the bottom of the board, where the new, low-level adventurers start, are the small jobs. Notices for lost pets and stray livestock dot the area. A baker offers his finest bread for anyone who can retrieve his misplaced family heirloom from the riverbed. But two quests stand out, freshly pinned and looking brand new \n\nOlly's eyes skim the board with practiced ease, his gaze settling on the bottom half. \"Ah, these will do nicely for us,\" he says with a cheerful grin. \"One is a quick win to get our feet wet, and the other...\" he pauses, his smile faltering a bit as he glances at the other quest. \"...well, the other is an express ticket to an early grave.",
     "choices": [
       {
         "label": "Quest 1: The Horned Rabbit Menace. ",
@@ -45,7 +49,7 @@
     "text": "This parchment is a simple, handwritten note from the town's herbalists. It describes how an unusually aggressive population of horned rabbits has been terrorizing the herb patches just outside of Pidling, disrupting their harvests. The reward is a modest but respectable sum. Olly’s eyes light up. \"Ah, this is perfect for us! It's an easy win, good for a start.\"",
     "choices": [
       {
-        "label": "Continue",
+        "label": "Rabbit Problems",
         "next_id": "E-005"
       }
     ],
@@ -58,32 +62,45 @@
     "text": "This one is a bit more formal, a printed notice from the Guild itself. It details a grave threat: a massive lizard horde led by a lesser dragon-kin has taken over an old dungeon. The reward is substantial, but the note also mentions that several high-level adventurer groups have already failed. Olly gives this quest a wide berth. \"I've heard whispers about that place. It's no joke. Trust me, you're not ready for that.\"",
     "choices": [
       {
-        "label": "Choice A",
-        "next_id": "E-006"
+        "label": "Rabbit Problems",
+        "next_id": "E-005"
       }
     ],
     "exit_line": ""
   },
    {
     "scene_id": "E-005",
-    "title": "Scene 5 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Untamed Wilds",
+    "where_when": "Herb Patch",
+    "text": "You chose the Horned Rabbit quest. Olly leads you along a well-trodden dirt path that quickly fades into the rougher terrain of the Untamed Wilds. The path is a familiar one to him, and he fills the silence by chattering about every rustle in the bushes, every animal track, and the names of every plant you pass. The trees here are marked with the insignia of Pidling, a reassurance that you're still within a safe zone.\n\nSuddenly, Olly's constant monologue comes to a halt. He raises a hand to silence you and crouches low, pulling you down with him. \"Lookie there, friend,\" he whispers, a glint in his eye. \n\"There's your prey.\"",
     "choices": [
       {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
+        "label": "Rabbits!",
+        "next_id": "E-006"
       }
     ],
     "exit_line": ""
   },
   {
     "scene_id": "E-006",
-    "title": "Scene 6 - generic title",
+    "title": "Rabbit Problems",
+    "where_when": "",
+    "text": "You peer through the tangled undergrowth and see a pair of horned rabbits nibbling on the village's prized herbs. They’re larger than you expected, their bodies plump from an easy diet. What stands out most, though, is the formidable horn protruding from each of their foreheads. It's a razor-sharp, spiral horn that they use not for defense, but to deftly pluck leaves from the bushes. It's a strange, unsettling sight.\n\nOlly takes a step back, a proud smile on his face. \"They're all yours,\" he says, giving you a firm but encouraging nod.\n\nWhen you were in town you were given sets of items.",
+    "choices": [
+      {
+        "label": "Sword and Shield",
+        "next_id": "E-007"
+      },
+      {
+        "label": "Battle Axe",
+        "next_id": "E-007A"
+      }
+    ],
+    "exit_line": "A sword and shield.\nThe smith in Pidling assured you this was the perfect all-around gear.\n\nA Battle Axe.\n A bit unwieldy, but you prefer the brute force it offers."
+  },
+  {
+    "scene_id": "E-007",
+    "title": "Sword and Shield",
     "where_when": "generic place and time",
     "text": "Your text (story) goes here.",
     "choices": [
@@ -99,8 +116,8 @@
     "exit_line": ""
   },
   {
-    "scene_id": "E-007",
-    "title": "Scene 7 - generic title",
+    "scene_id": "E-007A",
+    "title": "Battle Axe",
     "where_when": "generic place and time",
     "text": "Your text (story) goes here.",
     "choices": [
