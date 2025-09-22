@@ -165,7 +165,7 @@
     "scene_id": "E-009",
     "title": "After the Patch — Proof of Kill",
     "where_when": "Herb Patch perimeter",
-    "text": "As he crouches among the herbs, checking the damage with quick, careful hands, Olly looks up and taps the creature’s hind legs. \"Guild'll want proof,\" he says. \"For vermin and pests it’s the left hind foot—standard tally token. Bigger marks get tusks, tags, or teeth. And if you don’t dry it, your pack’ll smell like a midden in two days.\"\n\nHe pulls out a small, sharp knife and expertly severs the rabbit's horn and one of its hind feet, demonstrating the correct technique. \"See?\" he says, holding up the two items. \"A clean horn for the herb growers, and the foot for the guild. Simple. The bounty is just the start, though. These horns might fetch a good price from a collector, and the meat is good if you want it.\" He places the tokens into a small pouch. \"But the bounty is the easy part. The real prize is the materials. The horns from some creatures, the scales from others. Sometimes the quest is just a way to get you close to the true treasure.\"\n\nHe stands up and gestures to the second rabbit. \"Alright, your turn. Cut close to the joint.\"",
+    "text": "As he crouches among the herbs, checking the damage with quick, careful hands, Olly looks up and taps the creature’s hind legs. \"Guild'll want proof,\" he says. \"For vermin and pests it’s the left hind foot—standard tally token. Bigger marks get tusks, tags, or teeth. And if you don’t dry it, your pack’ll smell like a midden in two days.\"\n\nHe pulls out a small, sharp knife and expertly severs the rabbit's horn and one of its hind feet, demonstrating the correct technique. \"See?\" he says, holding up the two items. \"A clean horn, and the foot for the guild. Simple. The bounty is just the start, though. These horns might fetch a good price from a collector, and the meat is good if you want it.\" He places the tokens into a small pouch. \"But the bounty is the easy part. The real prize is the materials. The horns from some creatures, the scales from others. Sometimes the quest is just a way to get you close to the true treasure.\"\n\nHe stands up and gestures to the second rabbit. \"Alright, your turn. Cut close to the joint.\"",
     "choices": [
       { "label": "Collect and move on", "next_id": "E-011" }
     ],
@@ -175,9 +175,9 @@
     "scene_id": "E-011",
     "title": "Back to the Guild",
     "where_when": "Adventurers’ Guild hall, late afternoon",
-    "text": "With the waxed pouch tucked away, you and Olly make for the Guild. The entryway hums with voices and clatter; quest slips change hands, and a tired clerk stamps ledgers in a steady rhythm. Olly sets the pouch on the counter. A glance, a nod, a stamp—the kind of business that turns a day’s work into coin and standing.\n\nThe clerk’s eyes flick to you. “Novice intake meets at first bell,” she says. “Come early if you want a seat.” Olly just grins. “We’ll be there.”",
+    "text": "With the waxed pouch tucked away, you and Olly shoulder through the Guild doors. Warm lamplight and low laughter roll out; maps and notices line the walls; tables crowded with gear and familiar faces. Behind the counter, the same stocky receptionist from earlier looks up and grins, her rasp soft. \"Back already?\"\n\nShe tips her chin at Olly. \"Think your friend can handle themself?\" He answers with an easy nod.\n\nHer gaze drops to the bundle at your belt. \"Horns, eh? Don’t just let the ledger pay you. Take those to the jeweler on Mill Street—folk set ’em into pins and charms. Might fetch you a pretty penny.\"\n\nShe takes the feet from you and stamps the book with a satisfying thunk, the sound swallowed by the comfortable buzz of parties reuniting and planning their next run.",
     "choices": [
-      { "label": "Leave for the tavern", "next_id": "E-012" }
+      { "label": "Leave", "next_id": "E-012" }
     ],
     "exit_line": ""
   },
@@ -185,7 +185,7 @@
     "scene_id": "E-012",
     "title": "Tavern on Reward Night",
     "where_when": "The Thistle & Anvil, twilight",
-    "text": "Pidling’s tavern is a deep breath of warmth and spice after a day in the hedgerow. A hearth snaps. The stew is thick with barley and carrot; the bread comes with a glossy slab of butter. You pay in clinking coin—light, but honest—and find a table near the wall where you can watch the room.\n\nFor a long while you let your shoulders settle, letting the hum of talk and the crackle of fire fill the spaces where worry usually lives.",
+    "text": "You say your goodbye's and thank Olly for their time. You head out into the streets. Pidling’s tavern is a deep breath of warmth and spice after a day in the hedgerow. You head to the place you found lodging when you stumbled into town. The Thistle & Anvil. \n\nA hearth snaps. The stew is thick with barley and carrot; the bread comes with a glossy slab of butter. You pay and find a table near the wall where you can watch the room.\n\nFor a long while you let your shoulders settle, letting the hum of talk and the crackle of fire fill the spaces where worry usually lives.",
     "choices": [
       { "label": "Settle in and think", "next_id": "E-013" }
     ],
@@ -195,7 +195,7 @@
     "scene_id": "E-013",
     "title": "A Week in Pidling",
     "where_when": "A quiet corner table",
-    "text": "You let the stew’s steam fog your thoughts and walk them backward. A week since the crossroads. A week of odd jobs: milking in the chill dawn, hammering loose panes back into their frames, brushing dust from beams so old they creak when they breathe. Enough work to keep you fed, but not enough to move you forward.\n\nYarick found you there—mid-level, easy smile, the worn confidence of someone who has survived more than once. “Why only work for townsfolk?” he’d asked, leaning on the stall door. “Sign the novice book. Take pay for real work.” You’d laughed and told him the truth: you couldn’t afford the fee, or the gear. He pressed a purse into your hand anyway. “No strings,” he said, and meant it. “And talk to the smith—tell her Yarick sent you.”\n\nThe memory sits warm as the hearth. You take another spoonful and return to the present.",
+    "text": "You let the stew’s steam fog your thoughts and walk them backward. A week since the crossroads. A week of odd jobs: milking in the chill dawn, hammering loose panes back into their frames, brushing dust from beams so old they creak when they breathe. Enough work to keep you fed, but not enough to move you forward.\n\nYarick found you in the stable there. He's a mid-level adventurer, easy smile, the worn confidence of someone who has survived danger more than once. “Why only work for townsfolk?” he’d asked, leaning on the stall door. “Become an adventurer in the Guild. Take pay for real work.” You laughed and told him the truth: you couldn’t afford the fee, or the gear. He pressed a purse into your hand. “No strings,” he said, and meant it. “And talk to the smith—tell her Yarick sent you.”\n\nThe recent memory fills you with warmth. \"This place is pretty nice\" You take another spoonful and return to the present.",
     "choices": [
       { "label": "Finish your meal", "next_id": "E-014" }
     ],
@@ -215,7 +215,7 @@
     "scene_id": "E-015",
     "title": "Morning Light",
     "where_when": "A rented room above the tavern",
-    "text": "You wake in a bed that forgives mistakes. For a few breaths you lie still, half convinced the straw’s prickle will return. It doesn’t. You wash, buckle on your gear, and stand at the window while the street rubs the sleep from its eyes.\n\nYou could get used to this. All the same, first bell isn’t far off—and the Guild doesn’t wait.",
+    "text": "You wake in a bed that forgives mistakes. For a few breaths you lie still, half convinced the straw’s prickle will return. It doesn’t. You wash, buckle on your gear, and stand at the window while the street rubs the sleep from its eyes.\n\nYou could get used to this.",
     "choices": [
       { "label": "Head for the Guild", "next_id": "E-016" }
     ],
@@ -223,52 +223,31 @@
   },
   {
     "scene_id": "E-016",
-    "title": "Scene 16 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Commotion at the Guild",
+    "where_when": "Adventurers’ Guild square, early morning",
+    "text": "You step out into a street already humming and aim for the Guild. The closer you get, the louder it gets—boots, voices, paper slapping wood. A handful of apprentices sprint past with armfuls of fresh fliers.\n\nYou’re swept into a knot of people near the steps. Someone shoves a flier into your hand. Big letters: “Monster flood! Triple compensation per kill.” The sketch is unmistakable—a rat—but the size comparison next to a human figure is the part that steals your breath. Dog-sized. Mean-looking.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Find the receptionist", "next_id": "E-017" }
     ],
     "exit_line": ""
   },
   {
     "scene_id": "E-017",
-    "title": "Scene 17 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Where the Rats Are",
+    "where_when": "Guild counter, morning bustle",
+    "text": "The raspy-voiced receptionist is already working three conversations at once, but her smile hooks when she sees you. “Busy one,” she says, voice warm as ever. You ask where the rats are.\n\n“Down by the river,” she says, tapping the map with a blunt nail. “Old beaver den left to rot—rats patched it up with whatever they could drag home. Rat fur matted into the walls, bones shoved into the gaps. Looks like a child’s fort from a bad dream. Guild’s setting a staging camp just past the treeline. Short hike. Hard work.”\n\nShe eyes you, then glances at Olly. “You’re really interested? You only passed your entrance exam yesterday, and this is a steep jump into a coordinated sweep.” Her brow lifts. “Do you even have a party yet?”",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Check the flier again", "next_id": "E-018" }
     ],
     "exit_line": ""
   },
   {
     "scene_id": "E-018",
-    "title": "Scene 18 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Minimum Four",
+    "where_when": "Guild steps, map in hand",
+    "text": "You turn the flier over and find the small print: “Attack squads must register as a party of four or more. Compensation tallied per confirmed kill.” You look up to the square: runners, recruits, familiar faces gathering gear and gossip.\n\nThe wind flutters the corners of the paper. \n\n\"Time to make a Party.\"",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Step back and consider your options", "next_id": "E-019" }
     ],
     "exit_line": ""
   },
