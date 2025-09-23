@@ -263,6 +263,23 @@ def _inject_player():
     return {"player": session.get("player", {})}
 
 
+# --- Set player name (simple form) ---
+@app.get("/name")
+def name_form():
+    create_player()
+    name = (session.get('player') or {}).get('name', "")
+    return render_template("name.html", title="Set Your Name", theme="crossroads", name=name)
+
+@app.post("/name")
+def name_submit():
+    create_player()
+    new_name = (request.form.get("player_name") or "").strip()
+    p = session.get('player', {})
+    p['name'] = new_name
+    session['player'] = p
+    next_url = request.args.get('next') or url_for('home')
+    return redirect(next_url)
+
 @app.get("/debug/player")
 def debug_player():
     return jsonify(current_player())
