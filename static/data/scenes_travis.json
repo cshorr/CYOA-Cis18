@@ -1,44 +1,112 @@
 [
   {
     "scene_id": "E-001",
-    "title": "Scene 1 - east trailhead",
-    "where_when": "Forest edge, morning",
-    "text": "You head east. The light through the trees is sharp and cold.",
+    "title": "A Town Called Pidling",
+    "where_when": "Pidling Town",
+    "text": "The air in Pidling is thick with the scent of woodsmoke and a lingering metallic tang from the forge. It's a small town, but its heart beats with the ambition of adventurers—a haven for those seeking fame, fortune, or just a little excitement. The main street is a jumble of humble homes and shops, all leading toward the grand stone building that houses the Adventurer's Guild.\nAs you step inside, the low murmur of conversations and the clinking of tankards fill the air. A stocky, cheerful woman with a weathered face smiles from behind a large wooden counter. \"Here to see the quest board?\" she asks, her voice a warm rasp. Before you can answer, she calls out to a figure sitting in the corner. \"Hey, Olly! Got a new one for you!\"\nA young man with wide, bright eyes and a disarming smile stands up, adjusts the leather pack on his back, and ambles over to you. This is Olly, your newly assigned guide. He seems to know everyone and everything, a living encyclopedia of the surrounding lands.",
+
+
     "choices": [
-      { "label": "Take the narrow path", "next_id": "E-001A" },
-      { "label": "Climb the fallen tree", "next_id": "E-001B" }
+      {
+        "label": "Follow Olly",
+        "next_id": "E-002"
+      }
+
     ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "E-001A",
-    "title": "Scene 1A - on the narrow path",
-    "where_when": "Deep in the brush",
-    "text": "Branches snag your sleeves. Something moves ahead.",
-    "choices": [
-      { "label": "Continue", "next_id": "E-002" }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "E-001B",
-    "title": "Scene 1B - on the fallen tree",
-    "where_when": "Balancing act",
-    "text": "The bark shifts under your feet. You steady yourself.",
-    "choices": [
-      { "label": "Continue", "next_id": "E-002" }
-    ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": ""
   },
   {
     "scene_id": "E-002",
-    "title": "Scene 2 - east",
+    "title": "Pidling Quest Board",
+    "where_when": "Pidling Quest Board",
+    "text": "Olly gestures for you to follow him over to the main quest board, a massive plank of oak covered in countless scraps of parchment. He points to two specific quests.",
+    "choices": [
+      {
+        "label": "Quest 1: The Horned Rabbit Menace. ",
+        "next_id": "E-003"
+        },
+      {
+        "label": "Quest 2: The Lizard Horde of Blackfang Keep.",
+        "next_id": "E-004"
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-003",
+    "title": "Quest 1: The Horned Rabbit Menace. ",
+    "where_when": "Pidling Quest Board",
+    "text": "This parchment is a simple, handwritten note from the town's herbalists. It describes how an unusually aggressive population of horned rabbits has been terrorizing the herb patches just outside of Pidling, disrupting their harvests. The reward is a modest but respectable sum. Olly’s eyes light up. \"Ah, this is perfect for us! It's an easy win, good for a start.\"",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "E-003A"
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-004",
+    "title": "Quest 2: The Lizard Horde of Blackfang Keep.",
+    "where_when": "Pidling Quest Board",
+    "text": "This one is a bit more formal, a printed notice from the Guild itself. It details a grave threat: a massive lizard horde led by a lesser dragon-kin has taken over an old dungeon. The reward is substantial, but the note also mentions that several high-level adventurer groups have already failed. Olly gives this quest a wide berth. \"I've heard whispers about that place. It's no joke. Trust me, you're not ready for that.\"",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "E-002A"
+      }
+    ],
+    "exit_line": ""
+  },
+
+
+
+
+
+
+
+
+    {
+    "scene_id": "E-030",
+    "title": "Scene 30 - generic title",
     "where_when": "generic place and time",
     "text": "Your text (story) goes here.",
     "choices": [
-      { "label": "Choice A", "next_id": "E-002A" },
-      { "label": "Choice B", "next_id": "E-002B" }
+      {
+        "label": "Choice A",
+        "next_id": "E-030A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "E-030B"
+      }
     ],
     "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "E-030A",
+    "title": "Scene 30A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "E-030B",
+    "title": "Scene 30B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
   }
 ]

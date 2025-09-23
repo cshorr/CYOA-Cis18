@@ -2,17 +2,16 @@
   {
     "scene_id": "N-001",
     "title": "Scene 1 - generic title",
-    "where_when": "In a galaxy  far far away....",
-    "text": "Your text (story) goes here.",
+    "where_when": "its mid morning, and you are heading North to the marina",
+    "text": "As you emerge from the path into the north end of town , you see an Near empty Marina. all the houses and shops along the waterfront have boarded  up thier doors, You can see people scurrying away wheelbarrows piled high others with baskets or bags loaded over thier shoulders, what the hell is going on , you say aloud to no one",
+
+
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Continue towards the ship",
         "next_id": "N-001A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-001B"
       }
+
     ],
     "exit_line": "This line leads to the next scene."
   },
@@ -1288,5 +1287,31 @@
       }
     ],
     "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "N-030A",
+    "title": "Scene 30A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "The End",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Your story has reached its conclusion."
+  },
+  {
+    "scene_id": "N-030B",
+    "title": "Scene 30B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "The End",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Your story has reached its conclusion."
   }
 ]
