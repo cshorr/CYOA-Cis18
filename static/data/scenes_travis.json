@@ -209,6 +209,9 @@
     "choices": [
       { "label": "Turn in for the night", "next_id": "E-015" }
     ],
+    "gated_choices": [
+      { "label": "Take a bath before bed", "next_id": "E-015", "when": { "visited_any": ["E-008A"] } }
+    ],
     "exit_line": ""
   },
   {
