@@ -1,68 +1,42 @@
 [
   {
     "scene_id": "W-001",
-    "title": "Scene 1 - generic title",
-    "where_when": "its mid morning, and you are heading North to the marina",
-    "text": "As you emerge from the path into the north end of town , you see an Near empty Marina. all the houses and shops along the waterfront have boarded  up thier doors, You can see people scurrying away wheelbarrows piled high others with baskets or bags loaded over thier shoulders, what the hell is going on , you say aloud to no one",
+    "title": "Scene 1 - Paradise Lost",
+    "where_when": "Mid evening, Unknown Rimworld",
+    "text": "Screams, Explosions, all the sounds of panic fill you ears as you're jolted from your statis sleep. Your head swarms with something about a crossroad but you shrug it off. Making it first to the escape pods, you strap yourself in and hit the button. the pod's door slam close, muffering the other passengers panic as your blasted away to god knows where. The computer inside thankfully says your heading to an planet, an unknown one on the edge of settled planets. These Planets are called Rimworlds. The pod buckles and groans as it's thrusters activate, slowing the pod down enough so you're not killed on impact, instead everything goes black as your head slams against the inner walls.",
 
 
     "choices": [
       {
-        "label": "Continue towards the ship",
-        "next_id": "W-001A"
+        "label": "Wake the fuck up",
+        "next_id": "W-002"
       }
 
     ],
     "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "W-001A",
-    "title": "Scene 1A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "W-002"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "W-001B",
-    "title": "Scene 1B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "W-002"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "W-002",
-    "title": "Scene 2 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Scene 1A - Planet Fall",
+    "where_when": "Arcadia's Hospital, Early morning ",
+    "text": "Your eyes open. Everything hurts, vision blurry, head's pounding. You looks around, a vital monitor attached to your left arm as you lie in a hospital bed. Sterile tile fill the floor. A heater runs in the far corner as art work is scattered around the hospital. You look to your right, a set of shelfs with medical supplies filling them, and beds, 5 others, 4 empty, the last one isn't. Their hulking back is turned to you, making identifying any features hard. The only fact you can get is that they seem to be asleep.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Attempt to stand",
         "next_id": "W-002A"
       },
       {
-        "label": "Choice B",
+        "label": "Try to get the attention of the sleeping person",
         "next_id": "W-002B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "W-002A",
-    "title": "Scene 2A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Scene 2A - Attempt to Stand",
+    "where_when": "Arcadia's Hospital, Early morning",
+    "text": "You slowly trie to get out of bed, your legs rolling over the bed. You feet touch the cold floor as your legs buckle, nearly sending you crashing to the floor. using the bed to stable yourself, you shuffle to the front of it. Your legs quickly remember how to work as you stumble your way to the door. head swirling as the effects of statis sleep and a concussion attempt to make you heave all over the floor. you get to the door, going to lean on it when it opens, causing you to start to fall. Luckly, you hit a body first. Human from what you can tell as you get pulled back",
     "choices": [
       {
         "label": "Continue",
