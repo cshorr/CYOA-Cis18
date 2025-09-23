@@ -1,18 +1,31 @@
 
-from flask import Flask, render_template, url_for, redirect, abort, request, session
+# Standard library imports
 import json
-from pathlib import Path
-from flask import redirect, url_for
 import os
-from lib.player import create_player, add_history, mark_scene_seen, set_var, get_var, current_player, reset_visited, reset_history_and_vars
-
+from pathlib import Path
+from flask import (
+    Flask,
+    render_template,
+    url_for,
+    redirect,
+    abort,
+    request,
+    session,
+    jsonify,)
+from lib.player import (
+    create_player,
+    add_history,
+    mark_scene_seen,
+    current_player,
+    reset_visited,
+    reset_history_and_vars,)
 try:
     from lib.gating import compute_display_choices
 except Exception:
     compute_display_choices = None
 
+# Flask app setup
 app = Flask(__name__)
-
 app.config['SECRET_KEY'] = os.environ.get('FLASK_SECRET_KEY', 'What_This_Do')
 
 # --- Base paths ---
@@ -151,7 +164,6 @@ def travis_start():
 @app.get("/travis/<scene_id>")
 def scene_travis(scene_id):
     scene = get_travis(scene_id)
-    print(scene)
     if compute_display_choices:
         scene = dict(scene)
         scene['choices'] = compute_display_choices(scene, session.get('player', {}))
@@ -246,11 +258,13 @@ def replace_all_newlines(s: str):
     return Markup(s.replace('\n', '<br>'))
 
 
-from flask import jsonify
+@app.context_processor
+def _inject_player():
+    return {"player": session.get("player", {})}
+
 
 @app.get("/debug/player")
 def debug_player():
-    from lib.player import current_player
     return jsonify(current_player())
 
 @app.get("/debug/reset")
