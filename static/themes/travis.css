@@ -95,7 +95,13 @@ a.btn,
   text-align: center;
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
 }
-
+.crossroads_footer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
 /* === Shared Hover/Focus === */
 a.btn:hover,
 .choices button:hover {

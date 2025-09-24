@@ -18,7 +18,6 @@
   {% set color = (c.color|string).lower() if c.color is defined else '' %}
   {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
 
-
   {% if nextid == 'END' %}
   <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
     {{ c.label or 'Finish' }}
@@ -34,13 +33,11 @@
   {% endif %}
   {% endfor %}
 </div>
-
 {% if scene.exit_line %}
   <p> {{ scene.exit_line | replace_all_newlines |safe }}</p>
-
 {% endif %}
 
-<div class="choices" style="margin-top:12px">
+<div class="crossroads_footer">
   <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
 </div>
 {% endblock %}

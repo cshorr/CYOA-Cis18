@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
+<div style="text-align:right; margin-bottom:8px">
+  <a class="btn" href="{{ url_for('name_form', next=request.path) }}">What is your name? Click me!</a>
+</div>
 <h1>The Crossroads</h1>
 <p>
   You wake up in a foggy clearing, an ache in your head. “How did I get here?” you ask out loud to no one in particular.
