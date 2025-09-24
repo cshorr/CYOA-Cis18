@@ -8,6 +8,10 @@
       {
         "label": "Follow Olly",
         "next_id": "E-001A"
+      },
+      {
+        "label": "check name",
+        "next_id": "E-030"
       }
     ],
     "exit_line": ""
@@ -209,6 +213,9 @@
     "choices": [
       { "label": "Turn in for the night", "next_id": "E-015" }
     ],
+    "gated_choices": [
+      { "label": "Take a bath before bed", "next_id": "E-015", "when": { "visited_any": ["E-008A"] } }
+    ],
     "exit_line": ""
   },
   {
@@ -255,7 +262,7 @@
     "scene_id": "E-019",
     "title": "Scene 19 - generic title",
     "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "text": "What is your name?\n\n",
     "choices": [
       {
         "label": "Choice A",
@@ -441,8 +448,8 @@
     {
     "scene_id": "E-030",
     "title": "Scene 30 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "where_when": "your name is {{player.name}} ",
+    "text": "{{player.name}}, Your text (story) goes here.",
     "choices": [
       {
         "label": "Choice A",

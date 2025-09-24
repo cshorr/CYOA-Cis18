@@ -1,10 +1,32 @@
 
-from flask import Flask, render_template, url_for, redirect, abort, request
+# Standard library imports
 import json
+import os
 from pathlib import Path
-from flask import redirect, url_for
+from flask import (
+    Flask,
+    render_template,
+    url_for,
+    redirect,
+    abort,
+    request,
+    session,
+    jsonify,)
+from lib.player import (
+    create_player,
+    add_history,
+    mark_scene_seen,
+    current_player,
+    reset_visited,
+    reset_history_and_vars,)
+try:
+    from lib.gating import compute_display_choices
+except Exception:
+    compute_display_choices = None
 
+# Flask app setup
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('FLASK_SECRET_KEY', 'What_This_Do')
 
 # --- Base paths ---
 BASE_DIR = Path(__file__).parent.resolve()
@@ -97,6 +119,9 @@ def get_trey(scene_id: str) -> dict:
 # --- Crossroads ---
 @app.get("/")
 def home():
+    create_player()
+    reset_visited()
+    reset_history_and_vars()
     return render_template("home.html", title="The Crossroads", theme="crossroads")
 
 # Keep compass routes, but drive them into each owner’s story
@@ -125,6 +150,9 @@ def chris_start():
 @app.get("/chris/<scene_id>")
 def scene_chris(scene_id):
     scene = get_chris(scene_id)
+    if compute_display_choices:
+        scene = dict(scene)
+        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="chris" , base_endpoint="scene_chris")
 
 
@@ -136,6 +164,9 @@ def travis_start():
 @app.get("/travis/<scene_id>")
 def scene_travis(scene_id):
     scene = get_travis(scene_id)
+    if compute_display_choices:
+        scene = dict(scene)
+        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="travis", base_endpoint="scene_travis")
 
 
@@ -147,6 +178,9 @@ def charlie_start():
 @app.get("/charlie/<scene_id>")
 def scene_charlie(scene_id):
     scene = get_charlie(scene_id)
+    if compute_display_choices:
+        scene = dict(scene)
+        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="charlie", base_endpoint="scene_charlie")
 
 
@@ -158,6 +192,9 @@ def trey_start():
 @app.get("/trey/<scene_id>")
 def scene_trey(scene_id):
     scene = get_trey(scene_id)
+    if compute_display_choices:
+        scene = dict(scene)
+        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="trey", base_endpoint="scene_trey")
 
 # ========= ORACLE (AI) =========
@@ -187,6 +224,9 @@ def oracle_start():
 @app.get("/oracle/<scene_id>")
 def scene_oracle(scene_id):
     scene = get_oracle(scene_id)
+    if compute_display_choices:
+        scene = dict(scene)
+        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template(
         "scene.html",
         scene=scene,
@@ -214,11 +254,59 @@ def the_end():
 @app.template_filter('replace_all_newlines')
 def replace_all_newlines(s: str):
     from markupsafe import Markup
+    if s is None:
+        return ""
+    return Markup(str(s).replace('\n', '<br>'))
 
-    return Markup(s.replace('\n', '<br>'))
+
+@app.template_filter('add_player_name')
+def add_player_name(s: str):
+    if s is None:
+        return ""
+    name = ((session.get('player')).get('name') or "Player")
+    text = str(s)
+    for token in ['{{player.name}}', '{{ player.name }}']:
+        text = text.replace(token, name)
+    return text
+
+@app.context_processor
+def _inject_player():
+    return {"player": session.get("player", {})}
 
 
-# --- Main entry ---
+# --- Set player name (simple form) ---
+@app.get("/name")
+def name_form():
+    create_player()
+    name = (session.get('player') or {}).get('name', "")
+    return render_template("name.html", title="Set Your Name", theme="crossroads", name=name)
+
+@app.post("/name")
+def name_submit():
+    create_player()
+    new_name = (request.form.get("player_name") or "").strip()
+    p = session.get('player', {})
+    p['name'] = new_name
+    session['player'] = p
+    next_url = request.args.get('next') or url_for('home')
+    return redirect(next_url)
+
+@app.get("/debug/player")
+def debug_player():
+    return jsonify(current_player())
+
+@app.get("/debug/reset")
+def debug_reset():
+    session.pop('player', None)
+    return redirect(url_for("home"))
+
+@app.before_request
+def _init_and_track_player():
+    create_player()
+    add_history(request.path, limit=200)
+    mark_scene_seen()
+
+
 # --- Main entry ---
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)

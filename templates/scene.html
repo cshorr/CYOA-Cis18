@@ -4,9 +4,9 @@
 {% block content %}
 <h1>{{ scene.title }}</h1>
 
-  <p><strong>Where/When:</strong> {{ scene.where_when | replace_all_newlines }}</p>
+  <p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
 
-  <p>{{ scene.text | replace_all_newlines }}</p>
+  <p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
 
 <div class="choices">
 
@@ -17,7 +17,6 @@
   {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
   {% set color = (c.color|string).lower() if c.color is defined else '' %}
   {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
-
 
   {% if nextid == 'END' %}
   <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
@@ -34,13 +33,11 @@
   {% endif %}
   {% endfor %}
 </div>
-
 {% if scene.exit_line %}
-  <p> {{ scene.exit_line | replace_all_newlines |safe }}</p>
-
+  <p> {{ scene.exit_line | add_player_name | replace_all_newlines |safe }}</p>
 {% endif %}
 
-<div class="choices" style="margin-top:12px">
+<div class="crossroads_footer">
   <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
 </div>
 {% endblock %}
