@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>The Crossroads</h1>
+<p>
+  You wake up in a foggy clearing, an ache in your head. “How did I get here?” you ask out loud to no one in particular.
+  As the sun begins to melt the fog, you see you’re standing at a well-worn crossroads. Along with the aching head you don’t remember where or really even who you are.
+  There is a rustling in the trees and whatever it is sounds large! I have to get out of here! What way will you go?
+</p>
+
+  <p><strong>Where/When:</strong> {{  replace_all_newlines }}</p>
+
+
+<div class="choices">
+  <a class="btn" href="{{ url_for('north_path') }}">Go North (Chris’s story)</a>
+  <a class="btn" href="{{ url_for('east_path') }}">Go East (Travis’s story)</a>
+  <a class="btn" href="{{ url_for('south_path') }}">Go South (Charlie’s story)</a>
+  <a class="btn" href="{{ url_for('west_path') }}">Go West (Trey’s story)</a>
+</div>
+<!--  Oracle is there but invisible (browser ignores commented HTML).
+ When you want to enable it, just delete the arrow and dashes////////////////////|:)|\\\\\\\\\\\\
+<div class="choices">
+  <a class="btn" href="{{ url_for('oracle_start') }}">Go to the Oracle (AI)</a>
+</div>
+-->
+
+
+  <p><strong>The crossroads fades behind you as your chosen path unfolds.</strong></p>
+
+{% endblock %}

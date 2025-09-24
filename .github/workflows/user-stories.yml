@@ -1,0 +1,105 @@
+﻿name: Create User Stories
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "List what would be created without opening issues"
+        type: boolean
+        default: true
+      label:
+        description: "Default label to apply"
+        type: string
+        default: "user-story"
+      assignee:
+        description: "Optional GitHub username to assign"
+        type: string
+        required: false
+      prefix:
+        description: "Title prefix"
+        type: string
+        default: "[Story] "
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Define stories (inline JSON you can edit later)
+        id: stories
+        run: |
+          cat > stories.json <<'JSON'
+          [
+            {
+              "title": "As a UI/UX dev, I can see a Crossroads menu with 4 paths",
+              "body": "**Why**: Team picks a path (N/S/E/W).\n\n**Acceptance**:\n- Shows N/S/E/W buttons\n- Click navigates to first scene JSON per teammate\n- Works on desktop + mobile",
+              "labels": ["user-story","ui","frontend"]
+            },
+            {
+              "title": "As a dev, I can load scenes from JSON per teammate",
+              "body": "**Why**: Decouple content from code.\n\n**Acceptance**:\n- Loads /static/data/<owner>.json (e.g., chris.json, travis.json)\n- Schema validated (scene_id, title, text, options[])\n- 404 handled with friendly message",
+              "labels": ["user-story","backend","flask"]
+            },
+            {
+              "title": "As a dev, I can theme each teammate’s UI independently",
+              "body": "**Why**: Each story has a distinct look.\n\n**Acceptance**:\n- /static/themes/{chris|travis|charlie|maria}.css\n- Base stylesheet + per-teammate overrides\n- No bleed between themes",
+              "labels": ["user-story","ui","css"]
+            },
+            {
+              "title": "As a dev, I can trigger screen-shake and SFX from scene data",
+              "body": "**Why**: Immersion.\n\n**Acceptance**:\n- JSON supports optional fx: {\"shake\": true, \"sfx\": \"thump.mp3\"}\n- Frontend plays SFX and applies CSS animation when present",
+              "labels": ["user-story","frontend","effects"]
+            }
+          ]
+          JSON
+          echo "path=stories.json" >> $GITHUB_OUTPUT
+
+      - name: Create issues from stories
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = '${{ steps.stories.outputs.path }}';
+            const stories = JSON.parse(fs.readFileSync(path, 'utf8'));
+
+            const dryRun = ${{ github.event.inputs.dry_run == 'true' }};
+            const defaultLabel = '${{ github.event.inputs.label }}';
+            const assignee = '${{ github.event.inputs.assignee }}';
+            const prefix = '${{ github.event.inputs.prefix }}';
+
+            for (const s of stories) {
+              const title = prefix + s.title;
+
+              // Skip if an issue with this title already exists
+              const { data: existing } = await github.rest.search.issuesAndPullRequests({
+                q: `repo:${context.repo.owner}/${context.repo.repo} is:issue in:title "${title}"`
+              });
+              if (existing.total_count > 0) {
+                core.info(`Skip existing (found match): ${title}`);
+                continue;
+              }
+
+              const labels = Array.from(new Set([defaultLabel, ...(s.labels || [])]));
+
+              if (dryRun) {
+                core.info(`[DRY RUN] Would create: ${title} | labels=${labels.join(',')} assignee=${assignee || '(none)'}`);
+                continue;
+              }
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body: s.body || "",
+                labels,
+                assignees: assignee ? [assignee] : undefined
+              });
+
+              core.info(`Created: ${title}`);
+            }
