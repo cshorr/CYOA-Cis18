@@ -1,8 +1,8 @@
 [
   {
     "scene_id": "N-001",
-    "title": "Scene 1 - fleeing the crossroads you arrive at the North part of Island ",
-    "where_when": "fleeing the crossroads you arrive at the North part of Island. \n\nits mid morning, and you have arrived at the marina",
+    "title": "Scene 1 - fleeing the crossroads towards the Docks ",
+    "where_when": "as the crossroads fade into memory you arrive at the North part of Island. \n\nits mid morning, A bit cold  and you have arrived at the marina",
     "text": "You emerge from the path into the north end of town. The marina is nearly empty. Only one ship remains, a ragged crew scrambling across its deck while a large man bellows orders.\n\nShops along the waterfront are hastily boarded, doors braced with mismatched scraps — splintered fence posts, broken crates, even pieces of furniture torn apart in a rush. The air feels tight with panic.\n\nPeople hurry through the streets with carts, baskets, and bags heaped with food and valuables. Some push wheelbarrows piled high; others clutch bundles over their shoulders. Eyes dart constantly toward the sea.\n\nYou stop and mutter, “What the hell is going on?”",
 
 
@@ -11,13 +11,13 @@
       { "label": "Run for the hills!!", "next_id": "N-001B" },
       { "label": "Stay and figure it out", "next_id": "N-DEATH" }
     ],
-    "exit_line": "You're skeptical, but this feels like the best  option."
+    "exit_line": "How come I never come around the corner to eggs and bacon? I like eggs and bacon "
 
 },
 {
 "scene_id": "N-001A",
-"title": "Scene 1A - outcome of A",
-"where_when": "generic place and time",
+"title": "You're skeptical, but a lack of information make you hope like the best  option.",
+"where_when": "",
 "text": "What happens if the player picked A from the parent scene.",
 "choices": [
 { "label": "Continue", "next_id": "N-002" }
@@ -38,9 +38,11 @@
 "scene_id": "N-DEATH",
 "title": "Too Late",
 "where_when": "North docks",
-"text": "You hesitate a heartbeat too long. The crowd runs inland. The sea goes quiet, then wrong. You never see the wall of water. Darkness.",
-"choices": [],
-"exit_line": "Your story ends here."
+"text": "Your determined to discover the Malady that could be the cause of this Panic, in the distance  The crowd runs inland. The sea goes quiet, then slowly drains, your limbs frozen at the site of it. the ocean revealing it scars and debris on its sandy underbelly \n\nsuddenly you see it. the wall of water coming straight at you, what must have been moments feels like seconds, theres no where to go and nothing to do about it, the sky is blanketed over in salty darkness as the wave starts to crest \n.suddenly you feel your chest cave, as your lungs explode, instantly your crushed by a wall of cold wet Darkness.",
+"choices":[
+  {"label": "try again from the Marina", "next_id": "N-001"}
+],
+"exit_line": "Congratz!! Your story ends in Tragic fashion."
 },
 
 
