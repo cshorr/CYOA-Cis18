@@ -4,9 +4,9 @@
 {% block content %}
 <h1>{{ scene.title }}</h1>
 
-  <p><strong>Where/When:</strong> {{ scene.where_when | replace_all_newlines }}</p>
+  <p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
 
-  <p>{{ scene.text | replace_all_newlines }}</p>
+  <p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
 
 <div class="choices">
 
@@ -34,7 +34,7 @@
   {% endfor %}
 </div>
 {% if scene.exit_line %}
-  <p> {{ scene.exit_line | replace_all_newlines |safe }}</p>
+  <p> {{ scene.exit_line | add_player_name | replace_all_newlines |safe }}</p>
 {% endif %}
 
 <div class="crossroads_footer">
