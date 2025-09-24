@@ -254,9 +254,20 @@ def the_end():
 @app.template_filter('replace_all_newlines')
 def replace_all_newlines(s: str):
     from markupsafe import Markup
+    if s is None:
+        return ""
+    return Markup(str(s).replace('\n', '<br>'))
 
-    return Markup(s.replace('\n', '<br>'))
 
+@app.template_filter('add_player_name')
+def add_player_name(s: str):
+    if s is None:
+        return ""
+    name = ((session.get('player')).get('name') or "Player")
+    text = str(s)
+    for token in ['{{player.name}}', '{{ player.name }}']:
+        text = text.replace(token, name)
+    return text
 
 @app.context_processor
 def _inject_player():
