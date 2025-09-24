@@ -118,3 +118,11 @@ h1, h2, h3 {
   color: #ffd27f;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
+
+.crossroads_footer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}

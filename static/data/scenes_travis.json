@@ -258,7 +258,7 @@
     "scene_id": "E-019",
     "title": "Scene 19 - generic title",
     "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "text": "What is your name?\n\n",
     "choices": [
       {
         "label": "Choice A",

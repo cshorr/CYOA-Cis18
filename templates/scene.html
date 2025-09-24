@@ -33,14 +33,11 @@
   {% endif %}
   {% endfor %}
 </div>
-</div>
-
 {% if scene.exit_line %}
   <p> {{ scene.exit_line | replace_all_newlines |safe }}</p>
-
 {% endif %}
 
-<div class="choices" style="margin-top:12px">
+<div class="crossroads_footer">
   <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
 </div>
 {% endblock %}
