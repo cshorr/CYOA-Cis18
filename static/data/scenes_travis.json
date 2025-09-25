@@ -8,10 +8,6 @@
       {
         "label": "Follow Olly",
         "next_id": "E-001A"
-      },
-      {
-        "label": "check name",
-        "next_id": "E-030"
       }
     ],
     "exit_line": ""
@@ -448,16 +444,16 @@
     {
     "scene_id": "E-030",
     "title": "Scene 30 - generic title",
-    "where_when": "your name is {{player.name}} ",
-    "text": "{{player.name}}, Your text (story) goes here.",
+    "where_when": "",
+    "text": ",Your text (story) goes here.",
     "choices": [
       {
         "label": "Choice A",
-        "next_id": "E-030A"
+        "next_id": ""
       },
       {
         "label": "Choice B",
-        "next_id": "E-030B"
+        "next_id": ""
       }
     ],
     "exit_line": "This line leads to the next scene."
@@ -471,7 +467,7 @@
     "choices": [
       {
         "label": "Continue",
-        "next_id": "END"
+        "next_id": ""
       }
     ],
     "exit_line": "Continue to the next numbered scene."
@@ -484,7 +480,7 @@
     "choices": [
       {
         "label": "Continue",
-        "next_id": "END"
+        "next_id": ""
       }
     ],
     "exit_line": "Continue to the next numbered scene."
