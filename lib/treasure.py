@@ -19,31 +19,25 @@ TREY_TREASURE: Dict[str, str] = {
 }
 
 
-def all_treasure() -> Dict[str, str]:
+def all_treasure():
     merged: Dict[str, str] = {}
     for d in (CHRIS_TREASURE, TRAVIS_TREASURE, CHARLIE_TREASURE, TREY_TREASURE):
         merged.update(d)
     return merged
 
 
-def get_item_for(scene_id: str) -> Optional[str]:
+def get_item_for(scene_id: str):
     scene_id = str(scene_id).strip()
-    if not scene_id:
-        return None
     return all_treasure().get(scene_id)
 
 
-def _ensure_player_vars() -> Dict[str, object]:
+def _ensure_player_vars():
     p = session.get('player', {})
     vars_obj = p.get('vars')
-    if not isinstance(vars_obj, dict):
-        vars_obj = {}
-        p['vars'] = vars_obj
-        session['player'] = p
     return vars_obj
 
 
-def current_scene_id() -> Optional[str]:
+def current_scene_id():
     endpoint = request.endpoint
     if not endpoint or not endpoint.startswith('scene_'):
         return None
@@ -51,10 +45,8 @@ def current_scene_id() -> Optional[str]:
     scene_id = str(view_args.get('scene_id') or '').strip()
     return scene_id or None
 
-def grant_treasure_for_current(*, value: object = True) -> Optional[str]:
+def grant_treasure_for_current(*, value: object = True):
     scene_id = current_scene_id()
-    if not scene_id:
-        return None
     item_key = get_item_for(scene_id)
     if not item_key:
         return None
