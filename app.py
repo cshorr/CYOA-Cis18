@@ -12,6 +12,8 @@ from flask import (
     request,
     session,
     jsonify,)
+
+from lib.treasure import grant_treasure_for_current
 from lib.player import (
     create_player,
     add_history,
@@ -19,10 +21,7 @@ from lib.player import (
     current_player,
     reset_visited,
     reset_history_and_vars,)
-try:
-    from lib.gating import compute_display_choices
-except Exception:
-    compute_display_choices = None
+from lib.gating import compute_display_choices
 
 # Flask app setup
 app = Flask(__name__)
@@ -150,11 +149,9 @@ def chris_start():
 @app.get("/chris/<scene_id>")
 def scene_chris(scene_id):
     scene = get_chris(scene_id)
-    if compute_display_choices:
-        scene = dict(scene)
-        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
+    scene = dict(scene)
+    scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="chris" , base_endpoint="scene_chris")
-
 
 # --- Travis dynamic routes ---
 @app.get("/travis")
@@ -164,11 +161,9 @@ def travis_start():
 @app.get("/travis/<scene_id>")
 def scene_travis(scene_id):
     scene = get_travis(scene_id)
-    if compute_display_choices:
-        scene = dict(scene)
-        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
+    scene = dict(scene)
+    scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="travis", base_endpoint="scene_travis")
-
 
 # --- Charlie dynamic routes ---
 @app.get("/charlie")
@@ -178,11 +173,9 @@ def charlie_start():
 @app.get("/charlie/<scene_id>")
 def scene_charlie(scene_id):
     scene = get_charlie(scene_id)
-    if compute_display_choices:
-        scene = dict(scene)
-        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
+    scene = dict(scene)
+    scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="charlie", base_endpoint="scene_charlie")
-
 
 # --- Trey dynamic routes ---
 @app.get("/trey")
@@ -192,11 +185,9 @@ def trey_start():
 @app.get("/trey/<scene_id>")
 def scene_trey(scene_id):
     scene = get_trey(scene_id)
-    if compute_display_choices:
-        scene = dict(scene)
-        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
+    scene = dict(scene)
+    scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="trey", base_endpoint="scene_trey")
-
 # ========= ORACLE (AI) =========
 SCENES_FILE_ORACLE = BASE_DIR / "static" / "data" / "scenes_oracle.json"
 
@@ -224,9 +215,8 @@ def oracle_start():
 @app.get("/oracle/<scene_id>")
 def scene_oracle(scene_id):
     scene = get_oracle(scene_id)
-    if compute_display_choices:
-        scene = dict(scene)
-        scene['choices'] = compute_display_choices(scene, session.get('player', {}))
+    scene = dict(scene)
+    scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template(
         "scene.html",
         scene=scene,
@@ -234,7 +224,6 @@ def scene_oracle(scene_id):
         theme="oracle",
         base_endpoint="scene_oracle"
     )
-
 
 
 # --- Shared death/end page (defaults to Crossroads theme) --- its a design choice , circle of life and all that :)
@@ -305,7 +294,7 @@ def _init_and_track_player():
     create_player()
     add_history(request.path, limit=200)
     mark_scene_seen()
-
+    grant_treasure_for_current()
 
 # --- Main entry ---
 if __name__ == "__main__":
