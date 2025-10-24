@@ -9,7 +9,15 @@
   <!-- Load the right theme dynamically based on the route -->
   <link rel="stylesheet" href="{{ url_for('static', filename='themes/' + theme + '.css') }}">
 </head>
-<body>
+<body><script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const box = document.querySelector('.panel');
+    if (!box) return;
+    box.classList.add('shake');
+    box.addEventListener('animationend', () => box.classList.remove('shake'), { once: true });
+  });
+</script>
+
 <div class="screen">
   <div class="panel">
     <main class="wrap">
