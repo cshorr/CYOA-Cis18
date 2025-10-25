@@ -50,14 +50,3 @@ a.btn {
 a.btn:hover { filter: brightness(1.1); }
 
 .panel-footer { display: flex; justify-content: center; margin-top: 16px; }
-
-/* Screen-shake effect */
-@keyframes screenshake {
-  0%,100% { transform: translateX(0); }
-  20% { transform: translateX(-6px); }
-  40% { transform: translateX(6px); }
-  60% { transform: translateX(-4px); }
-  80% { transform: translateX(4px); }
-}
-.shake { animation: screenshake 600ms ease; }
-@media (prefers-reduced-motion: reduce) { .shake { animation: none; } }
