@@ -30,7 +30,7 @@ html, body {
   color: #e0d9e5;
   line-height: 1.6;
   backdrop-filter: blur(16px);
-  box-shadow: 10 10 24px rgba(161, 241, 119, 0.72),
+  box-shadow: 10px 10px 24px 6px rgba(161, 241, 119, 0.72);
   transition: transform 0.3s ease;
 }
 .panel:hover {
