@@ -2,45 +2,75 @@
 {% block title %}{{ title or scene.title }}{% endblock %}
 
 {% block content %}
-<h1>{{ scene.title }}</h1>
+  <h1>{{ scene.title }}</h1>
 
-{% if debug %}
-<p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
-{% endif %}
-
-
-<p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
-
-<div class="choices">
-
-
-  {% for c in scene.choices %}
-  {% set nextid = (c.next_id|string).strip() %}
-  {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
-  {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
-  {% set color = (c.color|string).lower() if c.color is defined else '' %}
-  {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
-
-  {% if nextid == 'END' %}
-  <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
-    {{ c.label or 'Finish' }}
-  </a>
-  {% elif nextid == 'DIE' %}
-  <a class="btn {{ btn_class }}" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.')) }}">
-    {{ c.label or 'You Died' }}
-  </a>
-  {% else %}
-  <a class="btn {{ btn_class }}" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
-    {{ c.label }}
-  </a>
+  {% if debug %}
+    <p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
   {% endif %}
-  {% endfor %}
-</div>
-{% if scene.exit_line %}
-  <p> {{ scene.exit_line | add_player_name | replace_all_newlines |safe }}</p>
+
+  <p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
+
+  <div class="choices">
+    {% for c in scene.choices %}
+      {% set nextid = (c.next_id|string).strip() %}
+      {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
+      {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
+      {% set color = (c.color|string).lower() if c.color is defined else '' %}
+      {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
+
+      {% if nextid == 'END' %}
+        <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
+          {{ c.label or 'Finish' }}
+        </a>
+      {% elif nextid == 'DIE' %}
+        <a class="btn {{ btn_class }}" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.')) }}">
+          {{ c.label or 'You Died' }}
+        </a>
+      {% else %}
+        <a class="btn {{ btn_class }}" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
+          {{ c.label }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% if scene.exit_line %}
+    <p> {{ scene.exit_line | add_player_name | replace_all_newlines | safe }}</p>
+  {% endif %}
+
+  <div class="crossroads_footer">
+    <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
+  </div>
+
+  {# ---- screen_shake: run if present on this scene ---- #}
+  {% if scene.screen_shake %}
+  <script>
+    (function () {
+      console.log("screen_shake block running with:", "{{ scene.screen_shake }}");
+      const presetName = "{{ scene.screen_shake }}".toLowerCase();
+      let intensity = 8;
+      let duration = 500;
+      let delay = 100;
+
+      if (presetName === "light") {
+        intensity = 4;
+        duration = 200;
+      } else if (presetName === "medium") {
+        intensity = 7;
+        duration = 500;
+
+      } else if (presetName === "heavy") {
+        intensity = 10;
+        duration = 800;
+      }
+
+      setTimeout(() => shake(intensity, duration, '.panel'), delay);
+    })();
+  </script>
 {% endif %}
 
-<div class="crossroads_footer">
-  <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
-</div>
+  {# ---- end screen_shake ---- #}
+
+
+
 {% endblock %}

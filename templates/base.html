@@ -6,9 +6,11 @@
 
   <title>{% block title %}{{ title or "CIS CYOA" }}{% endblock %}</title>
 
-  <!-- Load the right theme dynamically based on the route -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='themes/' + theme + '.css') }}">
+  <!-- Load theme first, then your main CSS (shake keyframes live here) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='themes/' ~ (theme or 'crossroads') ~ '.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 <div class="screen">
   <div class="panel">
@@ -17,7 +19,18 @@
     </main>
   </div>
 </div>
+
+<!-- Load screen shake JS after everything else so it runs correctly -->
+<script src="{{ url_for('static', filename='screen_shake.js') }}"></script>
+
+<!-- Auto-shake if the previous button set one -->
+<script>
+  const shakeCfg = localStorage.getItem('nextShake');
+  if (shakeCfg) {
+    const cfg = JSON.parse(shakeCfg);
+    localStorage.removeItem('nextShake');
+    setTimeout(() => shake(cfg.intensity, cfg.duration, '.panel'), 100);
+  }
+</script>
 </body>
 </html>
-
-

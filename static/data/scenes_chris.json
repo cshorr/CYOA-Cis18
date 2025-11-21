@@ -2,15 +2,16 @@
 [
   {
     "scene_id": "N-001",
+    "screen_shake": "heavy",
     "title": "Scene 1 - fleeing the crossroads towards the Docks ",
     "where_when": "as the crossroads fade into memory you arrive at the North part of Island. \n\nits mid morning, Grey, windy and cold  and you have arrived at the marina",
     "text": "You emerge from the path into the north end of town.the air feel's wrong, like the world’s holding its muggy breath. to the left you see a nearly empty marina. Only one ship remains, a ragged crew scrambling across its deck while a large scary man bellows orders.\n\n to the left of you homes and Shops along the waterfront are hastily boarded, doors braced with mismatched scraps, splintered fence posts, broken crates. The air feels tight with panic.\n\nPeople hurry through the streets with carts, baskets, and bags heaped with food and valuables. Some push wheelbarrows piled high; others clutch bundles over their shoulders.They all seem to be heading in the same direction as they head for the small foothills in the distance, cautious eyes dart constantly toward the sea.\n\nYou stop and mutter, “What the hell is going on?”",
     "choices": [
-      { "label": "Hurry towards the ship", "next_id": "N-001-A" },
+      { "label": "Hurry towards the ship", "next_id": "N-001-A","screen_shake": "heavy"},
       { "label": "Run for the hills!!", "next_id": "N-001-B" },
       { "label": "Stay and figure it out", "next_id": "N-001-D" }
     ],
-    "exit_line": "I never come around the corner to eggs and bacon? your stomach gurgles ...hungry"
+    "exit_line": "I Cant help the feeling like i have been in this situation at least once before...is this.... Deja-vu?"
   },
 
   {
