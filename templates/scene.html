@@ -4,6 +4,25 @@
 {% block content %}
   <h1>{{ scene.title }}</h1>
 
+
+ {% if scene.image %}
+  {% if scene.image_mode == 'background' %}
+    <style>
+      .screen {
+        background-image: url("{{ url_for('static', filename='images/' ~ scene.image ~ '.jpg') }}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+  {% else %}
+    <img class="scene-image"
+         src="{{ url_for('static', filename='images/' ~ scene.image ~ '.jpg') }}"
+         alt="scene image">
+  {% endif %}
+{% endif %}
+
+
   {% if debug %}
     <p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
   {% endif %}
@@ -43,39 +62,36 @@
   </div>
 
   {% if scene.sound %}
-   <audio id="scene-audio" src="{{ url_for('static', filename='audio/' ~ scene.sound ~ '.mp3') }}" autoplay></audio>
+    <audio id="scene-audio"
+           src="{{ url_for('static', filename='audio/' ~ scene.sound ~ '.mp3') }}"
+           autoplay></audio>
   {% endif %}
-
 
   {# ---- screen_shake: run if present on this scene ---- #}
   {% if scene.screen_shake %}
-  <script>
-    (function () {
-      console.log("screen_shake block running with:", "{{ scene.screen_shake }}");
-      const presetName = "{{ scene.screen_shake }}".toLowerCase();
-      let intensity = 8;
-      let duration = 500;
-      let delay = 100;
+    <script>
+      (function () {
+        console.log("screen_shake block running with:", "{{ scene.screen_shake }}");
+        const presetName = "{{ scene.screen_shake }}".toLowerCase();
+        let intensity = 8;
+        let duration = 500;
+        let delay = 100;
 
-      if (presetName === "light") {
-        intensity = 4;
-        duration = 200;
-      } else if (presetName === "medium") {
-        intensity = 7;
-        duration = 500;
+        if (presetName === "light") {
+          intensity = 4;
+          duration = 200;
+        } else if (presetName === "medium") {
+          intensity = 7;
+          duration = 500;
+        } else if (presetName === "heavy") {
+          intensity = 10;
+          duration = 800;
+        }
 
-      } else if (presetName === "heavy") {
-        intensity = 10;
-        duration = 800;
-      }
-
-      setTimeout(() => shake(intensity, duration, '.panel'), delay);
-    })();
-  </script>
-{% endif %}
-
+        setTimeout(() => shake(intensity, duration, '.panel'), delay);
+      })();
+    </script>
+  {% endif %}
   {# ---- end screen_shake ---- #}
-
-
 
 {% endblock %}
