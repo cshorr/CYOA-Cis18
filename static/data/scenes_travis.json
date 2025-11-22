@@ -1,6 +1,7 @@
 [
   {
     "scene_id": "E-001",
+    "sound" : "crazy_chicken",
     "screen_shake": "heavy",
     "title": "A Town Called Pidling",
     "where_when": "Pidling Town",

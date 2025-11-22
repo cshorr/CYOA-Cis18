@@ -1,6 +1,7 @@
 [
   {
     "scene_id": "W-001",
+    "sound": "violent-sword-slice",
     "screen_shake": "heavy",
     "title": "Scene 1 - Paradise Lost",
     "where_when": "Mid evening, Unknown Rimworld",

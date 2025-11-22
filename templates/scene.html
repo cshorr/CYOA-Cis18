@@ -42,6 +42,11 @@
     <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
   </div>
 
+  {% if scene.sound %}
+   <audio id="scene-audio" src="{{ url_for('static', filename='audio/' ~ scene.sound ~ '.mp3') }}" autoplay></audio>
+  {% endif %}
+
+
   {# ---- screen_shake: run if present on this scene ---- #}
   {% if scene.screen_shake %}
   <script>

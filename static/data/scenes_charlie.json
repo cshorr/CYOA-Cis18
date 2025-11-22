@@ -1,6 +1,7 @@
 [
   {
     "scene_id": "S-001",
+    "sound": "troubleonshore",
     "screen_shake": "heavy",
     "title": "The huge phone booth",
     "where_when": "In the middle of the huge field",
