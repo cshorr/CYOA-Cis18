@@ -20,17 +20,5 @@
   </div>
 </div>
 
-<!-- Load screen shake JS after everything else so it runs correctly -->
-<script src="{{ url_for('static', filename='screen_shake.js') }}"></script>
-
-<!-- Auto-shake if the previous button set one -->
-<script>
-  const shakeCfg = localStorage.getItem('nextShake');
-  if (shakeCfg) {
-    const cfg = JSON.parse(shakeCfg);
-    localStorage.removeItem('nextShake');
-    setTimeout(() => shake(cfg.intensity, cfg.duration, '.panel'), 100);
-  }
-</script>
 </body>
 </html>

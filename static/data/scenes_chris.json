@@ -3,7 +3,7 @@
   {
     "scene_id": "N-001",
     "sound": "opening-scene",
-    "screen_shake": "heavy",
+    "shake": "heavy",
     "image": "ship1",
     "image_mode": "background",
     "title": "Scene 1 - fleeing the crossroads towards the Docks ",
@@ -21,7 +21,7 @@
     "scene_id": "N-001-A",
     "title": "heading towards the last boat in the Marina",
     "where_when": "You shove through the wind and the stink of wet rope, boots splashing through puddles that taste of iron as you run for the lone ship at the pier.\n",
-    "text": "The closer you get, the worse it looks, men hauling ropes with wild eyes, what looks like farmers, the men and women bound to the rail with torn fabric, children sobbing their cries rising and falling with the sound of waves slapping against the hull.\n The scary captain with an Austrian accent bellows out at you... Come with me if you want to live, you grab the last morring line holding the boat to the doc and swing aboard saving the captain and crew from having to cut it ",
+    "text": "The closer you get, the worse it looks, men hauling ropes with wild eyes, what looks like farmers, the men and women bound to the rail with torn fabric, children sobbing their cries rising and falling with the sound of waves slapping against the hull.\n The scary captain with an Austrian accent bellows out at you... \"Come with me if you want to live\", you grab the last mooring line holding the boat to the doc and swing aboard saving the captain and crew from having to cut it ",
     "choices": [
       { "label": "Board the ship", "next_id": "N-001-AA" },
       { "label": "Step back and flee", "next_id": "N-001-AD" }
@@ -57,7 +57,7 @@
     "scene_id": "N-001-D",
     "title": "Too Late",
     "where_when": "North docks",
-    "text": "Your determined to discover the Malady that could be the cause of this Panic, in the distance  The crowd runs inland. The sea goes quiet, then slowly drains, your limbs frozen at the site of it. the ocean revealing it scars and debris on its sandy underbelly \n\nsuddenly you see it. the wall of water coming straight at you, what must have been moments feels like seconds, theres no where to go and nothing to do about it, the sky is blanketed over in salty darkness as the wave starts to crest \n.suddenly you feel your chest cave, as your lungs explode, instantly your crushed by a wall of cold wet Darkness.",
+    "text": "Your determined to discover the Malady that could be the cause of this Panic, in the distance  The crowd runs inland. The sea goes quiet, then slowly drains, your limbs frozen at the site of it. the ocean revealing it scars and debris on its sandy underbelly \n\nsuddenly you see it. the wall of water coming straight at you, what must have been moments feels like seconds, theres no where to go and nothing to do about it, the sky is blanketed over in salty darkness as the wave starts to crest \n.suddenly you feel your chest cave, as your lungs explode, instantly your crushed by a furious wall of cold wet Darkness.",
     "choices": [
       { "label": "try again from the Marina", "next_id": "N-001" }
     ],
