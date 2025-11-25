@@ -14,6 +14,7 @@ from flask import (
     jsonify,)
 
 from lib.treasure import grant_treasure_for_current
+from lib.shake import resolve as resolve_shake
 from lib.player import (
     create_player,
     add_history,
@@ -22,6 +23,8 @@ from lib.player import (
     reset_visited,
     reset_history_and_vars,)
 from lib.gating import compute_display_choices
+
+
 
 # Flask app setup
 app = Flask(__name__)
@@ -34,36 +37,6 @@ BASE_DIR = Path(__file__).parent.resolve()
 SCENES_FILE_CHRIS = BASE_DIR / "static" / "data" / "scenes_chris.json"
 
 
-
-SCREEN_SHAKE_PRESETS = {
-    "light":  {"intensity_px": 4, "duration_ms": 200},
-    "medium": {"intensity_px": 7, "duration_ms": 500},
-    "heavy":  {"intensity_px": 10, "duration_ms": 800},
-}
-def apply_screen_shake_preset(scene: dict) -> dict:
-    """
-    If scene["screen_shake"] is a preset name like 'light'/'medium'/'heavy',
-    replace it with the numeric config the template expects.
-    """
-    value = scene.get("screen_shake")
-
-    # If there is no screen_shake at all, or it's already a dict, leave it alone
-    if not value or isinstance(value, dict):
-        return scene
-
-    if isinstance(value, str):
-        preset = SCREEN_SHAKE_PRESETS.get(value.lower())
-        if preset:
-            scene["screen_shake"] = {
-                "intensity_px": preset["intensity_px"],
-                "duration_ms": preset["duration_ms"],
-                "delay_ms": 0,
-            }
-        else:
-
-            scene["screen_shake"] = None
-
-    return scene
 
 
 def _load_chris():
@@ -182,7 +155,6 @@ def chris_start():
 def scene_chris(scene_id):
     scene = get_chris(scene_id)
     scene = dict(scene)
-    scene = apply_screen_shake_preset(scene)
     scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="chris" , base_endpoint="scene_chris")
 
@@ -195,7 +167,6 @@ def travis_start():
 def scene_travis(scene_id):
     scene = get_travis(scene_id)
     scene = dict(scene)
-    scene = apply_screen_shake_preset(scene)
     scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="travis", base_endpoint="scene_travis")
 
@@ -208,7 +179,6 @@ def charlie_start():
 def scene_charlie(scene_id):
     scene = get_charlie(scene_id)
     scene = dict(scene)
-    scene = apply_screen_shake_preset(scene)
     scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="charlie", base_endpoint="scene_charlie")
 
@@ -221,7 +191,6 @@ def trey_start():
 def scene_trey(scene_id):
     scene = get_trey(scene_id)
     scene = dict(scene)
-    scene = apply_screen_shake_preset(scene)
     scene['choices'] = compute_display_choices(scene, session.get('player', {}))
     return render_template("scene.html", scene=scene, title=scene.get("title"), theme="trey", base_endpoint="scene_trey")
 # ========= ORACLE (AI) =========
@@ -293,6 +262,12 @@ def add_player_name(s: str):
     for token in ['{{player.name}}', '{{ player.name }}']:
         text = text.replace(token, name)
     return text
+
+@app.template_filter("shake_cfg")
+def shake_cfg_filter(value):
+    """Use lib.shake.resolve inside templates."""
+    return resolve_shake(value)
+
 
 @app.context_processor
 def _inject_player():
