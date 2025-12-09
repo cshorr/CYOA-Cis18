@@ -1,173 +1,287 @@
-
 [
   {
     "scene_id": "N-001",
+    "sound": "opening-scene",
+    "shake": "heavy",
+    "image": "ship1",
+    "image_mode": "background",
     "title": "Scene 1 - fleeing the crossroads towards the Docks ",
     "where_when": "as the crossroads fade into memory you arrive at the North part of Island. \n\nits mid morning, Grey, windy and cold  and you have arrived at the marina",
     "text": "You emerge from the path into the north end of town.the air feel's wrong, like the world’s holding its muggy breath. to the left you see a nearly empty marina. Only one ship remains, a ragged crew scrambling across its deck while a large scary man bellows orders.\n\n to the left of you homes and Shops along the waterfront are hastily boarded, doors braced with mismatched scraps, splintered fence posts, broken crates. The air feels tight with panic.\n\nPeople hurry through the streets with carts, baskets, and bags heaped with food and valuables. Some push wheelbarrows piled high; others clutch bundles over their shoulders.They all seem to be heading in the same direction as they head for the small foothills in the distance, cautious eyes dart constantly toward the sea.\n\nYou stop and mutter, “What the hell is going on?”",
     "choices": [
       { "label": "Hurry towards the ship", "next_id": "N-001-A" },
       { "label": "Run for the hills!!", "next_id": "N-001-B" },
-      { "label": "Stay and figure it out", "next_id": "N-001-D" }
+      { "label": "Stay and figure it out", "next_id": "N-001-C" }
     ],
-    "exit_line": "I never come around the corner to eggs and bacon? your stomach gurgles ...hungry"
+    "exit_line": "I Cant help the feeling like I have been in this situation at least once before...is this.... Deja-vu?"
   },
 
   {
     "scene_id": "N-001-A",
+    "sound": "thunder-rain",
     "title": "heading towards the last boat in the Marina",
     "where_when": "You shove through the wind and the stink of wet rope, boots splashing through puddles that taste of iron as you run for the lone ship at the pier.\n",
-    "text": "The closer you get, the worse it looks, men hauling ropes with wild eyes, what looks like farmers, the men and women bound to the rail with torn fabric, children sobbing their cries rising and falling with the sound of waves slapping against the hull.\n The scary captain with an Austrian accent bellows out at you... Come with me if you want to live, you grab the last morring line holding the boat to the doc and swing aboard saving the captain and crew from having to cut it ",
+    "text": "The closer you get, the worse it looks, men hauling ropes with wild eyes, what looks like farmers, the men and women bound to the rail with torn fabric, children sobbing their cries rising and falling with the sound of waves slapping against the hull.\n The scary captain with an Austrian accent bellows out at you... \"Come with me if you want to live\", you grab the last mooring line holding the boat to the dock and swing aboard saving the captain and crew from having to cut it ",
     "choices": [
       { "label": "Board the ship", "next_id": "N-001-AA" },
-      { "label": "Step back and flee", "next_id": "N-001-AD" }
+      { "label": "Step back and flee", "next_id": "N-001-AB" }
     ],
     "exit_line": "You're skeptical, but a lack of information make's this the best  option."
   },
 
   {
-    "scene_id": "N-001-B",
-    "title": "Running for the Hills",
-    "where_when": "North island foothills, moments later.",
-    "text": "You sprint with the crowd toward the low hills. The ground trembles. The sea goes silent behind you.",
-    "choices": [
-      { "label": "Keep running", "next_id": "N-001-BD" },
-      { "label": "Turn back toward the docks", "next_id": "N-001-A" }
-    ],
-    "exit_line": "You’ve got seconds. Pick wrong and the sea decides."
-  },
-
-  {
     "scene_id": "N-001-AA",
     "title": "Boarding the Ship",
+    "sound": "thunderstorm",
     "where_when": "At the ship, moments later.",
     "text": "You decide to climb aboard, ignoring the screams and confusion around you. The deck reeks of salt and fear. The captain shouts for lines to be cut as the ship lurches against its moorings.The captain you realize, is trying to save people despite his brutal demeanor. The storm builds.",
     "choices": [
       { "label": "Stay above deck", "next_id": "N-002-A" },
       { "label": "Go below deck", "next_id": "N-002-B" }
     ],
-    "exit_line": "At a speed you would not have expected The ship begins to pull away from the dock. as if being pulled out to sea"
+    "exit_line": "At a speed you would not have expected The ship begins to pull away from the dock. as if the very sea itself is retreating from the shore."
   },
 
   {
-    "scene_id": "N-001-D",
-    "title": "Too Late",
-    "where_when": "North docks",
-    "text": "Your determined to discover the Malady that could be the cause of this Panic, in the distance  The crowd runs inland. The sea goes quiet, then slowly drains, your limbs frozen at the site of it. the ocean revealing it scars and debris on its sandy underbelly \n\nsuddenly you see it. the wall of water coming straight at you, what must have been moments feels like seconds, theres no where to go and nothing to do about it, the sky is blanketed over in salty darkness as the wave starts to crest \n.suddenly you feel your chest cave, as your lungs explode, instantly your crushed by a wall of cold wet Darkness.",
-    "choices": [
-      { "label": "try again from the Marina", "next_id": "N-001" }
-    ],
-    "exit_line": "Congratz!! Your story ends in Tragic fashion."
-  },
-
-  {
-    "scene_id": "N-001-BD",
-    "title": "Too Late in the Foothills",
-    "where_when": "North island foothills, moments later.",
-    "text": "You flee the madness at the docks and follow the crowd toward the small foothills. You have nothing to carry and easily overtake several people weighed down by their possessions. The ground trembles underfoot. The sound of the sea fades into an eerie silence.\n\nThen the sky darkens. You turn your head and see it—the horizon rising, the ocean folding over itself. The wall of water races inland, swallowing rooftops and roads. What must have been moments feels like seconds. There is nowhere to go and nothing to do about it. The world is swallowed in salt and roar and cold. Your chest caves as your lungs collapse. You are gone before you can even scream.",
-    "choices": [
-      { "label": "Try again from the crossroads", "next_id": "N-001" }
-    ],
-    "exit_line": "The sea takes everything, even the hills."
-  },
-
-  {
-    "scene_id": "N-001-AD",
+    "scene_id": "N-001-AB",
     "title": "Too Late at the Docks",
     "where_when": "North docks, as the ship pulls away.",
+    "sound": "thunder-rain",
     "text": "You step back from the rail and turn to flee, but the moorings snap like thread and the crowd surges. The sea goes silent, then rises to swallow the pier. You try to run, but salt and sky and weight crush you flat. There is no time to scream.",
-    "choices": [
-      { "label": "try again from the Marina", "next_id": "N-001" }
-    ],
+    "ending": true,
     "exit_line": "Some choices only look like safety."
   },
 
   {
+    "scene_id": "N-001-B",
+    "title": "Running for the Hills",
+    "sound": "thunder-sound",
+    "where_when": "North island foothills, moments later.",
+    "text": "You sprint with the crowd toward the low hills. The ground trembles. The sea goes silent behind you.",
+    "choices": [
+      { "label": "Keep running", "next_id": "N-001-BA" },
+      { "label": "Turn back toward the docks", "next_id": "N-001-A" }
+    ],
+    "exit_line": "You’ve got seconds. Pick wrong and the sea decides."
+  },
+
+  {
+    "scene_id": "N-001-BA",
+    "title": "Too Late in the Foothills",
+    "where_when": "North island foothills, moments later.",
+    "sound": "trouble-on-shore",
+    "text": "You flee the madness at the docks and follow the crowd toward the small foothills. You have nothing to carry and easily overtake several people weighed down by their possessions. The ground trembles underfoot. The sound of the sea fades into an eerie silence.\n\nThen the sky darkens. You turn your head and see it-the horizon rising, the ocean folding over itself. The wall of water races inland, swallowing rooftops and roads. What must have been moments feels like seconds. There is nowhere to go and nothing to do about it. The world is swallowed in salt and roar and cold. Your chest caves as your lungs collapse. You are gone before you can even scream.",
+    "ending": true,
+    "exit_line": "The sea takes everything,...the houses, the vegetation, life and even the hills."
+  },
+
+  {
+    "scene_id": "N-001-C",
+    "title": "Too Late",
+    "where_when": "North docks",
+    "sound": "rolling-dice",
+    "text": "Your determined to discover the Malady that could be the cause of this Panic, in the distance  The crowd runs inland. The sea goes quiet, then slowly drains, your limbs frozen at the site of it. the ocean revealing it scars and debris on its sandy underbelly \n\nsuddenly you see it. the wall of water coming straight at you, what must have been moments feels like seconds, theres no where to go and nothing to do about it, the sky is blanketed over in salty darkness as the wave starts to crest \n.suddenly you feel your chest cave, as your lungs explode, instantly your crushed by a furious wall of cold wet Darkness.",
+    "ending": true,
+    "exit_line": "Congratz!! Your story ends in Tragic fashion. \n this is what happens when You make bad choices"
+  },
+
+  {
     "scene_id": "N-002-A",
-    "title": "Holding Fast — The Wave Rises",
+    "title": "Holding Fast - The Wave Rises",
     "where_when": "Above deck, seconds before impact.",
     "text": "The deck tilts skyward as the sea climbs the sky. You wrap your arms around the main mast while crewmen vanish into the foam. The captain’s voice cuts through the roar: \"Jump!\" For a heartbeat you hesitate, staring up at the wall of water folding over the ship. You can’t hold any longer. It’s jump or die.",
     "choices": [
       { "label": "Jump into the deep", "next_id": "N-002-AA" },
-      { "label": "Keep holding the mast", "next_id": "N-002-AD" }
+      { "label": "Keep holding the mast", "next_id": "N-002-AB" }
     ],
-    "exit_line": "Seconds left. Pick."
+    "exit_line": "you have Seconds left. Pick your fate."
   },
 
   {
-    "scene_id": "N-002-AD",
+    "scene_id": "N-002-AB",
     "title": "Wave-ing goodbye",
     "where_when": "The moment the crest falls.",
-    "text": "You cling to the mast until your arms give out. The world folds and the deck erupts. Timber, iron, salt, and dark. Your lungs never get that next breath.",
-    "choices": [
-      { "label": "Try again from the ship", "next_id": "N-001-AA" }
-    ],
+    "text": "You cling to the mast until your arms give out, your arms Locked in fear. The world folds and the deck erupts, as the boats slams back down to earth . your pelted with sharp debris and shrapnel from the deck exploding.your innards are introduced to new elements shredded Timber, broken iron, salt, and Pain. Your lungs never get that next breath.",
+    "ending": true,
     "exit_line": "The sea does not bargain."
   },
 
   {
     "scene_id": "N-002-AA",
-    "title": "Thrown into the Deep — The Backside of the Wave",
+    "sound": "siren-singing",
+    "title": "Thrown into the Deep - The Backside of the Wave",
     "where_when": "Midday becomes midnight as the wave crests overhead. The ship tilts skyward, and you leap.",
-    "text": "You jump. For a moment, it feels like flying — then everything is cold and chaos. The sound disappears, replaced by pressure and silence. You tumble through foam and wreckage, lungs on fire, the world flipping end over end.\n\nYour shoulder hits something hard — maybe the ship’s broken mast — but it spins you just right. The back side of the wave pulls you down, then hurls you forward with terrifying speed.\n\nWhen you finally break the surface, the world is gone. The ship, the dock, the city — all erased. Only floating debris and distant thunder remain.\n\nYou cling to a barrel and let the current take you. The stars vanish. The mist thickens. Somewhere ahead, faint singing cuts through the noise.",
+    "text": "You jump. For a moment, it feels like flying - then everything is cold and chaos. The sound disappears, replaced by pressure and silence. You tumble through foam and wreckage, lungs on fire, the world flipping end over end.\n\nYour shoulder hits something hard - maybe the ship’s broken mast - but it spins you just right. The back side of the wave pulls you down, then hurls you forward with terrifying speed.\n\nWhen you finally break the surface, the world is gone. The ship, the dock, the city - all erased. Only floating debris and distant thunder remain.\n\nYou cling to a barrel and let the current take you. The stars vanish. The mist thickens. Somewhere ahead, faint singing cuts through the noise.",
     "choices": [
       { "label": "Follow the singing", "next_id": "N-004" },
-      { "label": "Let the current take you", "next_id": "N-002-AAD" }
+      { "label": "Let the current take you", "next_id": "N-003" }
     ],
     "exit_line": "You drift in the dark, waiting to learn whether the sea meant to kill you or spare you."
   },
 
-  {
-    "scene_id": "N-002-AAD",
-    "title": "Lost to the Current",
-    "where_when": "Open water, no stars.",
-    "text": "You loosen your grip and let the ocean decide. The song fades. The cold does not.",
-    "choices": [
-      { "label": "Try again from the jump", "next_id": "N-002-AA" }
-    ],
-    "exit_line": "Some endings are just the sea closing over."
-  },
 
   {
     "scene_id": "N-002-B",
-    "title": "Below Deck — The Hold",
+    "title": "Below Deck - The Hold",
     "where_when": "Cargo hold, lantern light, wet boards.",
-    "text": "Bodies packed tight. would be survivors are tied to beams and rails. The air is sour with Urine and  fear. Water starts finding the seams. this is probably not the best place to be! ",
+    "text": "Bodies packed tight. would be survivors have tied themselves to beams and rails. The air is sour with Urine and fear. Water starts finding the seams. this is probably not the best place to be! ",
     "choices": [
-      { "label": "Force your way back up", "next_id": "N-002-A" },
-      { "label": "Stay with the bound crowd", "next_id": "N-002-BA" }
+      { "label": "tie yourself to the beam and embrace for impact", "next_id": "N-002-BA" },
+      { "label": "try looking through the porthole", "next_id": "N-002-BB" }
     ],
     "exit_line": "Stuck between a morgue and a sandbar."
   },
 
   {
     "scene_id": "N-002-BA",
-    "title": "The Broken Hold — Survivors in the Wreck",
-    "where_when": "Below deck, after the wave. The ship is half-buried against the rocks, creaking but still intact.",
-    "text": "You wake in darkness, the sound of dripping water close to your ear. The air tastes of rot and rust. The ship didn’t sink — it split, wedged between jagged black rocks. Half the hold is flooded. The other half is a tomb of splintered beams and crushed bodies.\n\nSomeone nearby coughs. Then another voice answers — hoarse, desperate. A handful of survivors crawl through the wreckage, gathering in the only pocket of dry space left.\n\nYou can hear the sea outside, grinding at the hull like teeth. There’s no telling how long the wreck will hold.\n\nA narrow gap in the planks shows pale daylight above — an escape, if you dare.",
+    "title": "The Broken Hold - Survivors in the Wreck",
+    "where_when": "Below deck, after the wave. The broken ship is half-buried against the rocks, creaking but still intact.",
+    "text": "You wake in darkness, the sound of dripping water close to your ear. The air tastes of rot and rust. The ship didn’t sink - it split, wedged between jagged black rocks. Half the hold is flooded. The other half is a tomb of splintered beams and crushed bodies.\n\nSomeone nearby coughs. Then another voice calls out - hoarse, desperate. A handful of survivors crawl through the wreckage, gathering in the only pocket of dry space left.\n\nYou can hear the sea outside, grinding at the hull like teeth. There’s no telling how long the wreck will hold.\n\nA narrow gap in the planks shows pale daylight above - an escape, if you dare.",
     "choices": [
-      { "label": "Climb toward the light", "next_id": "N-004" },
+      { "label": "Climb toward the light", "next_id": "N-003" },
       { "label": "Stay below and wait for help", "next_id": "N-002-BD" }
     ],
     "exit_line": "The ship creaks like it’s whispering its last words."
   },
-
   {
     "scene_id": "N-002-BD",
+    "title": "No One Is Coming",
+    "where_when": "Below deck, the wreck slowly filling with freezing water.",
+    "sound": "soon-dead",
+    "text": "As you wait for help to arrive, you feel weaker and the shivering grows more violent. The broken hull groans and shifts as icy tidal water creeps higher around your legs and waist.\n\nYou listen for voices, for boots on the deck, for anything that sounds like rescue. Nothing answers but the sea grinding at the rocks outside.\n\nA cold, ugly truth settles in. You are on your own. No one is coming for you. Maybe it is one of life’s more valuable lessons, learned a little too late.\n\nYour teeth stop chattering. Your hands go numb. You feel so cold, and so sleepy. Eventually you stop trying to keep your head above the water.\n\nYou slip away quietly, more tired than afraid.",
+    "ending": true,
+    "exit_line": "In the end, the wreck holds you tighter than any rescuer ever would."
+  },
+
+  {
+    "scene_id": "N-002-BB",
     "title": "The Waiting",
     "where_when": "The broken hold, water rising.",
-    "text": "You wait. The hull groans. The light narrows to a coin. The sea comes in to collect.",
+    "text": "You glance through the porthole just in time to see the ship cresting the top of a massive wave. For a heartbeat the world hangs still. Then the ocean moves on without you, and the ship drops. The fall is several hundred feet of weightless terror before the hull slams into the sea. Your spine folds. your leg tears open to let the shattered bone out. You don’t scream. You can’t. The splintering hull groans its last as darkness and broken planks tighten around you, as the last of the light shrinks to a coin and fades. The sea has finally come to collect its trophy.",
     "choices": [
       { "label": "Try again from the hold", "next_id": "N-002-B" }
     ],
-    "exit_line": "Silence, then bubbles, then none."
+    "exit_line": "Silence, then bubbles, then nothing."
+  },
+  {
+    "scene_id": "N-003",
+    "sound": "distant-singing",
+    "title": "Back on land — Fog, Wreckage, and Something Calling",
+    "where_when": "Shattered coastline, minutes after the wreck.",
+    "text": "You claw your way out of the broken hull and drag yourself across wet sand. The world is gray and shapeless, the air heavy with mist and the stench of splintered wood. Behind you, the rest of the ship grinds against hidden rocks, dying louder than the people who were on it.\n\nWhen you finally reach the drift line, you collapse. For a long moment there is only your breathing and the slow hiss of the tide.\n\nThen you hear it.\nA voice. No—several. Soft, distant, threading through the fog like a lullaby too old to remember. It rises, falls, and hangs in the air like a hook.\n\nFar down the shoreline, beyond the rocks, fires glow where other survivors gather, shouting for help.\n\nThe choice pulls at you like two different currents.",
+    "choices": [
+      { "label": "Follow the singing voices", "next_id": "N-003-A" },
+      { "label": "Head toward the survivor camp", "next_id": "N-003-B" }
+    ],
+    "exit_line": "The fog hides both salvation and mistakes."
+  },
+  {
+    "scene_id": "N-003-A",
+    "sound": "distant-siren-hum",
+    "title": "Into the Fog — The Pull of the Voices",
+    "where_when": "Shoreline, fog thick as wool.",
+    "text": "You follow the singing, half convinced it's a trick of exhaustion. Your legs shake with every step. Salt burns your lips. You haven’t eaten since before the storm — maybe longer.\n\nStill, you walk.\nNot because it’s smart. Not because it’s safe. Because something in the sound won’t let you stop.\n\nThe fog parts.\nThree women stand at the waterline, silhouettes framed in gray. Beautiful in a way that makes your tired brain lag a beat behind your eyes. Human enough, but wrong in ways you can’t name.\n\nOne holds a small clay cup, steam curling from it, sweet and warm. The scent hits you like a memory of better days — fruit, spice, something comforting.\n\nYour stomach twists with hunger. Your throat feels like cracked stone. You take the cup before you even realize your hand has moved.\n\nThe liquid is warm and sharp and sweet. Relief floods your limbs. The pain dulls. The world steadies.\n\nThe tallest of the three smiles and touches your cheek. \"Come,\" she says. \"The cold will take you if you stay out here any longer.\"",
+    "choices": [
+      { "label": "Follow them into shelter", "next_id": "N-004" },
+      { "label": "Second-guess the drink and resist", "next_id": "N-003-AB" }
+    ],
+    "exit_line": "The fog swallows the beach behind you. Their footsteps make no sound."
+  },
+  {
+    "scene_id": "N-003-AB",
+    "sound": "distant-siren-hum",
+    "title": "Second Thoughts — Instinct Over Hunger",
+    "where_when": "Shoreline, fog rolling in thicker than before.",
+    "text": "The sweet warmth spreads across your tongue, but something in you tightens. Maybe it’s instinct. Maybe it’s the part of your brain that hasn’t drowned yet. You lower the cup.\n\nThe tallest woman tilts her head, smile still perfect but somehow colder. The other two exchange a glance you weren’t supposed to see.\n\nYour arms and legs are trembling with exhaustion, but you take one step back anyway. The fog curls around your ankles. Your heartbeat thumps in your ears like a warning drum.\n\n\"You’re hurt,\" the tallest one says. \"Let us help you.\" Her tone stays gentle, but her eyes sharpen as if measuring how long you would last if you tried to run.\n\nThe warmth you felt a moment ago twists into something else — not fear exactly, but a deep awareness that you shouldn’t be here. Not with them. Not like this.\n\nOne of the women slowly reaches toward you with the cup again. \"Please,\" she whispers, voice too soft to be real. \"It’s only comfort.\"\n\nYour breath fogs the air. The world tilts. You’re not sure if you’re about to faint or bolt.",
+    "choices": [
+      { "label": "Give in and follow them after all", "next_id": "N-004" },
+      { "label": "Back away and flee into the fog", "next_id": "N-003-B" }
+    ],
+    "exit_line": "Every instinct screams to choose now, before you lose the strength to move."
+  },
+
+  {
+    "scene_id": "N-003-B",
+    "sound": "wind-and-surf",
+    "title": "The Survivor Camp — What’s Left of the Living",
+    "where_when": "Shattered coastline, fog thinning as the storm finally drifts inland.",
+    "text": "You follow the glow of distant lanterns and shouting voices until shapes begin to form through the mist. A handful of survivors have gathered along a ridge of driftwood and broken beams, using scraps of sailcloth to block the worst of the wind.\n\nNo one looks good. Everyone is scraped raw, soaked through, or barely standing. Whatever strength kept them alive ended on the sand.\n\nA man waves you over. His beard is full of salt and his hands shake, but he speaks with the steadiness of someone trying very hard not to fall apart.\n\"We lost most of the crew. Supplies are gone. If the rain stops, maybe we can get a fire going. Until then, stay close. People vanish in fog like this.\"\n\nHe’s not lying. Out past the camp, something moves — slow, heavy, dragging across the wet stones in a rhythm that doesn’t belong to anything you recognize. A few survivors whisper about shapes they saw crawling inland when the wave retreated.\n\nHeat, shelter, leadership — none of that exists yet. Just cold air, wet clothes, and the uneasy feeling of being watched.",
+    "choices": [
+      { "label": "Help the survivors reinforce the camp", "next_id": "N-003-BA" },
+      { "label": "Scout the shoreline for supplies", "next_id": "N-003-BB" }
+
+    ],
+    "exit_line": "The storm has passed, but the danger hasn’t."
+  },
+  {
+    "scene_id": "N-003-BA",
+    "sound": "creaking-wood",
+    "title": "Reinforcing the Camp — Holding Back the Night",
+    "where_when": "The survivor camp, fog lifting just enough to see shapes move in the distance.",
+    "text": "You step toward the cluster of survivors working along the ridge of debris. Their shelter is more wish than structure: snapped oars tied with seaweed, crooked planks wedged against each other, torn canvas flapping like a dying flag.\n\nYou join the effort. The work is mindless but grounding: hauling driftwood, wedging beams, knotting rope around anything that will hold. No one speaks much. Everyone listens.\n\nSomething out there drags across the stones again. Closer this time. Heavy.\n\nAn older woman beside you tightens her grip on a broken spar. \"That isn’t the sea,\" she whispers, eyes locked on the fog.\n\nA young boy starts crying quietly into his sleeve. A man tries to reassure him, but his own voice cracks halfway through.\n\nYou finish reinforcing the last section of the windbreak, driving a splintered beam deep into the wet sand. It won’t stop a wave, or a storm, or whatever is moving out there. But it might buy a few seconds if things go bad.\n\nA shape flickers at the edge of the fog — low to the ground, wide, and too smooth in its movements to be human.\n\nNo one breathes.",
+    "choices": [
+
+      { "label": "Return to the campfire circle and plan with the survivors", "next_id": "N-003-BD" },
+      { "label": " find a higher vantage point and scout for danger", "next_id": "N-003-BC" }
+    ],
+    "exit_line": "Something is watching. And it knows you’re here."
+  },
+  {
+    "scene_id": "N-003-BD",
+    "sound": "crackling-fire",
+    "title": "Drawing Lines in the Sand",
+    "where_when": "Around the campfire, weapons and nerves wearing thin.",
+    "text": "You stay by the fire. Not because it feels safe, but because running blind into the fog feels worse.\n\nSomeone drags over a crate lid to use as a makeshift table. You lay the broken oar across it. Others add what they have: splintered planks, snapped spars, a rusted hook, half a shattered spearhead.\n\n\"We’re not scaring that thing off,\" you say. \"So we make it bleed. Legs first. If it can’t stand, it can’t kill as many of us.\"\n\nIt isn’t a rousing speech, but people listen.\n\nYou show them how to sharpen the cleaner pieces of wood against stone. A few survivors take turns hardening the tips in the fire. Others break longer beams into manageable lengths and strip them down to something that might pass for a spear.\n\nA rough plan forms in the dirt: a left flank, a right flank, and a center line around the fire. Fire bearers in the middle, spear carriers on the sides, everyone else staying behind them to drag the wounded away if things go bad.\n\n\"We go for the joints,\" you say, tracing circles at the base of a crude crab shape in the sand. \"If it has a brain, it’s hiding under a plate. We’re not getting there unless the legs stop moving.\"\n\nNo one talks about winning. Just not being wiped out in the first ten seconds.\n\nA shout cuts through the planning from higher up the wreckage. The lookout’s voice cracks halfway through the words.\n\n\"It’s coming! From the shore! Big as the camp!\"",
+    "choices": [
+      { "label": "Take your place in the line and prepare to fight", "next_id": "N-003-BCA" }
+    ],
+    "exit_line": "There’s no safe direction. Just the side you choose to stand on when it reaches you."
+  },
+
+  {
+    "scene_id": "N-003-BB",
+    "sound": "crackling-fire",
+    "title": "Shoreline Sweep — Whispers by the Fire",
+    "where_when": "A little way down the beach, near a rough campfire ring of stones and driftwood.",
+    "text": "You volunteer to work the shoreline. It sounds useful, and more importantly, it gives you a reason to keep moving.\n\nYou pick through the wreckage: smashed crates, broken spars, a few half-rotten nets. Most of it is useless. Anything that might have been food is either gone or ground into the sand.\n\nYou do find one thing worth keeping — a length of broken oar, solid enough to swing like a club. You keep it.\n\nCloser to the waterline, you spot something else. Deep grooves in the wet sand. Not from the tide. Parallel gouges, heavy and wide, like something with weight and too many legs dragged itself up the beach.\n\nBy the time you make it back to the main camp, a rough circle has formed around a struggling fire. A few more survivors have limped in. People talk quietly, comparing what they’ve seen: shapes in the fog, scraping sounds on stone, something big moving just out of sight.\n\nWhen you describe the grooves in the sand, the camp goes even quieter.\n\n\"We need eyes higher up,\" someone says finally. \"If that thing comes back, I’d rather see it before it’s on top of us.\"",
+    "choices": [
+      { "label": "Stay by the fire and help plan defenses", "next_id": "N-003-BD" },
+      { "label": "Volunteer to climb higher and keep watch", "next_id": "N-003-BC" }
+    ],
+    "exit_line": "Whether you stay close or climb high, everyone knows the same truth: something is out there, and it probably isn't nice."
+  },
+  {
+    "scene_id": "N-003-BC",
+    "sound": "distant-rumble",
+    "title": "High Ground — The Thing in the Fog",
+    "where_when": "On a rise of broken hulls and rock above the survivor camp.",
+    "text": "You climb until your legs burn, using splintered ribs of the ship and jagged rock as handholds. From above, the beach looks like a graveyard someone tried to sweep into piles and gave up halfway.\n\nAt first you don’t see it.\n\nThen the fog shifts.\n\nWhat you thought were boulders near the tideline unfold. A shell the size of a cottage heaves up out of the mist, glistening and scarred. Long, jointed legs probe the sand, each one ending in a hooked point that digs deep and pulls the bulk of it forward.\n\nThe thing moves with awful patience, picking through wreckage. One claw the size of a wagon lifts something you decide not to look at too closely. It crushes, tests, discards.\n\nA giant crab, dredged up by the wave from somewhere it should have stayed.\n\nThen it pauses.\n\nSlowly, it turns. Its legs dig in, angling its mass not toward the open sea, but inland.\n\nToward the survivor camp.\n\nFrom up here, you can see the whole picture: the fire, the people huddled around it, and the slow inevitability of the thing closing the distance.",
+    "choices": [
+      { "label": "Race back and help the camp stand and fight", "next_id": "N-003-BCA" }
+    ],
+    "exit_line": "Running doesn’t save you out here. It just changes what kills you."
+  },
+
+
+
+  {
+    "scene_id": "N-003-BCA",
+    "sound": "battle-crabs",
+    "title": "Last Stand in the Wreckage",
+    "where_when": "Back at the camp, moments before the creature reaches the firelight.",
+    "text": "You slide and half-fall down the broken slope, lungs burning as you sprint back toward the camp.\\n\\n\\\"On your feet!\\\" you shout, voice cracking. \\\"It’s coming this way! Huge, claws, legs—just move!\\\"\\n\\nThere’s no argument. Fear does what leadership couldn’t. People scramble for anything with weight or a point: broken oars, snapped spars, sharpened planks. A few survivors drag burning branches from the fire, turning them into makeshift torches.\\n\\nThe creature rises out of the fog like a moving cliff. Up close, it’s worse. Chitin ridged with old scars, barnacles like tumors, its left eye clouded and useless, the other glossy and black, reflecting firelight and panic.\\n\\nIt reaches the edge of the camp and hesitates, confused by the heat and shouting. You don’t give it time to decide.\\n\\nYou and the others surge forward in a ragged line, driving fire and splintered wood at its legs. It snaps, tears, crushes the would-be defenders on its right side, leaving what’s left of the survivors to attack its left—its blind side.\\n\\nSomeone lands a lucky hit in the joint of one leg. Another torch finds soft tissue near a second joint and jabs burning wood into it. The creature thrashes, missteps, and crashes to one side with a shriek that doesn’t belong on land.\\n\\nThat’s when you see your opening.\\n\\nYou climb the creature’s flat head as it struggles to right itself. You raise the broken oar and thrust it down with everything you have, aiming for the softest patch in its cranial plate. The shell cracks. You drive the oar again. And again. The crab’s movements slow, then stop completely as its claw releases a crushed survivor.\\n\\nWhen the creature is finally still, no one cheers. The losses are obvious. The victory feels accidental—shaky, painful, and probably temporary. Someone throws more wood on the fire while others start cutting away chunks of meat.\\n\\nA man speaks up, voice dry and exhausted. \\\"We’ll bury the dead tomorrow,\\\" he says. \\\"Tonight we need to eat.\\\"\\n\\nNo one argues. No one sighs. The first pieces of crab are skewered and held over the coals. Tonight, at least, there is more than enough for the people still standing. Tomorrow another nightmare could wash in from the sea.",
+    "choices": [
+      { "label": "The End", "next_id": "END" }
+    ],
+    "exit_line": "For now, the beach is yours. Tomorrow is a different problem."
   },
 
   {
     "scene_id": "N-004",
-    "title": "The Sirens' Welcome — Salt and Sweetness",
+    "sound": "siren-singing",
+    "title": "The Sirens' Welcome - Salt and Sweetness",
     "where_when": "Shoreline cave, torchlight flickering on wet stone.",
-    "text": "The liquid burns like salt and honey. For a heartbeat you think you’re dying again, lungs filling with the sea. Then you cough, and breathe — the air thick, heavy, alive.\n\nThey carry you into a shallow cave carved by tides. Shells glow in the walls like trapped stars. Someone wraps your wounds with sea-silk; another hums a tune that pulls your heartbeat into rhythm.\n\nWhen you wake, the three of them sit in a circle around you. Bowls of strange fruit glisten in the sand. Their eyes shine like wet coins.\n\n'You fell from the storm,' the tallest one says. 'But storms do not choose who survives. Tell us, land-born — why did the sea spare you?'\n\nTheir smiles are gentle, but something sharp hides behind them. You can feel it — like teeth under velvet.",
+    "text": "The liquid burns like salt and honey. For a heartbeat you think you’re dying again, lungs filling with the sea. Then you cough, and breathe - the air thick, heavy, alive.\n\nThey carry you into a shallow cave carved by tides. Shells glow in the walls like trapped stars. Someone wraps your wounds with sea-silk; another hums a tune that pulls your heartbeat into rhythm.\n\nWhen you wake, the three of them sit in a circle around you. Bowls of strange fruit glisten in the sand. Their eyes shine like wet coins.\n\n'You fell from the storm,' the tallest one says. 'But storms do not choose who survives. Tell us, land-born - why did the sea spare you?'\n\nTheir smiles are gentle, but something sharp hides behind them. You can feel it - like teeth under velvet.",
     "choices": [
       { "label": "Tell them everything ", "next_id": "N-004-A" },
       { "label": "Distrust them and lie ", "next_id": "N-004-B" }
@@ -177,1124 +291,51 @@
 
   {
     "scene_id": "N-004-A",
-    "title": "The Survivor of the Deep",
+    "title": "Salt and Honesty",
+    "sound": "siren-melody",
     "where_when": "Still within the sirens' cave, somewhere between night and dawn.",
-    "text": " \"You are so Thirsty., The liquid burns, you continue drinking  out of thirst and desperation,  As soon as you drink from the conch, you wonder if you shouldn’t of been more cautious. There is an immediate  sense of relief from the pain.  at the same time, everything that happened immediately overwhelms you, you break down in tears. You tell these beautiful, strange creatures  everything — the crossroads, the ship at the marina, the people inside the boat hoping for escape; now entangled in seaweed and smashed upon the rocks, you recount the screams, the black wall of water. The words fall out of you in pieces, salt-bitten and raw. By the time you finish, the cave creatures are silent, Weariness  finally stills your once uncontrolled sobbing. The tallest siren moves closer. She touches your chest, her hand cool and slick. “No lies,” she announces softly to the coven. Narrowing her eyes at you she says, “We will save you land-born, as you are the first we have come across that has controlled their deceitful tongue and their lust",
+    "text":  "You are so thirsty. The liquid burns, and you keep drinking out of thirst and desperation. As soon as you drink from the conch, you wonder if you should have been more cautious.\n\nThere is an immediate sense of relief from the pain. At the same time, everything that happened overwhelms you. You break down in tears. You tell these beautiful, strange creatures everything: the crossroads, the ship at the marina, the people on the boat hoping for escape; now entangled in seaweed and smashed against the rocks. You recount the screams, the black wall of water, the terror that crawled up your spine.\n\nThe cave creatures listen without interrupting. Weariness finally stills your sobbing. The tallest siren moves closer and touches your chest, her hand cool and slick.\n\n\"No lies,\" she announces softly to the coven. Her eyes narrow in appraisal. \"We will save you, land-born. You are the first human we have come across who held their deceitful tongue, their ego, and their lust.\" \n\nAnother vessel is lifted toward your lips. This drink is colder. Sharper. It tastes like the moment just before a wave breaks. Your veins tingle. Your heartbeat begins to match the rhythm of the tide.\n\nThe water rises around your ankles. Your lungs brace for panic, but it doesn’t come. Not yet.",
     "choices": [
-      { "label": "The End", "next_id": "END" }
+      {
+        "label": "Let the tide take you deeper",
+        "next_id": "N-004-AA"
+      }
     ],
-    "exit_line": "You drift beneath the waves, weightless and awake, listening for another voice to answer the song."
+    "exit_line": "You feel the pull of the deep, patient and ancient."
+  },
+  {
+    "scene_id": "N-004-AA",
+    "title": "Chosen of the Deep — Becoming Something New",
+    "sound": "undersea-heartbeat",
+    "where_when": "Beneath the cave's surface, drifting into the dark water.",
+    "text": "The water climbs your waist, your ribs, your throat. Instead of fear, there is a strange peace. Your body hums with the cold, with the lingering sweetness of the drink, with something new curling beneath your skin.\n\nYou slip beneath the surface.\n\nYour eyes open in the dark and the dark answers. Shapes bloom where there should be nothing. You see every shell embedded in the stone, every ripple of current, every tiny creature scuttling in the silt.\n\nYour legs feel distant—muted—then they shift. Bones soften. Skin smooths. A powerful tail unfurls where your feet should be, scaled and shimmering in the faint blue light.\n\nYou move it once, instinctively. It feels like remembering something you never learned.\n\nAbove you, the sirens glide in a slow circle, watching with something between pride and amazement.\n\n\"Breathe,\" the tallest one commands.\n\nYou inhale.\n\nThe sea rushes into you.\n\nIt should kill you. It doesn’t.\n\nYour chest expands, your pulse steadies, and for the first time since the storm, you feel alive—truly alive—as if the ocean has been waiting for you all along.\n\nYou swim upward, cutting through the water like a blade. The world is new. The night is vast. And you are no longer prey.",
+    "choices": [
+      {
+        "label": "Accept your new life beneath the waves",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "You were meant to drown tonight. Instead, you were claimed."
   },
 
   {
     "scene_id": "N-004-B",
     "title": "The Eaten",
     "where_when": "Inside the sirens' cave. The tide creeping higher.",
-    "text": "You force a smile and tell them what you think they want to hear — a Hero's story, of slavers, chains, sword-fights and escape. The lie comes easy. Too easy. The three seductive and unnaturally beautiful creatures nod toward each other, smiling in silent agreement. They seem to believe you as one of them gently offers a new shell, winking seductively as you lift it to your lips. It is sweeter than the first. You gulp it down greedily, relieved they’ve accepted your lie. The tallest one moves closer, her expression unreadable. Her lips brush yours, tasting your mouth with her tongue. Her breath cool and sweet, like apples and vanilla orchids, and in that instant, you fall in love. Gradually the light in the cave shifts. The lust in her eyes doesn’t fade; it sharpens, glinting with the calm focus of hunger. Shadows stretch along the walls as her voice sharpens. 'Pitiful land-born,' she says. 'We can taste truth on the air.' With one graceful motion she slaps the shell from your hands. 'The drink will teach you honesty.' Your stomach twists. It burns. Your tongue goes numb. You try to stand, but your legs will not move. Paralyzed, you watch as their lovely mouths open wide, revealing rows of slick, needle sharp teeth. They close in, humming the same alluring tune that brought you here. You scream once, salt and blood fill your throat, and then you drown again, slower this time, as they tear into your limbs and torso. The water goes dark with blood and rendered flesh, the pain makes the world fold in on itself. You feel your soul tear loose and rise, breaking the surface far above. The last thing you see is your own body sinking below, motionless. Then everything turns white, and you find yourself standing once more at the crossroads, with no memory of how you got there.",
+    "text": "You force a smile and tell them what you think they want to hear - a Hero's story, of slavers, chains, sword-fights and escape. The lie comes easy. Too easy. The three seductive and unnaturally beautiful creatures nod toward each other, smiling in silent agreement. They seem to believe you as one of them gently offers a new shell, winking seductively as you lift it to your lips. It is sweeter than the first. You gulp it down greedily, relieved they’ve accepted your lie. The tallest one moves closer, her expression unreadable. Her lips brush yours, tasting your mouth with her tongue. Her breath cool and sweet, like apples and vanilla orchids, and in that instant, you fall in love. Gradually the light in the cave shifts. The lust in her eyes doesn’t fade; it sharpens, glinting with the calm focus of hunger. Shadows stretch along the walls as her voice sharpens. 'Pitiful land-born,' she says. 'We can taste truth on the air.' With one graceful motion she slaps the shell from your hands. 'The drink will teach you honesty.' Your stomach twists. It burns. Your tongue goes numb. You try to stand, but your legs will not move. Paralyzed, you watch as their lovely mouths open wide, revealing rows of slick, needle sharp teeth. They close in, humming the same alluring tune that brought you here. You scream once, salt and blood fill your throat, and then you drown again, slower this time, as they tear into your limbs and torso. The water goes dark with blood and rendered flesh, the pain makes the world fold in on itself. You feel your soul tear loose and rise, breaking the surface far above. The last thing you see is your own body sinking below, motionless. Then everything turns white, and you find yourself standing once more at the crossroads, with no memory of how you got there.",
+    "sound": "soon-dead",
     "choices": [
       { "label": "The End or is it? ", "next_id": "END" }
     ],
     "exit_line": "The sea keeps its secrets. You just became one of them."
   },
-  {
-    "scene_id": "N-005A",
-    "title": "Scene 5A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-006"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-005B",
-    "title": "Scene 5B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-006"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-006",
-    "title": "Scene 6 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-006A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-006B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-006A",
-    "title": "Scene 6A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-007"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-006B",
-    "title": "Scene 6B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-007"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-007",
-    "title": "Scene 7 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-007A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-007B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-007A",
-    "title": "Scene 7A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-008"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-007B",
-    "title": "Scene 7B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-008"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-008",
-    "title": "Scene 8 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-008A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-008B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-008A",
-    "title": "Scene 8A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-009"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-008B",
-    "title": "Scene 8B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-009"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-009",
-    "title": "Scene 9 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-009A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-009B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-009A",
-    "title": "Scene 9A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-010"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-009B",
-    "title": "Scene 9B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-010"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-010",
-    "title": "Scene 10 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-010A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-010B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-010A",
-    "title": "Scene 10A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-011"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-010B",
-    "title": "Scene 10B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-011"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-011",
-    "title": "Scene 11 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-011A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-011B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-011A",
-    "title": "Scene 11A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-012"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-011B",
-    "title": "Scene 11B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-012"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-012",
-    "title": "Scene 12 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-012A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-012B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-012A",
-    "title": "Scene 12A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-013"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-012B",
-    "title": "Scene 12B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-013"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-013",
-    "title": "Scene 13 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-013A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-013B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-013A",
-    "title": "Scene 13A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-014"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-013B",
-    "title": "Scene 13B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-014"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-014",
-    "title": "Scene 14 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-014A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-014B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-014A",
-    "title": "Scene 14A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-015"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-014B",
-    "title": "Scene 14B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-015"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-015",
-    "title": "Scene 15 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-015A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-015B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-015A",
-    "title": "Scene 15A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-016"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-015B",
-    "title": "Scene 15B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-016"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-016",
-    "title": "Scene 16 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-016A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-016B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-016A",
-    "title": "Scene 16A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-017"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-016B",
-    "title": "Scene 16B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-017"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-017",
-    "title": "Scene 17 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-017A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-017B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-017A",
-    "title": "Scene 17A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-018"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-017B",
-    "title": "Scene 17B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-018"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-018",
-    "title": "Scene 18 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-018A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-018B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-018A",
-    "title": "Scene 18A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-019"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-018B",
-    "title": "Scene 18B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-019"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-019",
-    "title": "Scene 19 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-019A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-019B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-019A",
-    "title": "Scene 19A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-020"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-019B",
-    "title": "Scene 19B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-020"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-020",
-    "title": "Scene 20 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-020A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-020B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-020A",
-    "title": "Scene 20A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-021"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-020B",
-    "title": "Scene 20B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-021"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-021",
-    "title": "Scene 21 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-021A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-021B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-021A",
-    "title": "Scene 21A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-022"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-021B",
-    "title": "Scene 21B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-022"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-022",
-    "title": "Scene 22 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-022A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-022B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-022A",
-    "title": "Scene 22A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-023"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-022B",
-    "title": "Scene 22B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-023"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-023",
-    "title": "Scene 23 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-023A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-023B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-023A",
-    "title": "Scene 23A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-024"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-023B",
-    "title": "Scene 23B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-024"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-024",
-    "title": "Scene 24 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-024A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-024B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-024A",
-    "title": "Scene 24A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-025"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-024B",
-    "title": "Scene 24B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-025"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-025",
-    "title": "Scene 25 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-025A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-025B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-025A",
-    "title": "Scene 25A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-026"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-025B",
-    "title": "Scene 25B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-026"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-026",
-    "title": "Scene 26 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-026A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-026B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-026A",
-    "title": "Scene 26A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-027"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-026B",
-    "title": "Scene 26B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-027"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-027",
-    "title": "Scene 27 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-027A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-027B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-027A",
-    "title": "Scene 27A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-028"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-027B",
-    "title": "Scene 27B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-028"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-028",
-    "title": "Scene 28 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-028A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-028B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-028A",
-    "title": "Scene 28A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-029"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-028B",
-    "title": "Scene 28B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-029"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-029",
-    "title": "Scene 29 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-029A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-029B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-029A",
-    "title": "Scene 29A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-030"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-029B",
-    "title": "Scene 29B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-030"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-030",
-    "title": "Scene 30 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "N-030A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "N-030B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-030A",
-    "title": "Scene 30A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "The End",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Your story has reached its conclusion."
-  },
-  {
-    "scene_id": "N-030B",
-    "title": "Scene 30B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "The End",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Your story has reached its conclusion."
+
+
+  {
+    "scene_id": "END",
+    "title": "Your Journey Ends",
+    "text": "Your story has reached its conclusion.",
+    "choices": []
   }
 ]
+

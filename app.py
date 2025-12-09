@@ -14,6 +14,7 @@ from flask import (
     jsonify,)
 
 from lib.treasure import grant_treasure_for_current
+from lib.shake import resolve as resolve_shake
 from lib.player import (
     create_player,
     add_history,
@@ -22,6 +23,8 @@ from lib.player import (
     reset_visited,
     reset_history_and_vars,)
 from lib.gating import compute_display_choices
+
+
 
 # Flask app setup
 app = Flask(__name__)
@@ -32,6 +35,8 @@ BASE_DIR = Path(__file__).parent.resolve()
 
 # ========= CHRIS (NORTH) =========
 SCENES_FILE_CHRIS = BASE_DIR / "static" / "data" / "scenes_chris.json"
+
+
 
 
 def _load_chris():
@@ -257,6 +262,12 @@ def add_player_name(s: str):
     for token in ['{{player.name}}', '{{ player.name }}']:
         text = text.replace(token, name)
     return text
+
+@app.template_filter("shake_cfg")
+def shake_cfg_filter(value):
+    """Use lib.shake.resolve inside templates."""
+    return resolve_shake(value)
+
 
 @app.context_processor
 def _inject_player():

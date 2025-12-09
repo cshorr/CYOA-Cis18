@@ -2,45 +2,98 @@
 {% block title %}{{ title or scene.title }}{% endblock %}
 
 {% block content %}
-<h1>{{ scene.title }}</h1>
-
-{% if debug %}
-<p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
-{% endif %}
+  <h1>{{ scene.title }}</h1>
 
 
-<p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
-
-<div class="choices">
-
-
-  {% for c in scene.choices %}
-  {% set nextid = (c.next_id|string).strip() %}
-  {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
-  {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
-  {% set color = (c.color|string).lower() if c.color is defined else '' %}
-  {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
-
-  {% if nextid == 'END' %}
-  <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
-    {{ c.label or 'Finish' }}
-  </a>
-  {% elif nextid == 'DIE' %}
-  <a class="btn {{ btn_class }}" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.')) }}">
-    {{ c.label or 'You Died' }}
-  </a>
+ {% if scene.image %}
+  {% if scene.image_mode == 'background' %}
+    <style>
+      .screen {
+        background-image: url("{{ url_for('static', filename='images/' ~ scene.image ~ '.jpg') }}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
   {% else %}
-  <a class="btn {{ btn_class }}" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
-    {{ c.label }}
-  </a>
+    <img class="scene-image"
+         src="{{ url_for('static', filename='images/' ~ scene.image ~ '.jpg') }}"
+         alt="scene image">
   {% endif %}
-  {% endfor %}
-</div>
-{% if scene.exit_line %}
-  <p> {{ scene.exit_line | add_player_name | replace_all_newlines |safe }}</p>
 {% endif %}
 
-<div class="crossroads_footer">
-  <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
-</div>
+
+  {% if debug %}
+    <p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
+  {% endif %}
+
+  <p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
+
+  <div class="choices">
+    {% for c in scene.choices %}
+      {% set nextid = (c.next_id|string).strip() %}
+      {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
+      {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
+      {% set color = (c.color|string).lower() if c.color is defined else '' %}
+      {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
+
+      {% if nextid == 'END' %}
+        <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
+          {{ c.label or 'Finish' }}
+        </a>
+      {% elif nextid == 'DIE' %}
+        <a class="btn {{ btn_class }}" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.')) }}">
+          {{ c.label or 'You Died' }}
+        </a>
+      {% else %}
+        <a class="btn {{ btn_class }}" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
+          {{ c.label }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% if scene.exit_line %}
+    <p> {{ scene.exit_line | add_player_name | replace_all_newlines | safe }}</p>
+  {% endif %}
+
+  <div class="crossroads_footer">
+    <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
+  </div>
+
+  {% if scene.sound %}
+    <audio id="scene-audio"
+           src="{{ url_for('static', filename='audio/' ~ scene.sound ~ '.mp3') }}"
+           autoplay></audio>
+  {% endif %}
+
+{# Screen shake: optional per scene #}
+{% set shake_cfg = scene.shake | shake_cfg %}
+{% if shake_cfg %}
+<script>
+  (function () {
+    const cfg = {{ shake_cfg | tojson }};
+    const panel = document.querySelector('.panel');
+    if (!panel) {
+      return;
+    }
+
+    // Set CSS vars
+    panel.style.setProperty('--shake-intensity', cfg.intensity_px + 'px');
+    panel.style.setProperty('--shake-duration', cfg.duration_ms + 'ms');
+
+    // Restart animation
+    panel.classList.remove('shake');
+    void panel.offsetWidth; // force reflow
+    panel.classList.add('shake');
+
+    // Stop after it finishes
+    setTimeout(function () {
+      panel.classList.remove('shake');
+    }, cfg.duration_ms);
+  })();
+</script>
+{% endif %}
+
+
 {% endblock %}
