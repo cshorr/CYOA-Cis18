@@ -43,7 +43,7 @@ def compute_display_choices(scene, player):
 
     for gc in gated:
         if eval_when(player, gc.get('when', {})):
-            choice = {k: v for k, v in gc.items() if k in {'label', 'next_id', 'variant', 'color', 'death_text'}}
+            choice = {k: v for k, v in gc.items() if k in {'label', 'next_id', 'variant', 'color'}}
             if 'label' in choice and 'next_id' in choice:
                 base.append(choice)
     return base

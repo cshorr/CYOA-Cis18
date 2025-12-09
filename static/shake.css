@@ -1,0 +1,22 @@
+:root {
+  --shake-intensity: 8px;
+  --shake-duration: 300ms;
+}
+
+/* When .panel gets this class, it will shake */
+.shake {
+  animation: screen-shake var(--shake-duration) linear;
+}
+
+@keyframes screen-shake {
+  0%, 100% { transform: translate(0, 0); }
+  10%      { transform: translate(var(--shake-intensity), 0); }
+  20%      { transform: translate(calc(-1 * var(--shake-intensity)), 0); }
+  30%      { transform: translate(0, var(--shake-intensity)); }
+  40%      { transform: translate(0, calc(-1 * var(--shake-intensity))); }
+  50%      { transform: translate(var(--shake-intensity), var(--shake-intensity)); }
+  60%      { transform: translate(calc(-1 * var(--shake-intensity)), calc(-1 * var(--shake-intensity))); }
+  70%      { transform: translate(var(--shake-intensity), 0); }
+  80%      { transform: translate(0, var(--shake-intensity)); }
+  90%      { transform: translate(0, 0); }
+}

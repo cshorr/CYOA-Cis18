@@ -136,3 +136,17 @@ h1, h2, h3 {
   text-shadow: 0 0 6px rgba(148, 191, 174, 0.35), 0 0 12px rgba(165, 224, 125, 0.28);
 
 }
+{
+.scene-image
+  width: 100%;
+  max-width: 600px;
+  border-radius: 6px;
+  margin: 20px auto;
+  display: block;
+}
+
+.panel-has-bg {
+
+  background-size: cover;
+  background-position: center;
+}

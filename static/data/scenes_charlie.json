@@ -1,1317 +1,603 @@
 [
   {
     "scene_id": "S-001",
-    "title": "Scene 1 - generic title",
-    "where_when": "generic text ",
-    "text": "generic text ",
-
-
+    "sound": "troubleonshore",
+     "shake": "light",
+    "title": "The huge phone booth",
+    "where_when": "In the middle of the huge field",
+    "text": "You are at a phone booth in a middle of a huge field.",
     "choices": [
-      {
-        "label": "Continue towards the ship",
-        "next_id": "S-001A"
-      }
-
+      { "label": "Make a phone call", "next_id": "S-001A" },
+      { "label": "Leave the phone booth", "next_id": "S-001B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-001A",
-    "title": "Scene 1A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Making phone call",
+    "where_when": "Phone booth",
+    "text": "You pick up the heavy receiver. There is no dial tone, only a faint, rhythmic static. You speak, but only the static answers.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-002"
-      }
+      { "label": "Hang up and leave", "next_id": "S-002" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-001B",
-    "title": "Scene 1B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Around the booth",
+    "where_when": "Outside the phone booth",
+    "text": "You step out onto the soft grass. The field stretches to the horizon in every direction, an ocean of green under a pale, featureless sky.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-002"
-      }
+      { "label": "Walk towards the horizon", "next_id": "S-002" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-002",
-    "title": "Scene 2 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "A glint of light",
+    "where_when": "The endless field",
+    "text": "As you walk, the silence is absolute. After a few minutes, you spot something glinting in the distance, catching the non-existent sun.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-002A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-002B"
-      }
+      { "label": "Walk towards the glint", "next_id": "S-002A" },
+      { "label": "Ignore it and walk another way", "next_id": "S-002B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-002A",
-    "title": "Scene 2A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The humming cube",
+    "where_when": "The endless field",
+    "text": "You approach the source of the light. It's a small, metallic cube, hovering an inch above the grass and humming with a low energy.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-003"
-      }
+      { "label": "Pick it up", "next_id": "S-003" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-002B",
-    "title": "Scene 2B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A different path",
+    "where_when": "The endless field",
+    "text": "You decide to ignore the distraction and choose a random direction. As you walk, the sky begins to darken unnaturally fast.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-003"
-      }
+      { "label": "Keep walking", "next_id": "S-003B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-003",
-    "title": "Scene 3 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "A change of scenery",
+    "where_when": "A glowing forest's edge",
+    "text": "As your fingers touch the cube, it grows warm. The field around you dissolves like a mirage, replaced by a forest of crystalline trees glowing with soft inner light.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-003A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-003B"
-      }
+      { "label": "Enter the forest", "next_id": "S-004A" },
+      { "label": "Look for a path around it", "next_id": "S-004B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-003A",
-    "title": "Scene 3A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The glowing forest",
+    "where_when": "Edge of the glowing forest",
+    "text": "You find yourself at the edge of a forest made of glowing, crystalline trees. The air hums with the same energy as the cube.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-004"
-      }
+      { "label": "Enter the forest", "next_id": "S-004A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-003B",
-    "title": "Scene 3B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Sudden twilight",
+    "where_when": "A dark path",
+    "text": "The sky is now a deep twilight. You stumble over something hard in the dim light - a metallic cube, identical to the one you saw earlier. As you touch it, the world shifts.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-004"
-      }
+      { "label": "Continue", "next_id": "S-003A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-004",
-    "title": "Scene 4 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Two paths",
+    "where_when": "Inside the glowing forest",
+    "text": "The forest floor is soft moss. The light from the crystal trees casts strange, shifting shadows. The path splits before you.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-004A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-004B"
-      }
+      { "label": "Take the path leading upwards", "next_id": "S-005" },
+      { "label": "Take the path leading downwards", "next_id": "S-006" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-004A",
-    "title": "Scene 4A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Into the light",
+    "where_when": "Inside the glowing forest",
+    "text": "You step into the forest. The light is beautiful and mesmerizing. Ahead, the path splits. One fork winds up a hill, the other descends into a misty hollow.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-005"
-      }
+      { "label": "Go up the hill", "next_id": "S-005A" },
+      { "label": "Go down into the hollow", "next_id": "S-005B" }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-004B",
-    "title": "Scene 4B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The long way around",
+    "where_when": "Skirting the forest",
+    "text": "You try to walk around the forest, but it seems to stretch infinitely. You find a dark cave entrance nestled in the roots of a giant crystal tree.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-005"
-      }
+      { "label": "Enter the cave", "next_id": "S-006A" },
+      { "label": "Keep trying to go around", "next_id": "S-006B" }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-005",
-    "title": "Scene 5 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The hilltop clearing",
+    "where_when": "Forest hilltop",
+    "text": "You reach a clearing at the top of the hill. In the center stands a single, large, pulsating crystal.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-005A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-005B"
-      }
+      { "label": "Touch the crystal", "next_id": "S-007A" },
+      { "label": "Observe it from a distance", "next_id": "S-007B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-005A",
-    "title": "Scene 5A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Crystal Peak",
+    "where_when": "Forest hilltop",
+    "text": "The path up the hill leads to a small clearing. In the middle is a floating crystal that pulses with a gentle light. Below, you can see the entire forest.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-006"
-      }
+      { "label": "Touch the floating crystal", "next_id": "S-007A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-005B",
-    "title": "Scene 5B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Misty Hollow",
+    "where_when": "Forest hollow",
+    "text": "You descend into a hollow filled with cool, shimmering mist. A stream of liquid light flows through it. A small, furry creature is drinking from the stream.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-006"
-      }
+      { "label": "Drink from the stream", "next_id": "S-008A" },
+      { "label": "Follow the creature", "next_id": "S-008B" }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-006",
-    "title": "Scene 6 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The whispering cave",
+    "where_when": "Cave entrance",
+    "text": "You enter the dark cave. The air is cool and still. You hear faint whispers echoing from deep within.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-006A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-006B"
-      }
+      { "label": "Follow the whispers", "next_id": "S-009A" },
+      { "label": "Light the cube for better visibility", "next_id": "S-009B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-006A",
-    "title": "Scene 6A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Into the Dark",
+    "where_when": "Inside the cave",
+    "text": "You step into the cave. It's pitch black. You can hear the dripping of water and faint whispers that seem to come from all directions.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-007"
-      }
+      { "label": "Follow the source of the whispers", "next_id": "S-009A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-006B",
-    "title": "Scene 6B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "No Way Around",
+    "where_when": "Forest's edge",
+    "text": "After what feels like an hour, you realize you've walked in a circle, arriving back at the same cave entrance. It seems to be the only way forward.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-007"
-      }
+      { "label": "Enter the cave", "next_id": "S-006A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-007",
-    "title": "Scene 7 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "A Vision",
+    "where_when": "Forest hilltop",
+    "text": "Touching the crystal fills your mind with a vision: a tall, impossibly thin tower piercing the clouds.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-007A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-007B"
-      }
+      { "label": "Head towards the tower", "next_id": "S-010" }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-007A",
-    "title": "Scene 7A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Vision of the Tower",
+    "where_when": "Forest hilltop",
+    "text": "As you touch the crystal, an image floods your mind: a tall, sleek tower of black stone, standing alone in a desolate landscape.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-008"
-      }
+      { "label": "Search for the tower", "next_id": "S-010" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-007B",
-    "title": "Scene 7B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A New Path",
+    "where_when": "Forest hilltop",
+    "text": "As you watch the crystal, it projects a beam of light, illuminating a new, previously hidden path leading out of the forest.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-008"
-      }
+      { "label": "Follow the path of light", "next_id": "S-010" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-008",
-    "title": "Scene 8 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Stream of Light",
+    "where_when": "Forest hollow",
+    "text": "The liquid light tastes like ozone and warmth. You feel energized. The small creature looks at you and then scurries down a tunnel.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-008A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-008B"
-      }
+      { "label": "Follow the creature", "next_id": "S-008B" },
+      { "label": "Follow the stream instead", "next_id": "S-011A" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-008A",
-    "title": "Scene 8A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Liquid Energy",
+    "where_when": "Forest hollow",
+    "text": "You cup your hands and drink. A pleasant warmth spreads through you, and you feel invigorated. The mist begins to clear.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-009"
-      }
+      { "label": "Continue onward", "next_id": "S-011A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-008B",
-    "title": "Scene 8B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A Hidden Passage",
+    "where_when": "Forest hollow",
+    "text": "You follow the creature into a small tunnel hidden behind a curtain of moss. The tunnel slopes steeply downwards.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-009"
-      }
+      { "label": "Descend into the tunnel", "next_id": "S-011B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-009",
-    "title": "Scene 9 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Echo Chamber",
+    "where_when": "Deep inside the cave",
+    "text": "The whispers lead you to a vast cavern. In the center is a pool of dark, still water. The whispers are your own thoughts, reflected back at you.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-009A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-009B"
-      }
+      { "label": "Look into the pool", "next_id": "S-012A" },
+      { "label": "Search the cavern walls", "next_id": "S-012B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-009A",
-    "title": "Scene 9A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Whispering Cavern",
+    "where_when": "Deep inside the cave",
+    "text": "You find the source of the whispers is a large, open cavern where your own thoughts seem to echo back to you. There's a pool of perfectly still water in the center.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-010"
-      }
+      { "label": "Gaze into the water", "next_id": "S-012A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-009B",
-    "title": "Scene 9B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Let There Be Light",
+    "where_when": "Inside the cave",
+    "text": "You focus on the cube, and it emits a bright, steady light, illuminating the cave. The walls are covered in complex geometric carvings.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-010"
-      }
+      { "label": "Examine the carvings", "next_id": "S-012B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-010",
-    "title": "Scene 10 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Lonely Tower",
+    "where_when": "Desolate plains",
+    "text": "The path leads out of the forest and onto a plain of black sand under a violet sky. In the distance stands the tower from your vision.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-010A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-010B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-010A",
-    "title": "Scene 10A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-011"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-010B",
-    "title": "Scene 10B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-011"
-      }
+      { "label": "Approach the tower", "next_id": "S-013A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-011",
-    "title": "Scene 11 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Underdark",
+    "where_when": "Under the forest",
+    "text": "The tunnel opens into a massive underground cavern, lit by glowing fungi. In the center, a colossal structure rises from the ground - the base of the tower.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-011A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-011B"
-      }
+      { "label": "Find a way into the tower's base", "next_id": "S-013B" }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-011A",
-    "title": "Scene 11A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Source",
+    "where_when": "Underground river",
+    "text": "You follow the stream of light to its source: a crack in the cave floor from which the light pours. The crack is just wide enough to squeeze through.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-012"
-      }
+      { "label": "Go through the crack", "next_id": "S-011B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-011B",
-    "title": "Scene 11B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Foundation",
+    "where_when": "Tower foundation",
+    "text": "You emerge into a vast, silent chamber filled with dormant machinery. You are inside the base of the black tower.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-012"
-      }
+      { "label": "Look for a way up", "next_id": "S-013B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-012",
-    "title": "Scene 12 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Pool of Stars",
+    "where_when": "The Whispering Cavern",
+    "text": "The water in the pool is not water, but a liquid sky filled with stars. Gazing into it shows you the tower, and a path to it.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-012A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-012B"
-      }
+      { "label": "Follow the star-path", "next_id": "S-011" }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-012A",
-    "title": "Scene 12A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Liquid Cosmos",
+    "where_when": "The Whispering Cavern",
+    "text": "You look into the pool. It's not a reflection you see, but a swirling galaxy of stars. An image forms in the depths: the black tower.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-013"
-      }
+      { "label": "Reach into the pool", "next_id": "S-010" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-012B",
-    "title": "Scene 12B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Carved History",
+    "where_when": "The Whispering Cavern",
+    "text": "The carvings depict a complex star map, with lines connecting countless worlds. All lines converge on a central symbol: a tall, thin tower.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-013"
-      }
+      { "label": "Look for an exit corresponding to the map", "next_id": "S-011" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-013",
-    "title": "Scene 13 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Tower Entrance",
+    "where_when": "Base of the tower",
+    "text": "You stand before the tower. There is no visible door or window, just smooth, seamless black stone.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-013A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-013B"
-      }
+      { "label": "Use the cube", "next_id": "S-014A" },
+      { "label": "Touch the wall", "next_id": "S-014B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-013A",
-    "title": "Scene 13A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Gate",
+    "where_when": "Base of the tower",
+    "text": "You arrive at the base of the impossibly tall tower. A single, massive door of the same black stone is set into the wall, with no handle or lock.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-014"
-      }
+      { "label": "Press the cube against the door", "next_id": "S-014A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-013B",
-    "title": "Scene 13B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Spiral Staircase",
+    "where_when": "Tower foundation",
+    "text": "You find a spiral staircase winding its way up into the darkness. It seems to be the only way to ascend.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-014"
-      }
+      { "label": "Climb the stairs", "next_id": "S-015A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-014",
-    "title": "Scene 14 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Way In",
+    "where_when": "Inside the tower's entrance hall",
+    "text": "Pressing the cube to the wall causes a doorway to silently iris open. You step inside a large, circular room. In the center is a pedestal.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-014A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-014B"
-      }
+      { "label": "Approach the pedestal", "next_id": "S-015" }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-014A",
-    "title": "Scene 14A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Key",
+    "where_when": "Base of the tower",
+    "text": "As the cube touches the door, both hum with the same frequency. The stone dissolves, revealing a brightly lit hallway.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-015"
-      }
+      { "label": "Enter the tower", "next_id": "S-015B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-014B",
-    "title": "Scene 14B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "No Entry",
+    "where_when": "Base of the tower",
+    "text": "The wall is cool and smooth to the touch. It feels ancient and impenetrable. There is no way in here.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-015"
-      }
+      { "label": "Search for another way in", "next_id": "S-013A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-015",
-    "title": "Scene 15 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Pedestal",
+    "where_when": "Tower control room",
+    "text": "The pedestal has a cube-shaped indentation on its surface. The room is otherwise bare.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-015A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-015B"
-      }
+      { "label": "Place the cube on the pedestal", "next_id": "S-016" },
+      { "label": "Touch the pedestal with your hand", "next_id": "S-016B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-015A",
-    "title": "Scene 15A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Upper Chamber",
+    "where_when": "Tower control room",
+    "text": "After a long climb, you emerge into a circular chamber at the very top of the tower. The ceiling is a dome of stars. In the center is a pedestal.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-016"
-      }
+      { "label": "Examine the pedestal", "next_id": "S-015B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-015B",
-    "title": "Scene 15B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Control Room",
+    "where_when": "Tower control room",
+    "text": "You enter a vast, circular room. In the exact center is a single pedestal of black stone with a cube-shaped slot on top.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-016"
-      }
+      { "label": "Place your cube in the slot", "next_id": "S-016A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-016",
-    "title": "Scene 16 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Activation",
+    "where_when": "Tower control room",
+    "text": "The cube clicks into place. The room floods with light, and the walls become a 360-degree view of the stars. A holographic map appears over the pedestal.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-016A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-016B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-016A",
-    "title": "Scene 16A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-017"
-      }
+      { "label": "Examine the map", "next_id": "S-017" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
-    "scene_id": "S-016B",
-    "title": "Scene 16B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "scene_id": "S-016A",
+    "title": "The Star Map",
+    "where_when": "Tower control room",
+    "text": "As the cube settles into the slot, the room hums to life. A vast, holographic star map appears floating above the pedestal, showing countless worlds.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-017"
-      }
+      { "label": "Look for your home world", "next_id": "S-017A" },
+      { "label": "Choose a random world", "next_id": "S-017B" }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "S-016B",
+    "title": "Inert",
+    "where_when": "Tower control room",
+    "text": "You touch the pedestal. Nothing happens. It's just a cold, dead stone without its key.",
+    "choices": [
+      { "label": "Place the cube on the pedestal", "next_id": "S-016A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-017",
-    "title": "Scene 17 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Crossroads of Worlds",
+    "where_when": "Tower control room",
+    "text": "The map is a nexus of pathways. One point of light is labeled 'Home.' Countless others are unlabeled and unknown.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-017A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-017B"
-      }
+      { "label": "Select 'Home'", "next_id": "S-018A" },
+      { "label": "Select an unknown destination", "next_id": "S-018B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-017A",
-    "title": "Scene 17A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Destination: Home",
+    "where_when": "Tower control room",
+    "text": "Your thoughts guide your hand. You find a familiar spiral galaxy, a yellow star, a small blue planet. The map highlights it with the word 'Home'.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-018"
-      }
+      { "label": "Select Home", "next_id": "S-018A" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-017B",
-    "title": "Scene 17B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A Leap of Faith",
+    "where_when": "Tower control room",
+    "text": "The possibilities are endless. You close your eyes and point to a random spot on the map. A world with twin suns and purple oceans is selected.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-018"
-      }
+      { "label": "Confirm destination", "next_id": "S-018B" }
     ],
     "exit_line": "Continue to the next numbered scene."
   },
   {
     "scene_id": "S-018",
-    "title": "Scene 18 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Portal",
+    "where_when": "Tower control room",
+    "text": "Once you make your selection, a section of the wall dissolves into a shimmering portal, showing you your destination.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-018A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-018B"
-      }
+      { "label": "Step through", "next_id": "S-019" }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "S-018A",
+    "title": "Homeward Bound",
+    "where_when": "Tower control room",
+    "text": "You select 'Home'. The humming intensifies, and a shimmering portal opens on the far wall. Through it, you see the familiar green grass of the huge field and the phone booth.",
+    "choices": [
+      { "label": "Step through the portal", "next_id": "S-019A" },
+      { "label": "Take the cube and go", "next_id": "S-019B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
-    "scene_id": "S-018A",
-    "title": "Scene 18A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-019"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
     "scene_id": "S-018B",
-    "title": "Scene 18B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A New Adventure",
+    "where_when": "Tower control room",
+    "text": "You confirm the unknown world. A shimmering portal opens, revealing a landscape of bizarre, alien beauty under two suns.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-019"
-      }
+      { "label": "Step into the new world", "next_id": "S-020A" },
+      { "label": "Have second thoughts", "next_id": "S-017A" }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-019",
-    "title": "Scene 19 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Departure",
+    "where_when": "The Portal",
+    "text": "You stand on the threshold between worlds. It is time to make a final choice.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-019A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-019B"
-      }
+      { "label": "Go home", "next_id": "S-019A" },
+      { "label": "Go somewhere else", "next_id": "S-020A" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-019A",
-    "title": "Scene 19A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Return",
+    "where_when": "The huge field",
+    "text": "You step through and find yourself back in the field. The portal closes behind you. The sky is blue. It's over.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-020"
-      }
+      { "label": "The End... for now.", "next_id": "S-001" }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This is an ending that loops back to the beginning."
   },
   {
     "scene_id": "S-019B",
-    "title": "Scene 19B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A Souvenir",
+    "where_when": "The huge field",
+    "text": "You retrieve the cube from the pedestal, which deactivates the portal. You find another way out and return to the field, cube in hand. A key to the universe.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-020"
-      }
+      { "label": "The End... for now.", "next_id": "S-001" }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This is an ending that loops back to the beginning."
   },
   {
     "scene_id": "S-020",
-    "title": "Scene 20 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "A New World",
+    "where_when": "An alien planet",
+    "text": "You step onto alien soil. The adventure is just beginning.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-020A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-020B"
-      }
+      { "label": "The adventure continues...", "next_id": "S-020B" }
     ],
     "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-020A",
-    "title": "Scene 20A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "First Steps",
+    "where_when": "An alien planet",
+    "text": "You take a breath of strange, sweet air. The portal closes behind you, leaving you stranded, but free. The adventure has just begun.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-021"
-      }
+      { "label": "Explore this new world", "next_id": "S-020B" }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This line leads to the next scene."
   },
   {
     "scene_id": "S-020B",
-    "title": "Scene 20B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Twin Suns",
+    "where_when": "A strange beach",
+    "text": "You find yourself on a beach of purple sand, looking out at a turquoise ocean. Two suns, one gold and one silver, hang in the sky.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-021"
-      }
+      { "label": "Follow the coastline", "next_id": "S-021" },
+      { "label": "Head inland towards the jungle", "next_id": "S-022" }
     ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-021",
-    "title": "Scene 21 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-021A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-021B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-021A",
-    "title": "Scene 21A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-022"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-021B",
-    "title": "Scene 21B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-022"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-022",
-    "title": "Scene 22 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-022A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-022B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-022A",
-    "title": "Scene 22A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-023"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-022B",
-    "title": "Scene 22B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-023"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-023",
-    "title": "Scene 23 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-023A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-023B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-023A",
-    "title": "Scene 23A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-024"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-023B",
-    "title": "Scene 23B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-024"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-024",
-    "title": "Scene 24 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-024A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-024B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-024A",
-    "title": "Scene 24A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-025"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-024B",
-    "title": "Scene 24B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-025"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-025",
-    "title": "Scene 25 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-025A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-025B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-025A",
-    "title": "Scene 25A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-026"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-025B",
-    "title": "Scene 25B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-026"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-026",
-    "title": "Scene 26 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-026A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-026B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-026A",
-    "title": "Scene 26A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-027"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-026B",
-    "title": "Scene 26B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-027"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-027",
-    "title": "Scene 27 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-027A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-027B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-027A",
-    "title": "Scene 27A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-028"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-027B",
-    "title": "Scene 27B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-028"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-028",
-    "title": "Scene 28 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-028A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-028B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-028A",
-    "title": "Scene 28A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-029"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-028B",
-    "title": "Scene 28B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-029"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-029",
-    "title": "Scene 29 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-029A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-029B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-029A",
-    "title": "Scene 29A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-030"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-029B",
-    "title": "Scene 29B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-030"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-030",
-    "title": "Scene 30 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-030A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-030B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-030A",
-    "title": "Scene 30A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-030B",
-    "title": "Scene 30B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-030A",
-    "title": "Scene 30A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "The End",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Your story has reached its conclusion."
-  },
-  {
-    "scene_id": "S-030B",
-    "title": "Scene 30B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "The End",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Your story has reached its conclusion."
+    "exit_line": "This is a hook for future scenes beyond S-20B."
   }
 ]

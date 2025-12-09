@@ -1,83 +1,13 @@
-.venv/
-*.pyc
-*.iml
-# ====================================
-# Python
-# ====================================
+# Python cache
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.pdb
-*.egg-info/
-*.egg
-*.manifest
-*.spec
+*.pyc
 
-# Virtual environments
+# Virtual environment
 venv/
-env/
-ENV/
-*.env
-*.venv
+.venv/
 
-# Byte-compiled / cache
-.pytest_cache/
-.mypy_cache/
-.dmypy.json
-.pyre/
-
-# Build / dist
-build/
-dist/
-.eggs/
-wheels/
-
-# Logs
-*.log
-# Coverage
-.coverage
-coverage.xml
-htmlcov/
-
-# Test tools
-.tox/
-.nox/
-
-# Type checkers
-
-.pytype/
-
-# JetBrains more
-*.ipr
-*.iws
-
-# Local env configs
-.envrc
-.env.local
-
-# ====================================
-# PyCharm / JetBrains IDE
-# ====================================
+# PyCharm project settings
 .idea/
-out/
 
-# User-specific
-*.swp
-*.swo
-*.DS_Store
-Thumbs.db
-
-# ====================================
-# Flask / web app
-# ====================================
+# Flask instance folder (holds secret keys, configs)
 instance/
-*.db
-*.sqlite3
-*.sqlite
-
-# ====================================
-# Misc
-# ====================================
-# Ignore backup or temp files
-*~
