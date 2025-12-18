@@ -1,7 +1,6 @@
 [
   {
     "scene_id": "E-001",
-    "sound" : "crazy_chicken",
     "shake": "quake",
     "title": "A Town Called Pidling",
     "where_when": "Pidling Town",
@@ -18,7 +17,7 @@
     "scene_id": "E-001A",
     "title": "Quest Board",
     "where_when": "Pidling Quest Board",
-    "text": "The Quest Board is a living testament to the dangers and opportunities of the world. It’s a massive, scarred slab of oak, so old that the grain has become a relief map of countless nail holes and rips. It's a collage of faded ink and fresh parchment, each tacked on with a mix of care and haste.\n\nThe top of the board is a mess of high-level requests, most of them marked with a blood-red DANGER stamp. Here, you see a notice from the dwarven mining community of Stonefall, offering a king's ransom for anyone brave enough to clear a dragon's nest from the Obsidian Peaks. The paper is torn and scorched at the edges. Next to it, a beautifully calligraphed letter from a noble house requests the retrieval of a stolen artifact from an ancient elven ruin, with the promise of land and title. The reward is immense, but the ink is fading from years of being unfulfilled.\n\nBelow these daunting tasks, the middle of the board is a mix of MEDIUM difficulty quests. A handful of towns are looking for help with bandit problems, their leaders' faces crudely drawn on a wanted poster. A farmer offers a simple reward of gold for the extermination of a giant spider infestation in his cellar. A frantic note from a traveling merchant asks for an escort through the Whispering Woods, a place known for its mischievous pixies and treacherous ground. These quests are for more advanced adventurers.",
+    "text": "The Quest Board is a scarred slab of oak, weathered by countless quests. At the top: blood-red DANGER stamps mark impossible tasks—clear a dragon's nest from the Obsidian Peaks, retrieve a stolen artifact from an elven ruin. High rewards. High stakes.\n\nBelow are MEDIUM difficulty quests: bandit hunts, spider infestations, escorts through dangerous woods. For seasoned adventurers.\n\nAt the bottom, where newcomers begin, are small jobs. Lost pets. Stray livestock. Two fresh notices stand out.",
     "choices": [
       {
         "label": "Quests!",
@@ -38,7 +37,7 @@
         "next_id": "E-003"
         },
       {
-        "label": "Quest 2: The Lizard Horde of Blackfang Keep.",
+        "label": "Quest 2: The Lizard Horde of Blackfang River.",
         "next_id": "E-004",
         "variant": "danger"
       }
@@ -47,7 +46,7 @@
   },
   {
     "scene_id": "E-003",
-    "title": "Quest 1: The Horned Rabbit Menace. ",
+    "title": "Quest 1: The Horned Rabbit Menace.",
     "where_when": "Pidling Quest Board",
     "text": "This parchment is a simple, handwritten note from the town's herbalists. It describes how an unusually aggressive population of horned rabbits has been terrorizing the herb patches just outside of Pidling, disrupting their harvests. The reward is a modest but respectable sum. Olly’s eyes light up. \"Ah, this is perfect for us! It's an easy win, good for a start.\"",
     "choices": [
@@ -60,9 +59,9 @@
   },
   {
     "scene_id": "E-004",
-    "title": "Quest 2: The Lizard Horde of Blackfang Keep.",
+    "title": "Quest 2: The Lizard Horde of Blackfang River.",
     "where_when": "Pidling Quest Board",
-    "text": "This one is a bit more formal, a printed notice from the Guild itself. It details a grave threat: a massive lizard horde led by a lesser dragon-kin has taken over an old dungeon. The reward is substantial, but the note also mentions that several high-level adventurer groups have already failed. Olly gives this quest a wide berth. \"I've heard whispers about that place. It's no joke. Trust me, you're not ready for that.\"",
+    "text": "This one is a bit more formal, a printed notice from the Guild itself. It details a grave threat: a massive lizard horde led by a lesser dragon-kin has taken over an old dungeon. The reward is substantial, but the note also mentions that several high-level adventurer groups have already failed. Olly gives this quest a wide berth. \"I've heard whispers about that place. It's about to be moved up a Tier. Trust me, you're not ready for that.\"",
     "choices": [
       {
         "label": "Rabbit Problems",
@@ -88,14 +87,14 @@
     "scene_id": "E-006",
     "title": "Rabbit Problems",
     "where_when": "Herb Patch, edge of the fields",
-    "text": "You peer through the tangled undergrowth and see a pair of horned rabbits nibbling on the village's prized herbs. They’re larger than you expected, their bodies plump from an easy diet. What stands out most, though, is the formidable horn protruding from each of their foreheads. It's a razor-sharp, spiral horn that they use not for defense, but to deftly pluck leaves from the bushes. It's a strange, unsettling sight.\n\nOlly takes a step back, a proud smile on his face. \"They're all yours,\" he says, giving you a firm but encouraging nod.\n\nWhen you were in town you were given sets of items.",
+    "text": "You peer through the tangled undergrowth and see a pair of horned rabbits nibbling on the village's prized herbs. They’re larger than you expected, their bodies plump from an easy diet. What stands out most, though, is the formidable horn protruding from each of their foreheads. It's a razor-sharp, spiral horn that they use not for defense, but to deftly pluck leaves from the bushes. It's a strange, unsettling sight.\n\nOlly takes a step back, a proud smile on his face. \"They're all yours,\" he says, giving you a firm but encouraging nod.\n\n You have been using gear from the blacksmith for a few days now. What was it again?",
     "choices": [
       {
-        "label": "Sword and Shield",
+        "label": "A Sword and Shield",
         "next_id": "E-007"
       },
       {
-        "label": "Battle Axe",
+        "label": "A Battle Axe",
         "next_id": "E-007A"
       }
     ],
@@ -167,7 +166,7 @@
     "scene_id": "E-009",
     "title": "After the Patch — Proof of Kill",
     "where_when": "Herb Patch perimeter",
-    "text": "As he crouches among the herbs, checking the damage with quick, careful hands, Olly looks up and taps the creature’s hind legs. \"Guild'll want proof,\" he says. \"For vermin and pests it’s the left hind foot—standard tally token. Bigger marks get tusks, tags, or teeth. And if you don’t dry it, your pack’ll smell like a midden in two days.\"\n\nHe pulls out a small, sharp knife and expertly severs the rabbit's horn and one of its hind feet, demonstrating the correct technique. \"See?\" he says, holding up the two items. \"A clean horn, and the foot for the guild. Simple. The bounty is just the start, though. These horns might fetch a good price from a collector, and the meat is good if you want it.\" He places the tokens into a small pouch. \"But the bounty is the easy part. The real prize is the materials. The horns from some creatures, the scales from others. Sometimes the quest is just a way to get you close to the true treasure.\"\n\nHe stands up and gestures to the second rabbit. \"Alright, your turn. Cut close to the joint.\"",
+    "text": "Olly crouches among the herbs and taps the rabbit's hind leg. \"Guild wants proof,\" he says. \"Left hind foot for vermin. Dried, so your pack won't reek.\"\n\nHe pulls out a knife and cleanly severs the horn and hind foot. \"See? Clean and simple. The horns fetch decent coin with collectors, and the meat's worth keeping. But here's the secret—the real prize is the materials. Horns, scales, bones. Most quests are just your ticket to the real treasure.\"\n\nHe hands you the knife. \"Your turn. Cut close to the joint.\"",
     "choices": [
       { "label": "Collect and move on", "next_id": "E-011" }
     ],
@@ -185,7 +184,7 @@
   },
   {
     "scene_id": "E-012",
-    "title": "Tavern on Reward Night",
+    "title": "Tavern at Night",
     "where_when": "The Thistle & Anvil, twilight",
     "text": "You say your goodbye's and thank Olly for their time. You head out into the streets. Pidling’s tavern is a deep breath of warmth and spice after a day in the hedgerow. You head to the place you found lodging when you stumbled into town. The Thistle & Anvil. \n\nA hearth snaps. The stew is thick with barley and carrot; the bread comes with a glossy slab of butter. You pay and find a table near the wall where you can watch the room.\n\nFor a long while you let your shoulders settle, letting the hum of talk and the crackle of fire fill the spaces where worry usually lives.",
     "choices": [
@@ -197,7 +196,7 @@
     "scene_id": "E-013",
     "title": "A Week in Pidling",
     "where_when": "A quiet corner table",
-    "text": "You let the stew’s steam fog your thoughts and walk them backward. A week since the crossroads. A week of odd jobs: milking in the chill dawn, hammering loose panes back into their frames, brushing dust from beams so old they creak when they breathe. Enough work to keep you fed, but not enough to move you forward.\n\nYarick found you in the stable there. He's a mid-level adventurer, easy smile, the worn confidence of someone who has survived danger more than once. “Why only work for townsfolk?” he’d asked, leaning on the stall door. “Become an adventurer in the Guild. Take pay for real work.” You laughed and told him the truth: you couldn’t afford the fee, or the gear. He pressed a purse into your hand. “No strings,” he said, and meant it. “And talk to the smith—tell her Yarick sent you.”\n\nThe recent memory fills you with warmth. \"This place is pretty nice\" You take another spoonful and return to the present.",
+    "text": "A week of odd jobs—dawn milking, fixing frames, dusting ancient beams. Enough to survive, not enough to move forward.\n\nThen Yarick found you. A mid-level adventurer with an easy smile and the scars of survival. \"Why settle for town work?\" he'd asked. \"Join the Guild. Get real pay.\" You'd laughed—you couldn't afford the entrance fee or gear.\n\nHe pressed a purse into your hand. \"No strings. Talk to the smith, tell her Yarick sent you.\"\n\nThat kindness still warms you. You take another spoonful and return to the present.",
     "choices": [
       { "label": "Finish your meal", "next_id": "E-014" }
     ],
@@ -240,7 +239,7 @@
     "scene_id": "E-017",
     "title": "Where the Rats Are",
     "where_when": "Guild counter, morning bustle",
-    "text": "The raspy-voiced receptionist is already working three conversations at once, but her smile hooks when she sees you. “Busy one,” she says, voice warm as ever. You ask where the rats are.\n\n“Down by the river,” she says, tapping the map with a blunt nail. “Old beaver den left to rot—rats patched it up with whatever they could drag home. Rat fur matted into the walls, bones shoved into the gaps. Looks like a child’s fort from a bad dream. Guild’s setting a staging camp just past the treeline. Short hike. Hard work.”\n\nShe eyes you, then glances at Olly. “You’re really interested? You only passed your entrance exam yesterday, and this is a steep jump into a coordinated sweep.” Her brow lifts. “Do you even have a party yet?”",
+    "text": "The raspy-voiced receptionist is already working three conversations at once, but her smile hooks when she sees you. “Busy one,” she says, voice warm as ever. You ask where the rats are.\n\n“Down by the river,” she says, tapping the map with a blunt nail. “Old beaver den left to rot—rats patched it up with whatever they could drag home. Rat fur matted into the walls, bones shoved into the gaps. Looks like a child’s fort from a bad dream. Guild’s setting a staging camp just past the treeline. Short hike. Hard work.”\n\nShe eyes you, “You’re really interested? You only passed your entrance exam yesterday, and this is a steep jump into a coordinated sweep.” Her brow lifts. “Do you even have a party yet?”",
     "choices": [
       { "label": "Check the flier again", "next_id": "E-018" }
     ],
@@ -258,1432 +257,524 @@
   },
   {
     "scene_id": "E-019",
-    "title": "Scene 19 - generic title",
-    "where_when": "generic place and time",
-    "text": "What is your name?\n\n",
+    "title": "Party Selection",
+    "where_when": "Guild staging camp, by the river",
+    "text": "You scan the staging camp. Two groups stand out immediately.\n\nThe first: a tall man with sandy hair grips a long sword, armor worn but maintained. Beside him, a woman with dark braids notches arrows in a leather quiver. A halfling crouches nearby, sharpening twin daggers on a stone. All three move with easy confidence—a seasoned group clearly used to working together. They watch the crowd quietly, assessing.\n\nThe second: three dwarves, each one a barrel of muscle and beard, grip hammers the size of wagon wheels. One shouts something about technique. The second argues back about momentum. The third threatens to settle it \"the old way.\" They're not fighting yet—but they look seconds away.\n\nYou need a party of four. One of these groups needs a hand.",
     "choices": [
       {
-        "label": "Choice A",
-        "next_id": ""
+        "label": "Approach the swordsman, archer, and halfling",
+        "next_id": "E-019A"
       },
       {
-        "label": "Choice B",
-        "next_id": ""
+        "label": "Approach the three dwarves",
+        "next_id": "E-019B"
       }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-020",
-    "title": "Scene 20 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-019A",
+    "title": "The Steady Trio",
+    "where_when": "Guild staging camp, by the river",
+    "text": "You approach the man and woman. The man looks up first, sword resting across his lap. \"Looking to join up?\" he asks, calm and direct. The woman studies you over her arrows. \"We're down one,\" she says. \"You fight?\"\n\nYou learn their names: Kess (the swordsman), Mara (the archer), and Pip (a halfling with twin daggers who glances up with a quick grin). \"We're good. Fast. Don't waste time talking,\" Pip says. They've done three rat hunts already. One more body to make four.\n\nMara nods. Kess just waits for your answer.",
     "choices": [
       {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
+        "label": "Join them",
+        "next_id": "E-020A"
       }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-021",
-    "title": "Scene 21 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-019B",
+    "title": "The Chaotic Trio",
+    "where_when": "Guild staging camp, by the river",
+    "text": "The three dwarves stop arguing when they notice you.\n\n\"Another one!\" shouts the first—Thorg. He's got a scar across his scalp. \"Perfect! We need a fourth!\"\n\n\"Don't recruit on your own!\" snaps the second—Brax, stockier than the others. \"We vote!\"\n\n\"There's nothing to vote on!\" roars the third—Grim, who spits when he talks. \"We're taking anyone with a pulse and hands!\"\n\nThey turn to you, grinning like madmen, hammers resting casually over their shoulders. You've never seen three people have so much fun being furious with each other.",
     "choices": [
       {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
+        "label": "Join them",
+        "next_id": "E-020B"
       }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-022",
-    "title": "Scene 22 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-020A",
+    "title": "Journey to the Den",
+    "where_when": "Trade road, heading north",
+    "text": "The four of you move north along the trade road, then cut into the forest toward the river. Kess sets an easy pace—not rushed, not casual. Mara hums quietly, her eyes tracking the treeline. Pip keeps pace with you, matching your stride.\n\n'Three rat hunts,' Pip says conversationally. 'Each one worse than the last. The den keeps growing.' He twirls a dagger absently. 'But Kess always has a plan.'\n\nKess glances back. 'The plan is simple: get in, clear the nest, get out alive. The Guild pays per kill. We've cleared two litters. This one's bigger.' He pauses at a fork in the trail. 'The old beaver den is just past that ridge. We scout first. No assumptions.'\n\nMara's voice cuts through: 'Movement. Three rats, hundred yards southeast. They're hunting.' She doesn't reach for her bow yet.\n\nYou're here now. The real work begins.",
     "choices": [
+      { "label": "The party proceeds more alert", "next_id": "E-021A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-021A",
+    "title": "The Rat Den",
+    "where_when": "Old beaver den, river confluence",
+    "text": "The beaver den sits half-submerged in mud and river water, the entrance a gaping mouth patched with refuse. Rat fur matted into the walls. Bones wedged into gaps. The smell hits you first—urine and rot and something worse.\n\n'They've been busy,' Kess says quietly. 'See the fresh scratches? Multiple routes in and out. They're using the whole structure.' He crouches at the water line, studying the mud. 'Prints are fresh. Heavy traffic today.'\n\nMara kneels beside him. 'Breeding chamber's probably deeper. That's where the big ones nest.' She looks at you. 'We need a strategy before we go in.'\n\nPip grins, daggers loose in his hands. 'So... fast and hard, or slow and quiet?'\n\nKess nods to Pip, then to you. 'Your call influences ours. What's your read?'",
+    "choices": [
+      { "label": "Plan the approach", "next_id": "E-022A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-022A",
+    "title": "Strategy Selection",
+    "where_when": "Den entrance, planning",
+    "text": "Kess and Mara wait for your answer. Pip leans against the den entrance, completely at ease.\n\nYou think about the path ahead. The den is a warren—multiple exits, tight spaces, plenty of places for rats to scatter or ambush. You could go in hard and fast, overwhelm them before they organize. Or you could move carefully, pick them apart quietly, control the pace.\n\n'Fast entry catches them off-guard,' Mara says, reading your hesitation. 'We hit hard, they panic. Quick kills.'\n\n'Quiet entry lets us pick targets,' Kess counters. 'Slower, but we control everything. Less chaos.'\n\nPip grins. 'Either way, we're walking out with coin. Let's just pick one.'",
+    "choices": [
+      { "label": "Go in fast and hard", "next_id": "E-023A-FAST" },
+      { "label": "Move slow and quiet", "next_id": "E-023A-QUIET" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-023A-FAST",
+    "title": "Aggressive Entry",
+    "where_when": "Den entrance",
+    "text": "You nod to Kess. 'Fast and hard. Hit them before they scatter.'\n\nKess grins—a rare expression. 'I like it. Mara, up high. Cover the secondary exits.' She's already moving, bow ready. 'Pip, left flank. I'll take the center. You're with me.'\n\nPip draws both daggers and lets out a sharp whistle. It's the signal.\n\nYou charge into the den.\n\nThe entrance erupts in chaos. Three rats, massive and mean, are at the water's edge. They shriek—a sound like tearing metal. They scramble, but you're faster. Kess is a wall of controlled violence, sword flashing. The nearest rat tries to flee deeper. You cut it off.\n\nThis is going to be bloody and quick.",
+    "choices": [
+      { "label": "Fight", "next_id": "E-024A-FAST" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-023A-QUIET",
+    "title": "Silent Approach",
+    "where_when": "Den entrance",
+    "text": "You shake your head. 'Quiet. Pick our shots.'\n\nKess nods, sword lowered. 'Smart. Mara, arrows from above. Silent kills first.' She's already scaling a tree, bow in hand. 'Pip, with me at the entrance. Slow and careful.'\n\nPip's grin fades to focus. Both daggers are ready, held low.\n\nThe four of you move like breath—silent, methodical. At the den's edge, Pip spots movement. A single rat, feeding on carrion. It hasn't noticed you yet.\n\nKess glances back. A hand signal. Pip moves like water, fast and silent. The rat doesn't even squeak—one clean dagger thrust, and it's done.\n\nYou're inside now. The killing is just beginning, but on your terms.",
+    "choices": [
+      { "label": "Proceed carefully", "next_id": "E-024A-QUIET" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024A-FAST",
+    "title": "Rat Combat - Full Chaos",
+    "where_when": "Inside the den",
+    "text": "Blood and fur explode. The first rat goes down hard under Kess's blade. Mara's arrow finds the second mid-leap. The chaos is deafening.\n\nThe third—largest and meanest—turns toward you with black fury in its eyes and charges straight at you. Teeth bared. Claws forward.\n\nKess supports your flank. Mara picks off stragglers from above. Pip darts in for finishing strikes. The den shakes with the sound of combat.",
+    "choices": [],
+    "gated_choices": [
       {
-        "label": "Choice A",
-        "next_id": ""
+        "label": "Brace with shield and riposte",
+        "next_id": "E-024A-FAST-SHIELD",
+        "when": { "visited_any": ["E-007"] }
       },
       {
-        "label": "Choice B",
-        "next_id": ""
+        "label": "Dodge and strike from the blind side",
+        "next_id": "E-024A-FAST-DODGE",
+        "when": { "visited_any": ["E-007"] }
+      },
+      {
+        "label": "Swing through with full power",
+        "next_id": "E-024A-FAST-SWING",
+        "when": { "visited_any": ["E-007A"] }
+      },
+      {
+        "label": "Step clear and let it pass",
+        "next_id": "E-024A-FAST-CLEAR",
+        "when": { "visited_any": ["E-007A"] }
       }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-023",
-    "title": "Scene 23 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-024A-FAST-SHIELD",
+    "title": "Shield Impact",
+    "where_when": "Inside the den",
+    "text": "You brace. The rat slams into your shield with bone-crushing force. The impact sends you sliding backward, boots scraping stone. The horn bites deep into the wood—stuck fast.\n\nFor a split second, the rat is trapped, thrashing wildly to free itself. That's all you need.\n\nYou angle the shield rim and drive your sword into its neck. The blade finds the artery. Blood sprays hot across your face. The rat goes rigid, then limp.\n\nKess grins. 'Brutal. No hesitation.'\n\nYou push the corpse aside, breathing hard.",
     "choices": [
+      { "label": "Move forward", "next_id": "E-025A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024A-FAST-DODGE",
+    "title": "Clean Sidestep",
+    "where_when": "Inside the den",
+    "text": "You pivot hard to the left. The rat rockets past, claws scraping empty air. Its momentum carries it straight into a support beam with a sickening crunch.\n\nStunned. Dazed. Vulnerable.\n\nYou don't hesitate. You strike from its blind side, your blade severing its spine with one clean stroke. The rat goes limp instantly, paralyzed.\n\nPip grins from across the chamber. 'That's how you end it!'\n\nYou're already moving toward the next threat, adrenaline flooding your system.",
+    "choices": [
+      { "label": "Move forward", "next_id": "E-025A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024A-FAST-SWING",
+    "title": "Axe Arc",
+    "where_when": "Inside the den",
+    "text": "You meet it head-on. Your axe comes up in a tight, controlled arc, catching the rat mid-leap. The blade bites deep into its neck, nearly severing the head. The impact is catastrophic. The rat crashes into the chamber wall, twitching once before going still.\n\nBefore it can twitch again, you're already moving. One more swing into its corpse just to be sure. The rat doesn't get back up.\n\nKess continues forward, unfazed. 'Savage. I like it.'\n\nYou pull your axe free and move with the trio deeper into the chaos.",
+    "choices": [
+      { "label": "Move forward", "next_id": "E-025A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024A-FAST-CLEAR",
+    "title": "Momentum Used",
+    "where_when": "Inside the den",
+    "text": "You step aside with practiced ease. The rat's charge carries it past you, its own momentum a weapon against it. It crashes into the far wall, stunning itself.\n\nYou step to its blind side and drive your axe through its ribs with maximum force. The blade punches clean through to the other side. The rat convulses and collapses.\n\nMara calls from above. 'Vicious!' Her arrow takes another rat mid-scramble.\n\nYou're in rhythm now, moving with the trio like you've always been part of them.",
+    "choices": [
+      { "label": "Move forward", "next_id": "E-025A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024A-QUIET",
+    "title": "Rat Combat - Silent Ambush",
+    "where_when": "Inside the den",
+    "text": "The den erupts anyway. Mara's arrow whistles past, another rat falls silently. Two more emerge from the darkness, confused and angry. They spot you.\n\nThe largest rat lunges toward you. Teeth and claws. You have a split second to react.\n\nKess supports your flank with steady efficiency. Mara picks off stragglers from above. Pip darts in for finishing strikes on downed rats. The den is a storm of combat.",
+    "choices": [],
+    "gated_choices": [
       {
-        "label": "Choice A",
-        "next_id": ""
+        "label": "Brace with shield and riposte",
+        "next_id": "E-024A-QUIET-SHIELD",
+        "when": { "visited_any": ["E-007"] }
       },
-        {
-        "label": "Choice B",
-        "next_id": ""
+      {
+        "label": "Dodge and strike from the blind side",
+        "next_id": "E-024A-QUIET-DODGE",
+        "when": { "visited_any": ["E-007"] }
+      },
+      {
+        "label": "Swing through with full power",
+        "next_id": "E-024A-QUIET-SWING",
+        "when": { "visited_any": ["E-007A"] }
+      },
+      {
+        "label": "Step clear and let it pass",
+        "next_id": "E-024A-QUIET-CLEAR",
+        "when": { "visited_any": ["E-007A"] }
       }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-024",
-    "title": "Scene 24 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-024A-QUIET-SHIELD",
+    "title": "Shield Block",
+    "where_when": "Inside the den",
+    "text": "You raise your shield and brace. The rat crashes into you with surprising force, but your stance holds. The horn lodges in the wood—stuck.\n\nWith the rat pinned, you slide your blade in smoothly, severing its spine with surgical precision. It goes limp instantly, all fight drained.\n\nKess keeps moving, barely breaking stride. 'Perfect. Efficient.'\n\nYou pull your shield free and move forward, every motion precise and controlled.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Move forward", "next_id": "E-025A" }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-025",
-    "title": "Scene 25 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-024A-QUIET-DODGE",
+    "title": "Precise Evasion",
+    "where_when": "Inside the den",
+    "text": "You shift your weight with minimal motion. The rat's charge passes inches from your face, its claws finding only empty air. It continues forward, momentum unstoppable, and slams into the den wall.\n\nYou're already moving. Your blade finds its neck, cutting deep. The rat dies without a sound, falling limp.\n\nPip glances over and nods. The three of you continue in near-silent coordination, like a single organism.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Move forward", "next_id": "E-025A" }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-026",
-    "title": "Scene 26 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-024A-QUIET-SWING",
+    "title": "Controlled Power",
+    "where_when": "Inside the den",
+    "text": "You don't panic. You meet the rat mid-charge with your axe in a measured, powerful swing. The blade cleaves through its neck with surgical precision. The impact is decisive—the rat is decapitated mid-leap, falling instantly.\n\nYou don't need a follow-up swing. The work is done.\n\nKess moves past without comment, but you catch his eye. There's approval there. This is exactly the kind of controlled aggression the trio respects.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Move forward", "next_id": "E-025A" }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-027",
-    "title": "Scene 27 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-024A-QUIET-CLEAR",
+    "title": "Perfect Pivot",
+    "where_when": "Inside the den",
+    "text": "You pivot smoothly, reading the charge before it fully commits. The rat flies past, its own momentum carrying it straight into a support column. The impact winds it.\n\nYou step to its blind side, axe raised, and bring it down with controlled precision. Your blade severs its spine. The rat collapses instantly, all four limbs going slack.\n\nMara calls softly from above. 'Flawless.' Kess nods approvingly. Pip is already moving to the next target.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Move forward", "next_id": "E-025A" }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-028",
-    "title": "Scene 28 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-025A",
+    "title": "Aftermath - Trophies",
+    "where_when": "Inside the den",
+    "text": "The den falls silent. Three rats down. No one's bleeding badly—just scratches and bruises.\n\nKess wipes his blade clean on a rag. 'Good work,' he says to you, then to the group. 'Mara, check the deeper passages. Pip, start collecting trophies.'\n\nPip is already moving, daggers resheathed, pulling out a collection kit. He works with surgical precision—left hind feet, tails, teeth. 'Six kills total,' he calls out. 'Breeding chamber's empty. They scattered when we hit them.'\n\nMara returns from deeper in, her expression changed. 'There's something back there. Bigger. Not just a rat.' She exchanges a look with Kess.\n\nKess crouches beside you, studying the dead rats. 'We're making good coin today. But that?' He nods toward where Mara pointed. 'That's the real question. Keep going or head back?'\n\nPip grins. 'I say we finish what we started.'",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Continue deeper", "next_id": "E-026A" }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-029",
-    "title": "Scene 29 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-026A",
+    "title": "Deeper into the Den",
+    "where_when": "Lower passages",
+    "text": "The group moves deeper. The passages get narrower, wetter. Rat tracks everywhere—fresh ones. The smell gets worse.\n\nMara signals a stop. Ahead, a larger chamber. The floor is slick with filth. Bones are piled in the corners—not rat bones. Larger. Deer, maybe. Something with bulk.\n\n'There,' Kess whispers. Movement in the chamber. A shadow that's too big to be a normal rat.\n\nPip crouches low. 'That's not a scout. That's a mother. Or a king.'\n\nThe shadow shifts. Eyes catch the dim light filtering down. Red. Hungry. Intelligent.\n\nThe temperature in the den seems to drop. This is the real reason the Guild put out a triple-pay contract.",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Face what's coming", "next_id": "E-027A" }
     ],
     "exit_line": ""
   },
-    {
-    "scene_id": "E-030",
-    "title": "Scene 30 - generic title",
-    "where_when": "",
-    "text": ",Your text (story) goes here.",
+  {
+    "scene_id": "E-027A",
+    "title": "The Rat King",
+    "where_when": "Boss chamber",
+    "text": "It emerges from the shadows fully.\n\nThe rat is massive—four feet long, scarred and feral. Its fur is matted with blood and filth. Its eyes track your every movement with predatory focus. Teeth like daggers. Claws that have gutted bigger things than you.\n\nThis is what's been leading them. Breeding them. Growing their numbers.\n\nKess draws his sword slowly. 'The Rat King. That's why we're here.' His voice is steady, but you hear the weight behind it.\n\nMara has her bow drawn, arrow notched. Pip's daggers are ready. They've seen this before.\n\nThe rat opens its maw and shrieks—a sound that echoes through the entire den. All around you, smaller rats respond. Movement. Scurrying. They're gathering.\n\n'This is the moment,' Kess says quietly. 'Fast strike to end it quick, or tactical setup to isolate it? Your call influences ours.'",
     "choices": [
-      {
-        "label": "Choice A",
-        "next_id": ""
-      },
-      {
-        "label": "Choice B",
-        "next_id": ""
-      }
+      { "label": "Aggressive final strike", "next_id": "E-028A-RISKY" },
+      { "label": "Set up a diversion", "next_id": "E-028A-DIVERSION" }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": ""
   },
-
+  {
+    "scene_id": "E-028A-RISKY",
+    "title": "Aggressive Final Strike",
+    "where_when": "Boss chamber",
+    "text": "You nod to Kess. 'Go hard. End it now.'\n\nKess grins. 'My kind of thinking.' He charges forward with you at his side. Mara's arrows rain down, suppressing the smaller rats. Pip flanks left, daggers ready.\n\nThe Rat King meets you head-on. The collision is violent. Your weapons clash against tooth and claw. Kess is a blur of steel, driving the beast back. You press hard, relentless. Blood sprays.\n\nThe King staggers. One moment of weakness. That's all you need.\n\nKess drives his blade home. The massive rat convulses and falls, thrashing once before going still.\n\nThe smaller rats scatter. Silence crashes over the den.\n\nPip lets out a whoop. 'That's how you do it! One clean strike!'\n\nMara lowers her bow, exhaling slowly. 'Fast and brutal. I like it.'\n\nKess wipes his blade. 'Good instincts. You fought like you'd been with us for years.' He extends his hand to help you up.\n\nYou did it.",
+    "choices": [
+      { "label": "Continue", "next_id": "E-029A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-028A-DIVERSION",
+    "title": "Diversion and Isolation",
+    "where_when": "Boss chamber",
+    "text": "You lean close to Kess. 'Isolate it. One clean kill.'\n\nKess nods. 'Smart. Mara, draw its attention. Pip, get to its flank.' He gestures to you. 'We split its focus.'\n\nMara's arrow strikes the Rat King's shoulder. It shrieks and charges toward her, exactly as planned. Pip darts in from the side, daggers slashing. The beast spins, confused by multiple threats.\n\nIn that moment of chaos, you slip behind. Kess moves with you, synchronized.\n\nThe King realizes too late. It's surrounded. Isolated. Trapped.\n\nKess and you strike together—a coordinated strike that the beast can't counter. Your blade finds the gap between ribs. Kess's sword follows through. The massive rat collapses.\n\nThe smaller rats flee into the darkness.\n\nSilence.\n\nPip grins, breathing hard. 'Textbook. Perfect coordination.'\n\nMara lowers her bow. 'Clean execution. No wasted effort.'\n\nKess clasps your shoulder. 'You moved like you understood the plan before we said it. That's rare.' He looks at you with new respect.\n\nYou did it.",
+    "choices": [
+      { "label": "Continue", "next_id": "E-029A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-029A",
+    "title": "Victory and Departure",
+    "where_when": "Boss chamber, then guild entrance",
+    "text": "The Rat King falls. Finally. Blood and filth cover the chamber.\n\nKess is already moving, checking the body. 'There.' He extracts a massive eye—the size of a plum—from the dead rat's socket. It's dark and intelligent even in death. Proof.\n\nHe hands it to you. 'You earned this.'\n\nThe walk back to Pidling is quiet. At the guild entrance, Kess stops. 'We're heading home. Trodden Hollow. Need rest after this one.' Mara nods. Pip extends his hand.\n\n'You fought well,' Kess says simply. 'Better than we expected from a newcomer. If you're ever in Trodden Hollow, find us.'\n\n'We'll work together again,' Mara adds.\n\nPip grins. 'Count on it.'\n\nThey leave. You watch them go, then turn to the guild doors.",
+    "choices": [
+      { "label": "Enter the guild", "next_id": "E-030A" }
+    ],
+    "exit_line": ""
+  },
   {
     "scene_id": "E-030A",
-    "title": "Scene 30A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Guild Recognition",
+    "where_when": "Adventurers' Guild hall",
+    "text": "You step inside. The receptionist looks up and immediately knows. Her smile widens.\n\n'The Rat King?' she asks.\n\nYou place the massive eye on the counter. Her whistle cuts through the hall. Conversations pause. Heads turn.\n\nShe slides two items across the scarred wood: a small brass token inscribed with the Guild's seal, and a leather-bound adventurer's certificate—your official seal. Proof that you're no longer a recruit. You're one of them now.\n\n'Full adventurer status,' she says warmly. 'And the payment for confirmed kills. Generous haul today.'\n\nShe slides a heavy purse across. Your share of the bounty.\n\n'There's something else,' she adds, producing an envelope. 'Left by your party. Said to give it to you when you came back.'",
     "choices": [
+      { "label": "Open the envelope", "next_id": "E-031A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-031A",
+    "title": "A Message from Friends",
+    "where_when": "Guild hall, by the counter",
+    "text": "You break the seal and unfold the letter.",
+    "choices": [],
+    "gated_choices": [
       {
-        "label": "Continue",
-        "next_id": ""
+        "label": "Read the note",
+        "next_id": "E-031A-FAST",
+        "when": { "visited_any": ["E-023A-FAST"] }
+      },
+      {
+        "label": "Read the note",
+        "next_id": "E-031A-QUIET",
+        "when": { "visited_any": ["E-023A-QUIET"] }
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-031A-FAST",
+    "title": "Words from Kess",
+    "where_when": "Guild hall",
+    "text": "Handwritten in Kess's steady script:\n\n'You had fire today. When the King charged, you didn't hesitate. You met it head-on like a veteran. That takes guts most adventurers never find.\n\nIf you keep that fire and live long enough to sharpen it, you'll be unstoppable.\n\nFind us in Trodden Hollow when you're ready for bigger contracts. We'll be waiting.\n\n—Kess, Mara, Pip'\n\nThe weight of the letter feels heavier than paper should. These are people you've fought beside. These are people you'll see again.",
+    "choices": [
+      { "label": "Move forward", "next_id": "E-032A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-031A-QUIET",
+    "title": "Words from Kess",
+    "where_when": "Guild hall",
+    "text": "Handwritten in Kess's steady script:\n\n'You read the moment perfectly today. While others would've panicked, you stayed calm and set up for the kill. That kind of tactical thinking is rarer than raw power.\n\nHold onto that. It'll keep you alive longer than any sword.\n\nFind us in Trodden Hollow when you're ready for bigger contracts. We'll be waiting.\n\n—Kess, Mara, Pip'\n\nThe weight of the letter feels heavier than paper should. These are people you've fought beside. These are people you'll see again.",
+    "choices": [
+      { "label": "Move forward", "next_id": "E-032A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-032A",
+    "title": "A New Chapter",
+    "where_when": "Guild hall, standing by the counter",
+    "text": "You slip the letter into your pack, nestled next to the giant rat eye. The brass token is warm in your palm. The adventurer's seal rests in its leather case.\n\nYou are no longer a newcomer. You are no longer untested.\n\nAround you, the guild hums with life. Adventurers planning their next runs. Recruits studying the quest board. The receptionist already calling out new contracts.\n\nYou've earned your place. Now the real work begins.",
+    "choices": [
+      { "label": "What comes next?", "next_id": "E-END-TRAVIS" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-END-TRAVIS",
+    "title": "THE END",
+    "where_when": "Pidling, Adventurers' Guild",
+    "text": "Your story in Pidling is just beginning.\n\nFrom a nameless wanderer to a recognized adventurer. From fear to confidence. From alone to surrounded by friends.\n\nYou have proven yourself. You have earned the respect of the Adventurers guild. You have defeated the Rat King and made allies.\n\n They will be waiting for you in Trodden Hollow.\n\nBut that is a story for another time.\n\n—THE END—\n\nThank you for playing Travis's story. Your choices shaped this adventure. We hope you'll return to continue the journey.",
+    "choices": [],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-020B",
+    "title": "Journey with the Lads",
+    "where_when": "Trade road, heading north",
+    "text": "The four of you head north together. Immediately, the arguing begins.\n\n'I'm leading!' Thorg announces.\n\n'Absolutely not,' Brax shoots back. 'Last time you led, we ended up in a goat pen.'\n\n'That wasn't my fault!' Thorg protests.\n\nGrim spits and grins. 'It was entirely your fault. You thought the sign said \"adventure\" not \"livestock.\"'\n\nThey all laugh. You're laughing too. These three argue like they've been fighting their whole lives—which, given they're dwarves, they probably have.\n\nThorg claps you on the back so hard you nearly stumble. 'So what's your name, friend? You're with us now. That means you're family. Family has good names.'\n\nYou tell them. \"{{player.name}}\".\n\n'Better than Brax's name anyway,' Grim adds, spitting on the ground. 'Brax sounds like a cough.'\n\n'Your mother sounds like a cough,' Brax retorts without missing a beat.\n\nThey keep bickering all the way to the den. But somehow, you know kind of love it.",
+    "choices": [
+      { "label": "Arrive at the den", "next_id": "E-021B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-021B",
+    "title": "The Den Scout",
+    "where_when": "Old beaver den, river confluence",
+    "text": "The den looks exactly as described. Nasty. Smelly. Rat fur and bones everywhere.\n\nThorg crouches down and examines the entrance. 'Well, this is disgusting.'\n\n'Your face is disgusting,' Grim says cheerfully.\n\n'That was terrible and you should feel bad,' Brax adds, but he's grinning.\n\nThorg stands up and looks at the den seriously for a moment. 'Actually,' he says, his voice dropping, 'this is worse than the Guild said. Look at those claw marks. Deep tunnels. Multiple routes.' He glances at you. 'These three aren't ordinary rats.'\n\nFor just a second, all the joking drops. All three dwarves are suddenly laser-focused, reading the den like a book.\n\nThen Grim spits and the moment breaks. 'Well, we knew that already, you beard-faced idiot. Let's go bash some BIGGER rats!'\n\nThorg grins. 'Now that's what I'm talking about.'",
+    "choices": [
+      { "label": "Plan the approach", "next_id": "E-022B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-022B",
+    "title": "Strategy Discussion",
+    "where_when": "Den entrance, planning",
+    "text": "All three sit down and get serious. Well, mostly serious.\n\n'We go in as one,' Thorg says. 'Hammers lead, we clear everything in our path.'\n\n'That's just an excuse for you to hit things,' Brax grumbles.\n\n'And what's wrong with that?!' Thorg shoots back.\n\n'Nothing,' Grim says, spitting. 'It works. We're just saying you like it.'\n\nThorg grins. 'I really do.'\n\nBrax rolls his eyes. 'Right. So hammers first, clearing rooms. We stay tight, we don't split up, and if anything big shows itself, we all three hit it until it stops moving.'\n\n'That's the dwarven strategy for everything,' Grim notes.\n\n'It's kept us alive this long,' Thorg counters.\n\nThey look at you. 'You with us, friend? Simple plan: go in together, hit hard, don't die.'\n\nYou nod. There's something reassuring about their simplicity. And their absolute confidence.\n\n'Good lad!' Thorg claps you on the back again. 'Let's go kill some rats.'",
+    "choices": [
+      { "label": "Enter the den together", "next_id": "E-023B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-023B",
+    "title": "Into the Den",
+    "where_when": "Den entrance",
+    "text": "The four of you march into the den like you own the place. Which, to be fair, is the attitude that gets things killed.\n\n'Hammers lead!' Thorg shouts, and all three dwarves raise their weapons.\n\nRats scatter. Literally everywhere. The first wave comes at you in a panicked rush.\n\nBrax swings his hammer in a wide arc. 'TAKE THIS, YOU FURRY LITTLE—'\n\n'Watch your swing!' Grim yells, spitting.\n\n'I AM watching it!' Brax shoots back.\n\nThorg just grins and wades in. 'Less talking, more hitting!'\n\nAnd they do. Hammers connect with rats. Rats fly. It's chaos, but it's *effective* chaos. These three have done this before.\n\nYou realize they're genuinely terrifying when they're serious. Funny, but terrifying.",
+    "choices": [],
+    "gated_choices": [
+      {
+        "label": "Join in with shield and blade",
+        "next_id": "E-023B-SHIELD",
+        "when": { "visited_any": ["E-007"] }
+      },
+      {
+        "label": "Show them what your axe can do!",
+        "next_id": "E-023B-AXE",
+        "when": { "visited_any": ["E-007A"] }
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-023B-SHIELD",
+    "title": "Shield and Fury",
+    "where_when": "Den entrance, first combat",
+    "text": "You raise your shield and wade in alongside them. A rat lunges—you catch it on the shield and Thorg's hammer obliterates it.\n\n'HAH! Shield work!' Thorg roars approvingly. 'Solid stance!'\n\n'Don't get cocky!' Brax yells, swinging past you. 'These things bite!'\n\nOne does. Right at your ankle. You stomp it hard, blade following through. Dead rat.\n\n'Nice footwork!' Grim shouts, spitting on a corpse.\n\nFor the next few minutes, it's a dance. You learn fast: hold the line with your shield, let the dwarves use that stability to swing wider. When they need a moment to reset, you step in with your blade. It's not perfect, but it works.\n\n'You know,' Thorg says between strikes, 'I think you might actually be good at this!'\n\nThen the first chamber opens up. Rats everywhere. But you're ready now.",
+    "choices": [
+      { "label": "Continue", "next_id": "E-024B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-023B-AXE",
+    "title": "Axe and Hammer",
+    "where_when": "Den entrance, first combat",
+    "text": "You bring your axe up in a tight arc as a rat lunges. The blade catches it mid-leap. It's all momentum and power.\n\n'THERE WE GO!' Thorg roars. 'AXE WORK! I LIKE IT!'\n\n'Show off,' Brax grumbles, but he's grinning.\n\nYou swing again—another rat goes flying. The weight of the axe is familiar now, and the dwarves seem to respect the form.\n\n'Swing's clean,' Grim notes between strikes. 'You've practiced.'\n\nThorg laughs. 'Of course they have. Look at that arc!'\n\nFor the next few minutes, you're in rhythm with them. Axe, hammer, hammer, axe. The dwarves adjust their positioning to complement your weapon. When you swing wide, they cover tight. When you go low, they take the high shots.\n\nIt's like they've fought alongside axe users their whole lives. Probably have.\n\n'You know what?' Thorg says, breathing hard. 'You might actually be perfect for this.'\n\nThen the first chamber opens up. Rats everywhere. But you're ready now.",
+    "choices": [
+      { "label": "Continue", "next_id": "E-024B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024B",
+    "title": "The First Chamber",
+    "where_when": "Inside the den",
+    "text": "Rats go down left and right. Not elegantly, but definitely finally.\n\nThorg kicks a rat corpse aside. 'How many's that?'\n\n'Seventeen,' Brax calls out.\n\n'I counted eighteen,' Grim says, spitting on a rat.\n\n'You can't count past your beard,' Brax grumbles.\n\n'Your beard is a lie!' Grim retorts.\n\nThey're bickering while looting bodies, which is somehow both ridiculous and oddly endearing. These three are basically a family that fights like they hate each other but would die for one another.\n\nThorg looks at you. 'You holding up okay, friend?'\n\nThere's genuine concern there, under the chaos.",
+    "choices": [
+      { "label": "\"Great!\" You come to a rest with the others", "next_id": "E-025B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-025B",
+    "title": "Trophies and Banter",
+    "where_when": "Chamber depths",
+    "text": "Grim is handling trophies.\n\nGrim crouches and starts collecting rat tails and feet with disturbing cheerfulness. 'These'll fetch decent coin.'\n\n'Don't forget the teeth,' Thorg adds.\n\n'I'm not an amateur,' Grim snaps, spitting.\n\nBrax counts on his fingers. 'So that's... a lot of rats dead.'\n\n'A LOT of rats dead,' Thorg agrees happily.\n\nGrim stands up, grinning. 'And there's more coming. I can hear them deeper in.'\n\nAll three dwarves tense. The joking drops for a second.\n\n'How much more?' you ask.\n\nThorg looks toward the deeper passages. 'Enough that we're probably finding the reason we got paid triple.'\n\nThe banter resumes. 'Well, let's go find it then!' Grim shouts.",
+    "choices": [
+      { "label": "Head deeper", "next_id": "E-026B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-026B",
+    "title": "Larger Chamber",
+    "where_when": "Deep passages",
+    "text": "The passage opens into a massive chamber. Bones everywhere. Not rat bones.\n\nThorg stops dead. 'Well. That's new.'\n\n'That's a deer skeleton,' Brax says quietly.\n\n'Several deer skeletons,' Grim adds, also quiet.\n\nThe three dwarves exchange looks. All the joking stops. They move as one unit now, hammers ready, eyes sharp.\n\nA shadow moves in the far corner of the chamber.\n\nAll three go very, very still.\n\n'That,' Thorg whispers, 'is not just a rat.'\n\n'And its more than Bigger,' Grim breathes.\n\n'It's Huge!,' Brax finishes.\n\nThe shadow shifts again. Two red eyes catch the dim light filtering down.\n\nThorg draws a breath and grins. 'Here we go lads.'\n\nThey look to you. Silent question. You in?\n\nYou nod.\n\n'Good,' Thorg says. 'Because I think we found our Rat King.'",
+    "choices": [
+      { "label": "Face the King", "next_id": "E-027B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-027B",
+    "title": "The Rat King Emerges",
+    "where_when": "Boss chamber",
+    "text": "It emerges from the shadows.\n\nFor just a moment, even the dwarves lose their banter.\n\nIt's massive. Ten feet long. Fat. Scarred. Mean. The absolute apex of rat-kind, and it's looking at you like you're lunch.\n\n'Well,' Grim says slowly. 'That's bigger than I expected.'\n\n'A lot bigger,' Brax adds.\n\nThorg just grins. 'Perfect.'\n\nThe Rat King opens its maw and shrieks—a sound like tearing metal.\n\nAll three dwarves raise their hammers in perfect sync.\n\n'FOR GLORY!' Thorg roars.\n\n'FOR COIN!' Grim shouts.\n\n'FOR NOT HAVING TO LISTEN TO THESE TWO ARGUE ANYMORE!' Brax yells, and then charges.\n\nThey move as one. Not in silence like professionals. They're YELLING. Hammers swinging. Coordinated chaos.\n\nAnd somehow, watching them fight is like watching a perfectly choreographed dance—if the dance involved comically large hammers and screaming.",
+    "choices": [
+      { "label": "Join the fight", "next_id": "E-028B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-028B",
+    "title": "Hammers and Glory",
+    "where_when": "Boss chamber",
+    "text": "The Rat King meets them halfway. The impact shakes the chamber.\n\nThorg and Brax swing their hammers in a devastating one-two combo. Grim slides underneath, driving upward with a perfect strike.\n\n'HAHAHAHA!' Thorg is laughing while fighting.\n\n'Focus!' Brax yells, but he's grinning too.\n\nThe King fights back. It's fast, vicious, smart. But it's one against three who've fought like a unit for years.\n\nEvery swing is coordinated. When Thorg pins it left, Brax is ready on the right. When Grim goes low, they have his back.\n\nYou see it now—the reason they argue constantly. It's not spite. It's love. The kind of rapport that only comes from absolute trust.\n\nThe Rat King staggers. One final coordinated strike—all three hammers connect at once—and it's done.\n\nThe King falls.\n\nThe dwarves stand there, breathing hard, covered in filth and rat blood.\n\nThen Thorg starts laughing. Really laughing.\n\n'That,' he roars, 'was MAGNIFICENT!'\n\n'That was expensive on my hammer!' Brax shoots back, but he's laughing too.\n\n'Your hammer's fine,' Grim says, spitting. 'Unlike your face.'\n\nThorg claps you on the back so hard you stumble. 'You did good, friend. Real good. You're one of us now.'\n\nThere's no question in it. Just fact.",
+    "choices": [
+      { "label": "Collect the prize", "next_id": "E-029B" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-029B",
+    "title": "Victory Lap",
+    "where_when": "Boss chamber",
+    "text": "Thorg extracts the giant rat eye from the corpse. He holds it up like a trophy.\n\n'Behold! The Prize of Pidling!'\n\n'That's disgusting,' Brax says.\n\n'That's beautiful,' Grim counters, spitting on the ground in what might be respect.\n\nThorg hands the eye to you. 'Yours friend. You earned it.'\n\nYou didn't, actually. It was all three of them. But they're giving it to you anyway.\n\n'Come on lads,' Thorg says, already heading toward the exit. 'We've got coin to collect and ales to drink. In that order.'\n\n'Ales first,' Brax argues.\n\n'Coin first,' Grim insists.\n\n'ALES FIRST!' all three roar at once, and you realize they'd argue about this even if they agreed.\n\nBut they're all moving toward the exit. Together.",
+    "choices": [
+      { "label": "Return to guild", "next_id": "E-030B" }
+    ],
+    "exit_line": ""
   },
   {
     "scene_id": "E-030B",
-    "title": "Scene 30B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Guild Reception",
+    "where_when": "Adventurers' Guild hall",
+    "text": "You burst through the guild doors, the three dwarves loudly announcing your arrival.\n\n'WE KILLED THE RAT KING!' Thorg bellows.\n\nThe receptionist looks up and immediately bursts out laughing. She knows these three.\n\n'You're alive?'\n\n'We're always alive,' Brax protests.\n\n'Last time you came in here you were on fire,' she says.\n\n'Coincidence,' Grim snaps, but he's grinning.\n\nYou place the giant rat eye on the counter. The whole hall goes quiet.\n\nThen the receptionist whistles.\n\n'Seems like your aFull adventurer now' she says to you. 'Im happy these three idiots kept you safe.' She slides the tokens and papers across, plus a hefty purse.\n\n'We're not idiots,' Brax says.\n\n'We're the best idiots,' Thorg agrees.\n\n'We're idiot legends,' Grim finishes.\n\nThey clink their tankards together, celebrating like they just won a war.\n\nAnd somehow, you feel like you did.",
     "choices": [
-      {
-        "label": "Continue",
-        "next_id": ""
-      }
+      { "label": "Note from Thorg", "next_id": "E-031B" }
     ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "E-031",
-    "title": "Scene 31 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-032",
-    "title": "Scene 32 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-033",
-    "title": "Scene 33 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-034",
-    "title": "Scene 34 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-035",
-    "title": "Scene 35 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-036",
-    "title": "Scene 36 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-037",
-    "title": "Scene 37 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-038",
-    "title": "Scene 38 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-039",
-    "title": "Scene 39 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-040",
-    "title": "Scene 40 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-041",
-    "title": "Scene 41 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-042",
-    "title": "Scene 42 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-043",
-    "title": "Scene 43 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-044",
-    "title": "Scene 44 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-045",
-    "title": "Scene 45 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-046",
-    "title": "Scene 46 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-047",
-    "title": "Scene 47 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-048",
-    "title": "Scene 48 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-049",
-    "title": "Scene 49 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-050",
-    "title": "Scene 50 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-051",
-    "title": "Scene 51 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-052",
-    "title": "Scene 52 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-053",
-    "title": "Scene 53 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-054",
-    "title": "Scene 54 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-055",
-    "title": "Scene 55 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-056",
-    "title": "Scene 56 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-057",
-    "title": "Scene 57 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-058",
-    "title": "Scene 58 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-059",
-    "title": "Scene 59 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-060",
-    "title": "Scene 60 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-061",
-    "title": "Scene 61 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-062",
-    "title": "Scene 62 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-063",
-    "title": "Scene 63 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-064",
-    "title": "Scene 64 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-065",
-    "title": "Scene 65 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-066",
-    "title": "Scene 66 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-067",
-    "title": "Scene 67 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-068",
-    "title": "Scene 68 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-069",
-    "title": "Scene 69 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-070",
-    "title": "Scene 70 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-071",
-    "title": "Scene 71 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-072",
-    "title": "Scene 72 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-073",
-    "title": "Scene 73 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-074",
-    "title": "Scene 74 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-075",
-    "title": "Scene 75 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-076",
-    "title": "Scene 76 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-077",
-    "title": "Scene 77 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-078",
-    "title": "Scene 78 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-079",
-    "title": "Scene 79 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-080",
-    "title": "Scene 80 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-081",
-    "title": "Scene 81 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-082",
-    "title": "Scene 82 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-083",
-    "title": "Scene 83 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-084",
-    "title": "Scene 84 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-085",
-    "title": "Scene 85 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-086",
-    "title": "Scene 86 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-087",
-    "title": "Scene 87 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-088",
-    "title": "Scene 88 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-089",
-    "title": "Scene 89 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-090",
-    "title": "Scene 90 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-091",
-    "title": "Scene 91 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-092",
-    "title": "Scene 92 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-093",
-    "title": "Scene 93 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-094",
-    "title": "Scene 94 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-095",
-    "title": "Scene 95 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-096",
-    "title": "Scene 96 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-097",
-    "title": "Scene 97 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-098",
-    "title": "Scene 98 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-099",
-    "title": "Scene 99 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-100",
-    "title": "Scene 100 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-101",
-    "title": "Scene 101 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-102",
-    "title": "Scene 102 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-103",
-    "title": "Scene 103 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-104",
-    "title": "Scene 104 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-105",
-    "title": "Scene 105 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-106",
-    "title": "Scene 106 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-107",
-    "title": "Scene 107 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-108",
-    "title": "Scene 108 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-109",
-    "title": "Scene 109 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-110",
-    "title": "Scene 110 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-111",
-    "title": "Scene 111 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-112",
-    "title": "Scene 112 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-113",
-    "title": "Scene 113 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-114",
-    "title": "Scene 114 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-115",
-    "title": "Scene 115 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-116",
-    "title": "Scene 116 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-117",
-    "title": "Scene 117 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-118",
-    "title": "Scene 118 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-119",
-    "title": "Scene 119 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-120",
-    "title": "Scene 120 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-121",
-    "title": "Scene 121 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-122",
-    "title": "Scene 122 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-123",
-    "title": "Scene 123 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-124",
-    "title": "Scene 124 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-125",
-    "title": "Scene 125 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-126",
-    "title": "Scene 126 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-127",
-    "title": "Scene 127 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-128",
-    "title": "Scene 128 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-129",
-    "title": "Scene 129 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-130",
-    "title": "Scene 130 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-131",
-    "title": "Scene 131 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-132",
-    "title": "Scene 132 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-133",
-    "title": "Scene 133 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-134",
-    "title": "Scene 134 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-135",
-    "title": "Scene 135 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-136",
-    "title": "Scene 136 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-137",
-    "title": "Scene 137 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-138",
-    "title": "Scene 138 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-139",
-    "title": "Scene 139 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-140",
-    "title": "Scene 140 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-141",
-    "title": "Scene 141 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-142",
-    "title": "Scene 142 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-143",
-    "title": "Scene 143 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-144",
-    "title": "Scene 144 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-145",
-    "title": "Scene 145 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-146",
-    "title": "Scene 146 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-147",
-    "title": "Scene 147 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
-    "exit_line": ""
-  },
-  {
-    "scene_id": "E-148",
-    "title": "Scene 148 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      { "label": "Continue", "next_id": "" }
-    ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-149",
-    "title": "Scene 149 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-031B",
+    "title": "Words from the Lads",
+    "where_when": "Guild hall",
+    "text": " Later, After some Merry Making that night, Thorg pulls out a crumpled piece of parchment. He shoves it into your hand.\n\n'Before we disappear for a week,' he says.\n\nYou unfold it. The handwriting is rough but earnest, and all three have signed it.\n\n'You came in as a stranger and left as family. That's not something we give out easy. You've got the instincts, the guts, and most importantly—you didn't complain once. That makes you either brave or stupid. Probably both.\n\nIf you're ever looking for work or just looking for good company, head to Trodden Hollow and ask for us. We'll be there. We'll buy you an ale. We'll probably argue about something stupid. And we'll do it all again.\n\nYou're one of us now. That's not changing.\n\n—Thorg, Brax, Grim'\n\nThorg claps your shoulder. 'Right then. We're off to drink for a week straight. You earned your place here, friend. Enjoy it.'\n\nThey're already heading out, arguing about which tavern to hit first.\n\nBut not before Thorg turns back and winks.",
     "choices": [
-      { "label": "Continue", "next_id": "" }
+      { "label": "Move forward", "next_id": "E-032B" }
     ],
     "exit_line": ""
   },
   {
-    "scene_id": "E-150",
-    "title": "Scene 150 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "scene_id": "E-032B",
+    "title": "A New Chapter",
+    "where_when": "Guild hall, standing by the counter",
+    "text": "You slip the note into your pack, next to the giant rat eye. Your Guild Seal heavy in your hand. The adventurer's seal rests in its leather case.\n\nYou are no longer a newcomer. You are no longer untested.\n\nYou're also no longer alone.\n\nAround you, the guild hums with life. Adventurers planning runs. Recruits dreaming of glory. The receptionist already calling out new contracts.\n\nYou've earned your place. And more than that—you've found your people.\n\nNow the real adventure begins.",
     "choices": [
-      { "label": "Continue", "next_id": "" }
+      { "label": "What comes next?", "next_id": "E-END-TRAVIS" }
     ],
     "exit_line": ""
   },
