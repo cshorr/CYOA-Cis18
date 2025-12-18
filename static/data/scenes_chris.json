@@ -361,7 +361,7 @@
     "choices": [
 
       { "label": "Accept your new life beneath the waves",
-        "next_id": "END" }
+        "next_id": "ENDING" }
     ],
     "exit_line": "You were meant to drown tonight. Instead, you were claimed."
   },
@@ -373,15 +373,15 @@
     "text": "You force a smile and tell them what you think they want to hear - a Hero's story, of slavers, chains, sword-fights and escape. The lie comes easy. Too easy. The three seductive and unnaturally beautiful creatures nod toward each other, smiling in silent agreement. They seem to believe you as one of them gently offers a new shell, winking seductively as you lift it to your lips. It is sweeter than the first. You gulp it down greedily, relieved they’ve accepted your lie. The tallest one moves closer, her expression unreadable. Her lips brush yours, tasting your mouth with her tongue. Her breath cool and sweet, like apples and vanilla orchids, and in that instant, you fall in love. Gradually the light in the cave shifts. The lust in her eyes doesn’t fade; it sharpens, glinting with the calm focus of hunger. Shadows stretch along the walls as her voice sharpens. 'Pitiful land-born,' she says. 'We can taste truth on the air.' With one graceful motion she slaps the shell from your hands. 'The drink will teach you honesty.' Your stomach twists. It burns. Your tongue goes numb. You try to stand, but your legs will not move. Paralyzed, you watch as their lovely mouths open wide, revealing rows of slick, needle sharp teeth. They close in, humming the same alluring tune that brought you here. You scream once, salt and blood fill your throat, and then you drown again, slower this time, as they tear into your limbs and torso. The water goes dark with blood and rendered flesh, the pain makes the world fold in on itself. You feel your soul tear loose and rise, breaking the surface far above. The last thing you see is your own body sinking below, motionless. Then everything turns white, and you find yourself standing once more at the crossroads, with no memory of how you got there.",
     "sound": "soon-dead",
     "choices": [
-      { "label": "The End or is it? ", "next_id": "END" }
+      { "label": "The End or is it? ", "next_id": "ENDING" }
     ],
     "exit_line": "The sea keeps its secrets. You just became one of them."
   },
 
   {
-    "scene_id": "END",
-    "sound": "blade-thru-body",
-    "title": "Your Journey Ends",
+    "scene_id": "ENDING",
+    "sound": "siren-melody",
+    "title": "Your Journey Ends In Success",
     "image": "mermaids3",
     "image_mode": "background",
     "text": "Your story has reached its conclusion.",
